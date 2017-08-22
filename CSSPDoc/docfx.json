@@ -4,11 +4,9 @@
       "src": [
         {
           "files": [
-            "**/**/CSSPEnums.csproj",
-            "**/**/CSSPModels.csproj",
-            "**/**/CSSPServices.csproj"
+            "*.csproj"
           ],
-          "cwd": "../../",
+          "cwd": ".",
           "exclude": [
             "**/obj/**",
             "**/bin/**",
