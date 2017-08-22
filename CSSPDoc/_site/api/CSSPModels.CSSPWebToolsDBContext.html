@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CSSPWebToolsDBContext
    ">
-    <meta name="generator" content="docfx 2.22.1.0">
+    <meta name="generator" content="docfx 2.22.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,6 +83,12 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbSetCache.GetOrAddSet(Microsoft.EntityFrameworkCore.Internal.IDbSetSource, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;()</span>
+    </div>
+    <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges()</span>
     </div>
     <div>
@@ -93,6 +99,18 @@
     </div>
     <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SetPool(Microsoft.EntityFrameworkCore.Internal.IDbContextPool)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SnapshotConfiguration()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.Resurrect(Microsoft.EntityFrameworkCore.Internal.DbContextPoolConfigurationSnapshot)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.ResetState()</span>
     </div>
     <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Dispose()</span>
@@ -164,9 +182,6 @@
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
     </div>
     <div>
-      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;()</span>
-    </div>
-    <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find(System.Type, System.Object[])</span>
     </div>
     <div>
@@ -185,9 +200,6 @@
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[], System.Threading.CancellationToken)</span>
     </div>
     <div>
-      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;.Instance</span>
-    </div>
-    <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Database</span>
     </div>
     <div>
@@ -197,32 +209,38 @@
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Model</span>
     </div>
     <div>
-      <span class="xref">System.Object.ToString()</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.SetSource</span>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityFinderSource</span>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.QueryProvider</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.StateManager</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetHashCode()</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.ChangeDetector</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityGraphAttacher</span>
     </div>
     <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.UpdateLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.InfrastructureLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;.Instance</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CSSPModels.html">CSSPModels</a></h6>
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_CSSPWebToolsDBContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CSSPWebToolsDBContext : DbContext, IDisposable, IInfrastructure&lt;IServiceProvider&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class CSSPWebToolsDBContext : DbContext, IDisposable, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbContextPoolable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -300,7 +318,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.Address&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Address.html">Address</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -330,7 +348,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.AppErrLog&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.AppErrLog.html">AppErrLog</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -360,7 +378,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.AppTaskLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -390,7 +408,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.AppTask&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.AppTask.html">AppTask</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -420,7 +438,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.BoxModelLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.BoxModelLanguage.html">BoxModelLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -450,7 +468,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.BoxModelResult&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.BoxModelResult.html">BoxModelResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -480,7 +498,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.BoxModel&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.BoxModel.html">BoxModel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -510,7 +528,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.ClimateDataValue&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ClimateDataValue.html">ClimateDataValue</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -540,7 +558,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.ClimateSite&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ClimateSite.html">ClimateSite</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -570,7 +588,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.ContactLogin&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ContactLogin.html">ContactLogin</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -600,7 +618,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.ContactPreference&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ContactPreference.html">ContactPreference</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -630,7 +648,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.Contact&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Contact.html">Contact</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -660,7 +678,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.ContactShortcut&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ContactShortcut.html">ContactShortcut</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -720,7 +738,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.DocTemplate&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.DocTemplate.html">DocTemplate</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -750,7 +768,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.EmailDistributionListContact&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.EmailDistributionListContact.html">EmailDistributionListContact</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -780,7 +798,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.EmailDistributionList&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.EmailDistributionList.html">EmailDistributionList</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -810,7 +828,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.Email&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Email.html">Email</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -870,7 +888,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.HydrometricDataValue&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -900,7 +918,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.HydrometricSite&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.HydrometricSite.html">HydrometricSite</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -930,7 +948,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.InfrastructureLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.InfrastructureLanguage.html">InfrastructureLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -960,7 +978,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.Infrastructure&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Infrastructure.html">Infrastructure</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -990,7 +1008,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.LabSheetDetail&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.LabSheetDetail.html">LabSheetDetail</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1020,7 +1038,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.LabSheet&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.LabSheet.html">LabSheet</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1050,7 +1068,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.LabSheetTubeMPNDetail&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.LabSheetTubeMPNDetail.html">LabSheetTubeMPNDetail</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1080,7 +1098,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.Log&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Log.html">Log</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1110,7 +1128,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MapInfoPoint&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1140,7 +1158,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MapInfo&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MapInfo.html">MapInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1170,7 +1188,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MikeBoundaryCondition&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeBoundaryCondition.html">MikeBoundaryCondition</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1200,7 +1218,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MikeScenario&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeScenario.html">MikeScenario</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1230,7 +1248,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MikeSource&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeSource.html">MikeSource</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1260,7 +1278,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MikeSourceStartEnd&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeSourceStartEnd.html">MikeSourceStartEnd</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1290,7 +1308,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMLookupMPN&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMLookupMPN.html">MWQMLookupMPN</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1320,7 +1338,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMRunLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMRunLanguage.html">MWQMRunLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1350,7 +1368,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMRun&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMRun.html">MWQMRun</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1380,7 +1398,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMSampleLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSampleLanguage.html">MWQMSampleLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1410,7 +1428,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMSample&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSample.html">MWQMSample</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1440,7 +1458,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMSite&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSite.html">MWQMSite</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1470,7 +1488,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMSiteStartEndDate&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSiteStartEndDate.html">MWQMSiteStartEndDate</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1500,7 +1518,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMSubsectorLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSubsectorLanguage.html">MWQMSubsectorLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1530,7 +1548,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.MWQMSubsector&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSubsector.html">MWQMSubsector</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1560,7 +1578,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.PolSourceObservationIssue&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.PolSourceObservationIssue.html">PolSourceObservationIssue</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1590,7 +1608,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.PolSourceObservation&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.PolSourceObservation.html">PolSourceObservation</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1620,7 +1638,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.PolSourceSite&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.PolSourceSite.html">PolSourceSite</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1650,7 +1668,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.RainExceedance&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.RainExceedance.html">RainExceedance</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1680,7 +1698,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.RatingCurve&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.RatingCurve.html">RatingCurve</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1710,7 +1728,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.RatingCurveValue&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.RatingCurveValue.html">RatingCurveValue</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1740,7 +1758,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.ResetPassword&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ResetPassword.html">ResetPassword</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1770,7 +1788,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.SamplingPlan&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SamplingPlan.html">SamplingPlan</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1800,7 +1818,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.SamplingPlanSubsector&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SamplingPlanSubsector.html">SamplingPlanSubsector</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1830,7 +1848,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.SamplingPlanSubsectorSite&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SamplingPlanSubsectorSite.html">SamplingPlanSubsectorSite</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1860,7 +1878,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.SpillLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SpillLanguage.html">SpillLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1890,7 +1908,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.Spill&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Spill.html">Spill</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1920,7 +1938,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.Tel&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Tel.html">Tel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1950,7 +1968,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TideDataValue&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TideDataValue.html">TideDataValue</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1980,7 +1998,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TideLocation&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TideLocation.html">TideLocation</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2010,7 +2028,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TideSite&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TideSite.html">TideSite</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2040,7 +2058,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVFileLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVFileLanguage.html">TVFileLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2070,7 +2088,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVFile&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVFile.html">TVFile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2100,7 +2118,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVItemLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemLanguage.html">TVItemLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2130,7 +2148,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVItemLink&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemLink.html">TVItemLink</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2160,7 +2178,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVItem&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItem.html">TVItem</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2190,7 +2208,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVItemStat&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemStat.html">TVItemStat</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2220,7 +2238,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVItemUserAuthorization&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemUserAuthorization.html">TVItemUserAuthorization</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2250,7 +2268,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.TVTypeUserAuthorization&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVTypeUserAuthorization.html">TVTypeUserAuthorization</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2280,7 +2298,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.UseOfSite&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.UseOfSite.html">UseOfSite</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2310,7 +2328,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.VPAmbient&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPAmbient.html">VPAmbient</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2340,7 +2358,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.VPResult&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPResult.html">VPResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2370,7 +2388,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.VPScenarioLanguage&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPScenarioLanguage.html">VPScenarioLanguage</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2400,7 +2418,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet&lt;CSSPModels.VPScenario&gt;</span></td>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPScenario.html">VPScenario</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
