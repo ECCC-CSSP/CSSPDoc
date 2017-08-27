@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum PolSourceObsInfoEnum
    ">
-    <meta name="generator" content="docfx 2.22.3.0">
+    <meta name="generator" content="docfx 2.23.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -72,7 +72,8 @@
   
   <h1 id="CSSPEnums_PolSourceObsInfoEnum" data-uid="CSSPEnums.PolSourceObsInfoEnum" class="text-break">Enum PolSourceObsInfoEnum
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>PolSourceObsInfoEnum used by <a href="CSSPModels.html">CSSPModels</a> and <a href="CSSPServices.html">CSSPServices</a> </p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CSSPEnums.html">CSSPEnums</a></h6>
   <h6><strong>Assembly</strong>: CSSPEnums.dll</h6>
@@ -80,6 +81,341 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum PolSourceObsInfoEnum</code></pre>
   </div>
+  <h5 id="CSSPEnums_PolSourceObsInfoEnum_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><pre><code>    public enum PolSourceObsInfoEnum
+    {
+        Error = 0,
+        Start = 10100,
+        LandBased = 10101,
+        WaterBased = 10102,
+        DistanceFromShoreInMetersStart = 10200,
+        DistanceFromShoreInMetersOnShore = 10201,
+        DistanceFromShoreInMetersLessThan100 = 10202,
+        DistanceFromShoreInMetersBetween100And250 = 10203,
+        DistanceFromShoreInMetersBetween250And500 = 10204,
+        DistanceFromShoreInMetersBetween500And1000 = 10205,
+        DistanceFromShoreInMetersMoreThan1000 = 10206,
+        DistanceOnWaterMetersStart = 10300,
+        DistanceOnWaterMetersLessThan100 = 10301,
+        DistanceOnWaterMetersBetween100And250 = 10302,
+        DistanceOnWaterMetersBetween250And500 = 10303,
+        DistanceOnWaterMetersBetween500And1000 = 10304,
+        DistanceOnWaterMetersMoreThan1000 = 10305,
+        AreaSlopeStart = 10400,
+        AreaSlopeLow = 10401,
+        AreaSlopeMedium = 10402,
+        AreaSlopeHigh = 10403,
+        SourceTypeLandStart = 10500,
+        SourceTypeLandAgriculture = 10501,
+        SourceTypeLandForested = 10502,
+        SourceTypeLandIndustry = 10503,
+        SourceTypeLandMarine = 10504,
+        SourceTypeLandRecreation = 10505,
+        SourceTypeLandUrban = 10506,
+        SourceTypeShore = 10507,
+        AgricultureStart = 10600,
+        AgricultureCrop = 10601,
+        AgriculturePasture = 10602,
+        AgricultureFeedlot = 10603,
+        AgricultureFarm = 10604,
+        AgricultureBuilding = 10605,
+        CropStart = 10700,
+        CropFood = 10701,
+        CropHay = 10702,
+        CropPeatMoss = 10703,
+        PastureStart = 10800,
+        PastureActive = 10801,
+        PastureFallow = 10802,
+        FeedlotStart = 10900,
+        FeedlotActive = 10901,
+        FeedlotNotActive = 10902,
+        FarmStart = 11000,
+        FarmHobby = 11001,
+        FarmCommerical = 11002,
+        ForestedStart = 11100,
+        ForestedLoggingActivity = 11101,
+        ForestedClearcut = 11102,
+        ForestedRegrowth = 11103,
+        ForestedBuilding = 11104,
+        IndustryStart = 11200,
+        IndustryAirport = 11201,
+        IndustryLandfill = 11202,
+        IndustryFisheriesRelated = 11203,
+        IndustryWaste = 11204,
+        IndustryStorageTank = 11205,
+        IndustryCommercial = 11206,
+        TypeOfFishStart = 11300,
+        FishProcessingShellfish = 11301,
+        FishProcessingFinfish = 11302,
+        FishProcessingFishMeal = 11303,
+        MarineStart = 11400,
+        MarineWharf = 11401,
+        MarineBuildings = 11402,
+        MarineSeaWall = 11403,
+        WharfStart = 11500,
+        WharfCommercialTransportation = 11501,
+        WharfFishing = 11502,
+        WharfPrivate = 11503,
+        WharfMarina = 11504,
+        WharfAbandoned = 11505,
+        WharfTransportationStart = 11600,
+        TransportationCommerical = 11601,
+        TransportationFerry = 11602,
+        RecreationStart = 11700,
+        RecreationCampground = 11701,
+        RecreationDayUseArea = 11702,
+        RecreationSwimmingArea = 11703,
+        RecreationRecreationaltArea = 11704,
+        RecreationCommunityCentre = 11705,
+        RecreationGolfCourse = 11706,
+        CampgroundFacilitiesStart = 11800,
+        CampgroundNoDumpStn = 11801,
+        CampgroundwithDumpStn = 11802,
+        SewageStart = 11900,
+        SewageCesspool = 11901,
+        SewageDirectDischarge = 11902,
+        SewagePrivyOuthouse = 11903,
+        SewageMunicipalSystem = 11904,
+        SepticSystemDrainageField = 11905,
+        SepticSystemFullRention = 11906,
+        SepticSystemLagoon = 11907,
+        SepticNoStructure = 11908,
+        SeeMunicipalityInfrastructureStart = 12000,
+        UrbanStart = 12100,
+        UrbanStormWater = 12104,
+        UrbanSurfaceRunoff = 12106,
+        UrbanDumpStation = 12107,
+        WildlifeStart = 12200,
+        WildlifeBirds = 12201,
+        WildlifeLandMammals = 12202,
+        WildlifeMarineMammals = 12203,
+        MunicipalSystemStart = 12300,
+        MuncipialSystemConnected = 12301,
+        MunicipalSystemNotConnected = 12302,
+        StorageTankStart = 12400,
+        StorageTankFuel = 12401,
+        StorageTankPropane = 12402,
+        StorageTankChemicals = 12403,
+        TankSizeStart = 12500,
+        TankSizeSmall = 12501,
+        TankSizeLarge = 12502,
+        BuildingAgricultureStart = 12600,
+        BuildingResidentialFarm = 12601,
+        BuildingWarehouseFarm = 12602,
+        BuildingCommericalFarm = 12603,
+        BuildingBarnFarm = 12604,
+        BuildingRecreational = 12605,
+        BuildingForestedStart = 12700,
+        BuildingForestedResidential = 12701,
+        BuildingForestedWarehouse = 12702,
+        BuildingForestedRecreational = 12703,
+        BuildingForestedTrailer = 12704,
+        BuildingForestedFactory = 12705,
+        BuildingForestedCommerical = 12706,
+        BuildingTypeStart = 12800,
+        BuildingindustryWarehouse = 12801,
+        BuildingIndustryFactory = 12802,
+        BuildingIndustryCommerical = 12803,
+        BuildingFishStart = 12900,
+        BuildingFishHatchery = 12901,
+        BuildingFishTanks = 12902,
+        BuildingFishWarehouse = 12903,
+        BuildingFishCommercial = 12904,
+        BuildingAllStart = 13000,
+        BuildingAllCottage = 13001,
+        BuildingAllTrailer = 13002,
+        BuildingAllResidential = 13003,
+        BuildingAllWarehouse = 13004,
+        BuildingAllHotelMotel = 13005,
+        BuildingAllCommerical = 13006,
+        CountNumberStart = 13100,
+        CountNumberEqualTo1 = 13101,
+        CountNumberBetween1and5 = 13102,
+        CountNumberbBetween5and10 = 13103,
+        CountNumberbBetween10and25 = 13104,
+        CountNumberbBetween25and40 = 13105,
+        CountNumberGreaterThan40 = 13106,
+        AreaSizeStart = 13200,
+        AreaSizeSmall = 13201,
+        AreaSizeLarge = 13202,
+        FecalSourceStart = 13300,
+        FecalSourceLivestock = 13301,
+        FecalSourcePeople = 13302,
+        FecalSourceWildlife = 13303,
+        FecalSourceAbsent = 13304,
+        FecalSourceDrainagewater = 13305,
+        MajorIssueSourceStart = 13400,
+        MajorIssueSourceManurePile = 13401,
+        MajorIssueAbsent1 = 13402,
+        MajorIssueRunoff = 13403,
+        LandfillTypeStart = 13500,
+        LandfillTypeResidental = 13501,
+        LandfillTypeIndustrial = 13502,
+        LandfillTypeWoodwaste = 13503,
+        NumberPresentStart = 13600,
+        NumberPresentLessThan5 = 13601,
+        NumberPresentBetween5and10 = 13602,
+        NumberPresentBetween10and25 = 13603,
+        NumberPresentGreaterThan25 = 13604,
+        TypesOfLivestockStart = 13700,
+        TypesEqualLargeDomestic = 13701,
+        TypesEqualSmallDomestic = 13702,
+        TypesEqualDomesticBirds = 13703,
+        TypesEqualFurFarms = 13704,
+        TypesEqualDomesticMixture = 13705,
+        TypesOfWildlifeStart = 13800,
+        TypesEqualSmallWildAnimals = 13801,
+        TypesEqualLargeWildAnimals = 13802,
+        TypesEqualLargeBirds = 13803,
+        TypesEqualMediumBirds = 13804,
+        TypesEqualSmallBirds = 13805,
+        AnimalNumberPresentStart = 13900,
+        NumberAnimalPresentLessThan5 = 13901,
+        NumberAnimalPresentBetween5and10 = 13902,
+        NumberAnimalPresentBetween10and25 = 13903,
+        NumberAnimalPresentBetween25and100 = 13904,
+        NumberAnimalPresentGreaterThan100 = 13905,
+        PointSourceWildlifeStart = 16600,
+        SourceDirectInputToMarine = 16601,
+        BoatStart = 14000,
+        BoatCountEquals1 = 14001,
+        BoatCountLessThan5 = 14002,
+        BoatCountBetween5and25 = 14003,
+        BoatCountBetween25and50 = 14004,
+        BoatCountBetween50and100 = 14005,
+        BoatCountBetweenMoreThan100 = 14006,
+        OilDumpingFacilityStart = 14100,
+        OilDumpingFacilityPresent = 14101,
+        OilDumpingFacilityAbsent = 14102,
+        SewageDumpingStationStart = 14200,
+        SewageDumpingStationPresent = 14201,
+        SewageDumpingStationAbsent = 14202,
+        PointSourceStart = 14300,
+        SourceTypeLandCulvert = 14301,
+        SourceTypeLandPipe = 14302,
+        SourceTypeLandWaterCourse = 14303,
+        SourceTypeLandDitch = 14304,
+        SourceTypeLandDrainage = 14305,
+        SourceTypeDirectInputToMarine = 14306,
+        PointSourceManureStart = 14400,
+        SourceManureLandDrainage = 14401,
+        SourceManureDitch = 14402,
+        DiameterInCentimetersStart = 14500,
+        DiameterInCentimetersLessThan30 = 14501,
+        DiameterInCentimetersBetween30and100cm = 14502,
+        DiameterInCentimetersBetween100and200cm = 14503,
+        DiameterInCentimetersMoreThan200cm = 14504,
+        FlowLevelStart = 14600,
+        FlowLevelHigh = 14601,
+        FlowLevelMedium = 14602,
+        FlowLevelLow = 14603,
+        OuthouseStart = 14700,
+        OuthouseCementHoldingTank = 14701,
+        OuthouseSittingOnGround = 14702,
+        WidthInMetersStart = 14800,
+        WidthInMetersLessThan1 = 14801,
+        WidthInMetersBetween1And5 = 14802,
+        WidthInMetersBetween5And25 = 14803,
+        WidthInMetersMoreThan25 = 14804,
+        DitchStart = 14900,
+        DitchAlongRoad = 14901,
+        DitchBetweenAcrossProperties = 14902,
+        DrainageStart = 15000,
+        DrainagePavedSurfaces = 15001,
+        DrainageVegetatedSurfaces = 15002,
+        DrainageDirect = 15003,
+        DrainageBareSoilSurfaces = 15004,
+        ManurePileSizeStart = 15100,
+        ManurePileSmall = 15101,
+        ManurePileLarge = 15102,
+        SourceTypeWaterStart = 15200,
+        SourceTypeWaterAquacultureSite = 15201,
+        SourceTypeWaterAnchorageMooringSite = 15202,
+        SourceTypeWaterDisposalAtSea = 15203,
+        SourceTypeWaterMarinePark = 15204,
+        SourceTypeWaterSeaport = 15205,
+        SourceSandBar = 15206,
+        WaterAquacultureStart = 15300,
+        WaterAquacultureSiteActive = 15301,
+        WaterAquacultureSiteFallow = 15302,
+        WaterAquacultureTypeStart = 15400,
+        AquacultureCages = 15401,
+        AquacultureFloatingBags = 15402,
+        AquacultureSubmergedLines = 15403,
+        WaterStructureSiteStart = 15500,
+        WaterStructureVessel = 15501,
+        WaterStructureBarge = 15502,
+        WaterStructureResidental = 15503,
+        WaterStructureCommercial = 15504,
+        WaterStructureNotActive = 15505,
+        WaterDisposalAtSeaStart = 15600,
+        WaterDumpSiteActive = 15601,
+        WaterDumpSiteNotActive = 15602,
+        WaterSeaportStart = 15700,
+        SeaportRecreational = 15701,
+        SeaportCommercial = 15702,
+        WaterSizeStart = 15800,
+        AquacultureSmall = 15801,
+        AquacultureLarge = 15802,
+        WaterTypeStart = 15900,
+        WaterTypeSalt = 15901,
+        WaterTypeBrachish = 15902,
+        WaterTypeFresh = 15903,
+        WaterAreaSizeStart = 16000,
+        WaterAreaSizeSmall = 16001,
+        WaterAreaSizeLarge = 16002,
+        WaterFecalSourceStart = 16100,
+        WaterFecalSourcePeople = 16101,
+        WaterFecalSourceWildlife = 16102,
+        WaterFecalSourceAbsent = 16103,
+        WaterCountNumberStart = 16200,
+        WaterCountNumberLessThan5 = 16201,
+        WaterCountNumberBetween5and10 = 16202,
+        WaterCountNumberBetween10and25 = 16203,
+        WaterCountNumberGreaterThan25 = 16204,
+        WaterSewageStart = 16300,
+        WaterSewageDirectDischarge = 16301,
+        WaterSepticSystemFullRention = 16302,
+        WaterNumberPresentStart = 16400,
+        WaterNumberPresentLessThan5 = 16401,
+        WaterNumberPresentBetween5and10 = 16402,
+        WaterNumberPresentBetween10and25 = 16403,
+        WaterNumberPresentGreaterThan25 = 16404,
+        WaterTypesOfMarineLifeStart = 16500,
+        WaterTypesEqualSmallMammals = 16501,
+        WaterTypesEqualLargeMammals = 16502,
+        WaterTypesEqualLargeBirds = 16503,
+        WaterTypesEqualMediumBirds = 16504,
+        WaterTypesEqualSmallBirds = 16505,
+        ShorelineStart = 17000,
+        ShorelineSandy = 17001,
+        ShorelineRocky = 17002,
+        ShorelineIssueStart = 17100,
+        ShorelineBuildings = 17101,
+        ShorelineWildlife = 17102,
+        ShorelineLandFill = 17103,
+        ShorelineSlipway = 17104,
+        ShorelineDayuse = 17105,
+        SlipwayStart = 18000,
+        SlipwayPaved = 18001,
+        SlipwayRocks = 18002,
+        SourceTypeShoreStart = 19000,
+        SourceTypeShoreline = 19001,
+        SourceTypeMarine = 19002,
+        StatusStart = 90000,
+        StatusDefinite = 90001,
+        StatusPotential = 90002,
+        StatusNonPollutionSource = 90003,
+        RiskAStart = 91000,
+        RiskLow = 91001,
+        RiskBStart = 92000,
+        RiskModerate = 92001,
+        RiskHighP = 92002,
+        RiskCStart = 93000,
+        RiskHigh = 93001,
+    }</code></pre>
+
+</div>
   <h3 id="fields">Fields
   </h3>
   <table class="table table-bordered table-striped table-condensed">
@@ -92,1319 +428,1648 @@
     <tbody>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AgricultureBuilding">AgricultureBuilding</td>
-        <td></td>
+        <td><p>10605 -- en [Buildings] ---- fr [Bâtiments]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AgricultureCrop">AgricultureCrop</td>
-        <td></td>
+        <td><p>10601 -- en [Crop] ---- fr [Récolte]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AgricultureFarm">AgricultureFarm</td>
-        <td></td>
+        <td><p>10604 -- en [Farm] ---- fr [Ferme]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AgricultureFeedlot">AgricultureFeedlot</td>
-        <td></td>
+        <td><p>10603 -- en [Feedlot] ---- fr [Enclos]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AgriculturePasture">AgriculturePasture</td>
-        <td></td>
+        <td><p>10602 -- en [Pasture] ---- fr [Pâturage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AgricultureStart">AgricultureStart</td>
-        <td></td>
+        <td><p>10600 -- en [Agriculture] ---- fr [Agriculture]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalNumberPresentStart">AnimalNumberPresentStart</td>
-        <td></td>
+        <td><p>13900 -- en [Number present] ---- fr [Nombre présent]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AquacultureCages">AquacultureCages</td>
-        <td></td>
+        <td><p>15401 -- en [Cages] ---- fr [Cages]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AquacultureFloatingBags">AquacultureFloatingBags</td>
-        <td></td>
+        <td><p>15402 -- en [Floating bags] ---- fr [Sacs flottantes]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AquacultureLarge">AquacultureLarge</td>
-        <td></td>
+        <td><p>15802 -- en [Large] ---- fr [Grand ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AquacultureSmall">AquacultureSmall</td>
-        <td></td>
+        <td><p>15801 -- en [Small] ---- fr [Petit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AquacultureSubmergedLines">AquacultureSubmergedLines</td>
-        <td></td>
+        <td><p>15403 -- en [Submerged lines] ---- fr [Lignes submergées ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AreaSizeLarge">AreaSizeLarge</td>
-        <td></td>
+        <td><p>13202 -- en [Large] ---- fr [Grand]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AreaSizeSmall">AreaSizeSmall</td>
-        <td></td>
+        <td><p>13201 -- en [Small] ---- fr [Petit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AreaSizeStart">AreaSizeStart</td>
-        <td></td>
+        <td><p>13200 -- en [Area size] ---- fr [Taille de l&apos;endroit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AreaSlopeHigh">AreaSlopeHigh</td>
-        <td></td>
+        <td><p>10403 -- en [High] ---- fr [Raide]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AreaSlopeLow">AreaSlopeLow</td>
-        <td></td>
+        <td><p>10401 -- en [Low] ---- fr [Faible]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AreaSlopeMedium">AreaSlopeMedium</td>
-        <td></td>
+        <td><p>10402 -- en [Medium] ---- fr [Modérée]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AreaSlopeStart">AreaSlopeStart</td>
-        <td></td>
+        <td><p>10400 -- en [Area slope] ---- fr [Pente de l&apos;endroit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BoatCountBetween25and50">BoatCountBetween25and50</td>
-        <td></td>
+        <td><p>14004 -- en [ 25 - 50] ---- fr [ 25 à 50 bateaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BoatCountBetween50and100">BoatCountBetween50and100</td>
-        <td></td>
+        <td><p>14005 -- en [ 50 - 100] ---- fr [ 50 à 100 bateaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BoatCountBetween5and25">BoatCountBetween5and25</td>
-        <td></td>
+        <td><p>14003 -- en [  5 - 25] ---- fr [ 5 à 25 bateaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BoatCountBetweenMoreThan100">BoatCountBetweenMoreThan100</td>
-        <td></td>
+        <td><p>14006 -- en [100 and more] ---- fr [ 100 bateaux et plus]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BoatCountEquals1">BoatCountEquals1</td>
-        <td></td>
+        <td><p>14001 -- en [   1] ---- fr [ 1 bateau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BoatCountLessThan5">BoatCountLessThan5</td>
-        <td></td>
+        <td><p>14002 -- en [  2 - 5] ---- fr [ 2 à 5 bateaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BoatStart">BoatStart</td>
-        <td></td>
+        <td><p>14000 -- en [Boat] ---- fr [Bateau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAgricultureStart">BuildingAgricultureStart</td>
-        <td></td>
+        <td><p>12600 -- en [Building Types] ---- fr [Type d&apos;édifices]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAllCommerical">BuildingAllCommerical</td>
-        <td></td>
+        <td><p>13006 -- en [Commercial-Business] ---- fr [Commercial-affaires]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAllCottage">BuildingAllCottage</td>
-        <td></td>
+        <td><p>13001 -- en [Cottage] ---- fr [Chalet]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAllHotelMotel">BuildingAllHotelMotel</td>
-        <td></td>
+        <td><p>13005 -- en [Hotel or motel] ---- fr [Hôtel ou motel]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAllResidential">BuildingAllResidential</td>
-        <td></td>
+        <td><p>13003 -- en [Residental ] ---- fr [Résidentiel]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAllStart">BuildingAllStart</td>
-        <td></td>
+        <td><p>13000 -- en [Buildings] ---- fr [Bâtiments]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAllTrailer">BuildingAllTrailer</td>
-        <td></td>
+        <td><p>13002 -- en [Trailer] ---- fr [Caravane]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingAllWarehouse">BuildingAllWarehouse</td>
-        <td></td>
+        <td><p>13004 -- en [Warehouse] ---- fr [Entrepôt]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingBarnFarm">BuildingBarnFarm</td>
-        <td></td>
+        <td><p>12604 -- en [Barn] ---- fr [Grange]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingCommericalFarm">BuildingCommericalFarm</td>
-        <td></td>
+        <td><p>12603 -- en [Commercial] ---- fr [Commercial-affaires, ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingFishCommercial">BuildingFishCommercial</td>
-        <td></td>
+        <td><p>12904 -- en [Commercial] ---- fr [Commercial]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingFishHatchery">BuildingFishHatchery</td>
-        <td></td>
+        <td><p>12901 -- en [Hatchery] ---- fr [Incubateur]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingFishStart">BuildingFishStart</td>
-        <td></td>
+        <td><p>12900 -- en [Fishery Buildings] ---- fr [Bâtiments pour la pêche]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingFishTanks">BuildingFishTanks</td>
-        <td></td>
+        <td><p>12902 -- en [Tanks ] ---- fr [Réservoirs]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingFishWarehouse">BuildingFishWarehouse</td>
-        <td></td>
+        <td><p>12903 -- en [Warehouse] ---- fr [Entrepôt]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingForestedCommerical">BuildingForestedCommerical</td>
-        <td></td>
+        <td><p>12706 -- en [Commercial] ---- fr [Commercial]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingForestedFactory">BuildingForestedFactory</td>
-        <td></td>
+        <td><p>12705 -- en [Factory] ---- fr [Usine]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingForestedRecreational">BuildingForestedRecreational</td>
-        <td></td>
+        <td><p>12703 -- en [Recreational] ---- fr [Récréatif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingForestedResidential">BuildingForestedResidential</td>
-        <td></td>
+        <td><p>12701 -- en [Residental ] ---- fr [Résidentiel]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingForestedStart">BuildingForestedStart</td>
-        <td></td>
+        <td><p>12700 -- en [Forested Buildings ] ---- fr [Édifice forestier]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingForestedTrailer">BuildingForestedTrailer</td>
-        <td></td>
+        <td><p>12704 -- en [Trailer] ---- fr [Caravane]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingForestedWarehouse">BuildingForestedWarehouse</td>
-        <td></td>
+        <td><p>12702 -- en [Warehouse] ---- fr [Entrepôt]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingIndustryCommerical">BuildingIndustryCommerical</td>
-        <td></td>
+        <td><p>12803 -- en [Commercial] ---- fr [Commercial]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingIndustryFactory">BuildingIndustryFactory</td>
-        <td></td>
+        <td><p>12802 -- en [Factory] ---- fr [Usine]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingindustryWarehouse">BuildingindustryWarehouse</td>
-        <td></td>
+        <td><p>12801 -- en [Warehouse] ---- fr [Entrepôt]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingRecreational">BuildingRecreational</td>
-        <td></td>
+        <td><p>12605 -- en [Recreational] ---- fr [Récréatif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingResidentialFarm">BuildingResidentialFarm</td>
-        <td></td>
+        <td><p>12601 -- en [Residental ] ---- fr [Résidentiel]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingTypeStart">BuildingTypeStart</td>
-        <td></td>
+        <td><p>12800 -- en [Type of Buildings] ---- fr [Type d&apos;édifices]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_BuildingWarehouseFarm">BuildingWarehouseFarm</td>
-        <td></td>
+        <td><p>12602 -- en [Warehouse] ---- fr [Entrepôt]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CampgroundFacilitiesStart">CampgroundFacilitiesStart</td>
-        <td></td>
+        <td><p>11800 -- en [Campground size] ---- fr [Taille du terrain de camping]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CampgroundNoDumpStn">CampgroundNoDumpStn</td>
-        <td></td>
+        <td><p>11801 -- en [no dump station ] ---- fr [Aucune station d’élimination des eaux usées]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CampgroundwithDumpStn">CampgroundwithDumpStn</td>
-        <td></td>
+        <td><p>11802 -- en [dump station] ---- fr [Station d’élimination des eaux usées]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CountNumberbBetween10and25">CountNumberbBetween10and25</td>
-        <td></td>
+        <td><p>13104 -- en [10 - 25] ---- fr [10 à 25]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CountNumberbBetween25and40">CountNumberbBetween25and40</td>
-        <td></td>
+        <td><p>13105 -- en [25 - 40] ---- fr [25 à 40]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CountNumberbBetween5and10">CountNumberbBetween5and10</td>
-        <td></td>
+        <td><p>13103 -- en [  5 - 10] ---- fr [5 à 10]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CountNumberBetween1and5">CountNumberBetween1and5</td>
-        <td></td>
+        <td><p>13102 -- en [   1 - 5] ---- fr [1 à 5]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CountNumberEqualTo1">CountNumberEqualTo1</td>
-        <td></td>
+        <td><p>13101 -- en [    1] ---- fr [  1]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CountNumberGreaterThan40">CountNumberGreaterThan40</td>
-        <td></td>
+        <td><p>13106 -- en [40 and more] ---- fr [40 et plus.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CountNumberStart">CountNumberStart</td>
-        <td></td>
+        <td><p>13100 -- en [Number ] ---- fr [Nombre d&apos;unités]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CropFood">CropFood</td>
-        <td></td>
+        <td><p>10701 -- en [Food] ---- fr [Nourriture]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CropHay">CropHay</td>
-        <td></td>
+        <td><p>10702 -- en [Hay] ---- fr [Foin]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CropPeatMoss">CropPeatMoss</td>
-        <td></td>
+        <td><p>10703 -- en [Peat Moss] ---- fr [Tourbe]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_CropStart">CropStart</td>
-        <td></td>
+        <td><p>10700 -- en [Crop] ---- fr [Récolte]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween100and200cm">DiameterInCentimetersBetween100and200cm</td>
-        <td></td>
+        <td><p>14503 -- en [100 - 200] ---- fr [100 à 200 (cm)]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween30and100cm">DiameterInCentimetersBetween30and100cm</td>
-        <td></td>
+        <td><p>14502 -- en [ 30 - 100] ---- fr [ 30 à 100 (cm)]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersLessThan30">DiameterInCentimetersLessThan30</td>
-        <td></td>
+        <td><p>14501 -- en [  less than 30] ---- fr [  moins de 30 (cm)]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersMoreThan200cm">DiameterInCentimetersMoreThan200cm</td>
-        <td></td>
+        <td><p>14504 -- en [200 and more] ---- fr [200 et plus (cm)]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersStart">DiameterInCentimetersStart</td>
-        <td></td>
+        <td><p>14500 -- en [Pipe or culvert diameter (centimeters)] ---- fr [Diamètre du tuyau ou aqueduc en centimètres ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceFromShoreInMetersBetween100And250">DistanceFromShoreInMetersBetween100And250</td>
-        <td></td>
+        <td><p>10203 -- en [   100 - 250] ---- fr [   100 à 250]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceFromShoreInMetersBetween250And500">DistanceFromShoreInMetersBetween250And500</td>
-        <td></td>
+        <td><p>10204 -- en [  250 - 500] ---- fr [  250 à 500]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceFromShoreInMetersBetween500And1000">DistanceFromShoreInMetersBetween500And1000</td>
-        <td></td>
+        <td><p>10205 -- en [ 500 - 1000] ---- fr [ 500 à 1000]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceFromShoreInMetersLessThan100">DistanceFromShoreInMetersLessThan100</td>
-        <td></td>
+        <td><p>10202 -- en [     Less than 100] ---- fr [      Moins de 100]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceFromShoreInMetersMoreThan1000">DistanceFromShoreInMetersMoreThan1000</td>
-        <td></td>
+        <td><p>10206 -- en [1000 and more] ---- fr [1000 et plus]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceFromShoreInMetersOnShore">DistanceFromShoreInMetersOnShore</td>
-        <td></td>
+        <td><p>10201 -- en [        On shore] ---- fr [          Sur la côte]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceFromShoreInMetersStart">DistanceFromShoreInMetersStart</td>
-        <td></td>
+        <td><p>10200 -- en [Distance from shore (meters)] ---- fr [Distance de la côte (mètres)]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceOnWaterMetersBetween100And250">DistanceOnWaterMetersBetween100And250</td>
-        <td></td>
+        <td><p>10302 -- en [    100 - 250] ---- fr [    100 à 250]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceOnWaterMetersBetween250And500">DistanceOnWaterMetersBetween250And500</td>
-        <td></td>
+        <td><p>10303 -- en [   250 - 500] ---- fr [   250 à 500]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceOnWaterMetersBetween500And1000">DistanceOnWaterMetersBetween500And1000</td>
-        <td></td>
+        <td><p>10304 -- en [  500 - 1000] ---- fr [  500 à 1000]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceOnWaterMetersLessThan100">DistanceOnWaterMetersLessThan100</td>
-        <td></td>
+        <td><p>10301 -- en [      less than 100] ---- fr [      moins de 100]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceOnWaterMetersMoreThan1000">DistanceOnWaterMetersMoreThan1000</td>
-        <td></td>
+        <td><p>10305 -- en [1000 and more] ---- fr [1000 et plus]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceOnWaterMetersStart">DistanceOnWaterMetersStart</td>
-        <td></td>
+        <td><p>10300 -- en [Distance on water] ---- fr [Distance sur l&apos;eau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DitchAlongRoad">DitchAlongRoad</td>
-        <td></td>
+        <td><p>14901 -- en [Along a road] ---- fr [Le long d&apos;un chemin]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DitchBetweenAcrossProperties">DitchBetweenAcrossProperties</td>
-        <td></td>
+        <td><p>14902 -- en [Across properties] ---- fr [Par le biais de terrains]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DitchStart">DitchStart</td>
-        <td></td>
+        <td><p>14900 -- en [Ditch] ---- fr [Fossé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageBareSoilSurfaces">DrainageBareSoilSurfaces</td>
-        <td></td>
+        <td><p>15004 -- en [Bare soil] ---- fr [Sol]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageDirect">DrainageDirect</td>
-        <td></td>
+        <td><p>15003 -- en [Direct flow] ---- fr [Débit direct]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DrainagePavedSurfaces">DrainagePavedSurfaces</td>
-        <td></td>
+        <td><p>15001 -- en [Paved surface] ---- fr [Surface d&apos;asphalte]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageStart">DrainageStart</td>
-        <td></td>
+        <td><p>15000 -- en [Drainage] ---- fr [Drainage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageVegetatedSurfaces">DrainageVegetatedSurfaces</td>
-        <td></td>
+        <td><p>15002 -- en [Vegetated surface] ---- fr [Surface recouverte de végétation]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_Error">Error</td>
-        <td></td>
+        <td><p>0 -- en [Empty] ---- fr [Empty (fr)]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FarmCommerical">FarmCommerical</td>
-        <td></td>
+        <td><p>11002 -- en [Commercial] ---- fr [Commercial]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FarmHobby">FarmHobby</td>
-        <td></td>
+        <td><p>11001 -- en [Hobby] ---- fr [Divertissement]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FarmStart">FarmStart</td>
-        <td></td>
+        <td><p>11000 -- en [Farm] ---- fr [Ferme]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FecalSourceAbsent">FecalSourceAbsent</td>
-        <td></td>
+        <td><p>13304 -- en [Absent] ---- fr [Nul]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FecalSourceDrainagewater">FecalSourceDrainagewater</td>
-        <td></td>
+        <td><p>13305 -- en [Drainage Water] ---- fr [Écoulement d&apos;eau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FecalSourceLivestock">FecalSourceLivestock</td>
-        <td></td>
+        <td><p>13301 -- en [Livestock] ---- fr [Bétail]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FecalSourcePeople">FecalSourcePeople</td>
-        <td></td>
+        <td><p>13302 -- en [People] ---- fr [Personnes]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FecalSourceStart">FecalSourceStart</td>
-        <td></td>
+        <td><p>13300 -- en [Fecal source] ---- fr [Source fécale]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FecalSourceWildlife">FecalSourceWildlife</td>
-        <td></td>
+        <td><p>13303 -- en [Wildlife] ---- fr [Faune]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FeedlotActive">FeedlotActive</td>
-        <td></td>
+        <td><p>10901 -- en [Active] ---- fr [Actif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FeedlotNotActive">FeedlotNotActive</td>
-        <td></td>
+        <td><p>10902 -- en [Not Active] ---- fr [Inactif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FeedlotStart">FeedlotStart</td>
-        <td></td>
+        <td><p>10900 -- en [Feedlot] ---- fr [Enclos]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FishProcessingFinfish">FishProcessingFinfish</td>
-        <td></td>
+        <td><p>11302 -- en [Finfish] ---- fr [Poissons]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FishProcessingFishMeal">FishProcessingFishMeal</td>
-        <td></td>
+        <td><p>11303 -- en [Fish meal] ---- fr [Nourriture à base de poisson]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FishProcessingShellfish">FishProcessingShellfish</td>
-        <td></td>
+        <td><p>11301 -- en [Shellfish] ---- fr [Mollusques]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelHigh">FlowLevelHigh</td>
-        <td></td>
+        <td><p>14601 -- en [High] ---- fr [Élevé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelLow">FlowLevelLow</td>
-        <td></td>
+        <td><p>14603 -- en [  Low] ---- fr [  Faible]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelMedium">FlowLevelMedium</td>
-        <td></td>
+        <td><p>14602 -- en [ Medium] ---- fr [ Modéré]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelStart">FlowLevelStart</td>
-        <td></td>
+        <td><p>14600 -- en [Flow] ---- fr [Débit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ForestedBuilding">ForestedBuilding</td>
-        <td></td>
+        <td><p>11104 -- en [Building] ---- fr [Bâtiment]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ForestedClearcut">ForestedClearcut</td>
-        <td></td>
+        <td><p>11102 -- en [Clearcut] ---- fr [Coupe à blanc]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ForestedLoggingActivity">ForestedLoggingActivity</td>
-        <td></td>
+        <td><p>11101 -- en [Forest harvesting] ---- fr [Activités d&apos;exploitation forestière]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ForestedRegrowth">ForestedRegrowth</td>
-        <td></td>
+        <td><p>11103 -- en [Regrowth] ---- fr [Reboisement]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ForestedStart">ForestedStart</td>
-        <td></td>
+        <td><p>11100 -- en [Forested] ---- fr [Foresterie]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustryAirport">IndustryAirport</td>
-        <td></td>
+        <td><p>11201 -- en [Airport] ---- fr [Aéroport]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustryCommercial">IndustryCommercial</td>
-        <td></td>
+        <td><p>11206 -- en [Commercial] ---- fr [Commerces]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustryFisheriesRelated">IndustryFisheriesRelated</td>
-        <td></td>
+        <td><p>11203 -- en [Fisheries] ---- fr [Pêches]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustryLandfill">IndustryLandfill</td>
-        <td></td>
+        <td><p>11202 -- en [Landfill] ---- fr [Centre d&apos;enfouissement]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustryStart">IndustryStart</td>
-        <td></td>
+        <td><p>11200 -- en [Industry] ---- fr [Industrie]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustryStorageTank">IndustryStorageTank</td>
-        <td></td>
+        <td><p>11205 -- en [Storage tank] ---- fr [Réservoir]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustryWaste">IndustryWaste</td>
-        <td></td>
+        <td><p>11204 -- en [Waste treatment] ---- fr [Traitement des eaux usées]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_LandBased">LandBased</td>
-        <td></td>
+        <td><p>10101 -- en [Land] ---- fr [Terrestre]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_LandfillTypeIndustrial">LandfillTypeIndustrial</td>
-        <td></td>
+        <td><p>13502 -- en [Industrial Landfill] ---- fr [Mise en décharge industrielle]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_LandfillTypeResidental">LandfillTypeResidental</td>
-        <td></td>
+        <td><p>13501 -- en [Residental Landfill] ---- fr [Mise en décharge résidentielle]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_LandfillTypeStart">LandfillTypeStart</td>
-        <td></td>
+        <td><p>13500 -- en [Land Fill Type] ---- fr [Type de mise en décharge]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_LandfillTypeWoodwaste">LandfillTypeWoodwaste</td>
-        <td></td>
+        <td><p>13503 -- en [Woodwaste Landfill] ---- fr [Mise en décharge de déchets ligneux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MajorIssueAbsent1">MajorIssueAbsent1</td>
-        <td></td>
+        <td><p>13402 -- en [No issue identified] ---- fr [Aucun problème identifié]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MajorIssueRunoff">MajorIssueRunoff</td>
-        <td></td>
+        <td><p>13403 -- en [Runoff] ---- fr [Ruisellement]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MajorIssueSourceManurePile">MajorIssueSourceManurePile</td>
-        <td></td>
+        <td><p>13401 -- en [Manure pile] ---- fr [Tas de fumier]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MajorIssueSourceStart">MajorIssueSourceStart</td>
-        <td></td>
+        <td><p>13400 -- en [Major Issue] ---- fr [Préoccupation majeure]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ManurePileLarge">ManurePileLarge</td>
-        <td></td>
+        <td><p>15102 -- en [Large] ---- fr [Grand ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ManurePileSizeStart">ManurePileSizeStart</td>
-        <td></td>
+        <td><p>15100 -- en [Manure pile size] ---- fr [Grandeur du tas de fumier]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ManurePileSmall">ManurePileSmall</td>
-        <td></td>
+        <td><p>15101 -- en [Small] ---- fr [Petit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MarineBuildings">MarineBuildings</td>
-        <td></td>
+        <td><p>11402 -- en [Buildings] ---- fr [Bâtiment]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MarineSeaWall">MarineSeaWall</td>
-        <td></td>
+        <td><p>11403 -- en [Seawall] ---- fr [Mur marin]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MarineStart">MarineStart</td>
-        <td></td>
+        <td><p>11400 -- en [Marine facilities] ---- fr [Installations marines]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MarineWharf">MarineWharf</td>
-        <td></td>
+        <td><p>11401 -- en [Wharf] ---- fr [Quai]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MuncipialSystemConnected">MuncipialSystemConnected</td>
-        <td></td>
+        <td><p>12301 -- en [Connected to Infrastructure] ---- fr [Infrastructure des eaux pluviales]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MunicipalSystemNotConnected">MunicipalSystemNotConnected</td>
-        <td></td>
+        <td><p>12302 -- en [Not connected to Municipal System] ---- fr [Collecteur des eaux pluviales]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MunicipalSystemStart">MunicipalSystemStart</td>
-        <td></td>
+        <td><p>12300 -- en [Municipal System] ---- fr [Eaux pluviales]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberAnimalPresentBetween10and25">NumberAnimalPresentBetween10and25</td>
-        <td></td>
+        <td><p>13903 -- en [   10 - 25] ---- fr [10 à 25 ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberAnimalPresentBetween25and100">NumberAnimalPresentBetween25and100</td>
-        <td></td>
+        <td><p>13904 -- en [  25 - 100] ---- fr [ 25 à 100 ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberAnimalPresentBetween5and10">NumberAnimalPresentBetween5and10</td>
-        <td></td>
+        <td><p>13902 -- en [     5 - 10] ---- fr [5 à 10]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberAnimalPresentGreaterThan100">NumberAnimalPresentGreaterThan100</td>
-        <td></td>
+        <td><p>13905 -- en [100 and more] ---- fr [   100 et plus]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberAnimalPresentLessThan5">NumberAnimalPresentLessThan5</td>
-        <td></td>
+        <td><p>13901 -- en [      less than 5] ---- fr [ moins de 5]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberPresentBetween10and25">NumberPresentBetween10and25</td>
-        <td></td>
+        <td><p>13603 -- en [ 10 - 25] ---- fr [10 à 25]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberPresentBetween5and10">NumberPresentBetween5and10</td>
-        <td></td>
+        <td><p>13602 -- en [   5 - 10] ---- fr [5 à 10]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberPresentGreaterThan25">NumberPresentGreaterThan25</td>
-        <td></td>
+        <td><p>13604 -- en [25 and more] ---- fr [25 et plus]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberPresentLessThan5">NumberPresentLessThan5</td>
-        <td></td>
+        <td><p>13601 -- en [     less than 5] ---- fr [ moins de 5]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_NumberPresentStart">NumberPresentStart</td>
-        <td></td>
+        <td><p>13600 -- en [Number present] ---- fr [Nombre présent]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_OilDumpingFacilityAbsent">OilDumpingFacilityAbsent</td>
-        <td></td>
+        <td><p>14102 -- en [Absent] ---- fr [Absent]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_OilDumpingFacilityPresent">OilDumpingFacilityPresent</td>
-        <td></td>
+        <td><p>14101 -- en [Present] ---- fr [Présent]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_OilDumpingFacilityStart">OilDumpingFacilityStart</td>
-        <td></td>
+        <td><p>14100 -- en [Oil dumping facility] ---- fr [Installations pour vider l&apos;huile]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_OuthouseCementHoldingTank">OuthouseCementHoldingTank</td>
-        <td></td>
+        <td><p>14701 -- en [Cement holding tank] ---- fr [Réservoir en béton]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_OuthouseSittingOnGround">OuthouseSittingOnGround</td>
-        <td></td>
+        <td><p>14702 -- en [On ground] ---- fr [Sur le sol]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_OuthouseStart">OuthouseStart</td>
-        <td></td>
+        <td><p>14700 -- en [Outhouse] ---- fr [Fosse des latrines]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PastureActive">PastureActive</td>
-        <td></td>
+        <td><p>10801 -- en [Active] ---- fr [Actif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PastureFallow">PastureFallow</td>
-        <td></td>
+        <td><p>10802 -- en [Fallow] ---- fr [Jachère]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PastureStart">PastureStart</td>
-        <td></td>
+        <td><p>10800 -- en [Pasture] ---- fr [Pâturage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PointSourceManureStart">PointSourceManureStart</td>
-        <td></td>
+        <td><p>14400 -- en [Manure point source] ---- fr [Source ponctuelle du fumier]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PointSourceStart">PointSourceStart</td>
-        <td></td>
+        <td><p>14300 -- en [Point source] ---- fr [Source ponctuelle]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PointSourceWildlifeStart">PointSourceWildlifeStart</td>
-        <td></td>
+        <td><p>16600 -- en [Point Source] ---- fr [Source ponctuelle]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RecreationCampground">RecreationCampground</td>
-        <td></td>
+        <td><p>11701 -- en [Campground] ---- fr [Terrain de camping]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RecreationCommunityCentre">RecreationCommunityCentre</td>
-        <td></td>
+        <td><p>11705 -- en [Community Centre] ---- fr [Centre communautaire]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RecreationDayUseArea">RecreationDayUseArea</td>
-        <td></td>
+        <td><p>11702 -- en [Day use area] ---- fr [Aire d&apos;utilisation journalière]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RecreationGolfCourse">RecreationGolfCourse</td>
-        <td></td>
+        <td><p>11706 -- en [Golf Course] ---- fr [Terrain de golf]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RecreationRecreationaltArea">RecreationRecreationaltArea</td>
-        <td></td>
+        <td><p>11704 -- en [Residental or recreational area] ---- fr [Aire Activités récréatives or residental]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RecreationStart">RecreationStart</td>
-        <td></td>
+        <td><p>11700 -- en [Recreational Activities] ---- fr [Activités récréatives]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RecreationSwimmingArea">RecreationSwimmingArea</td>
-        <td></td>
+        <td><p>11703 -- en [Swimming area] ---- fr [Zone de baignade]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RiskAStart">RiskAStart</td>
-        <td></td>
+        <td><p>91000 -- en [Risk to Pollute] ---- fr [Le risque de pollution]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RiskBStart">RiskBStart</td>
-        <td></td>
+        <td><p>92000 -- en [Risk to Pollute] ---- fr [Le risque de pollution]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RiskCStart">RiskCStart</td>
-        <td></td>
+        <td><p>93000 -- en [Risk to Pollute] ---- fr [Le risque de pollution]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RiskHigh">RiskHigh</td>
-        <td></td>
+        <td><p>93001 -- en [High] ---- fr [Élevé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RiskHighP">RiskHighP</td>
-        <td></td>
+        <td><p>92002 -- en [High] ---- fr [Élevé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RiskLow">RiskLow</td>
-        <td></td>
+        <td><p>91001 -- en [  Low] ---- fr [Faible ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_RiskModerate">RiskModerate</td>
-        <td></td>
+        <td><p>92001 -- en [ Moderate] ---- fr [Moyen]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SeaportCommercial">SeaportCommercial</td>
-        <td></td>
+        <td><p>15702 -- en [Commerical Vessels] ---- fr [Bateaux commerciaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SeaportRecreational">SeaportRecreational</td>
-        <td></td>
+        <td><p>15701 -- en [Recreational boats] ---- fr [Bateaux de plaisance ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SeeMunicipalityInfrastructureStart">SeeMunicipalityInfrastructureStart</td>
-        <td></td>
+        <td><p>12000 -- en [Infrastructure] ---- fr [Infrastructure]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SepticNoStructure">SepticNoStructure</td>
-        <td></td>
+        <td><p>11908 -- en [No Structure] ---- fr [Aucune structure]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SepticSystemDrainageField">SepticSystemDrainageField</td>
-        <td></td>
+        <td><p>11905 -- en [Drainage field] ---- fr [Aire de drainage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SepticSystemFullRention">SepticSystemFullRention</td>
-        <td></td>
+        <td><p>11906 -- en [Full retention] ---- fr [Rétention complète]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SepticSystemLagoon">SepticSystemLagoon</td>
-        <td></td>
+        <td><p>11907 -- en [Lagoon ] ---- fr [Lagune]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageCesspool">SewageCesspool</td>
-        <td></td>
+        <td><p>11901 -- en [Cesspool/Holding tank] ---- fr [Fosse / Réservoir]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageDirectDischarge">SewageDirectDischarge</td>
-        <td></td>
+        <td><p>11902 -- en [Direct discharge] ---- fr [Décharge directe]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageDumpingStationAbsent">SewageDumpingStationAbsent</td>
-        <td></td>
+        <td><p>14202 -- en [Absent] ---- fr [Absent]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageDumpingStationPresent">SewageDumpingStationPresent</td>
-        <td></td>
+        <td><p>14201 -- en [Present] ---- fr [Présent]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageDumpingStationStart">SewageDumpingStationStart</td>
-        <td></td>
+        <td><p>14200 -- en [Sewage dumping station] ---- fr [Station d’élimination des eaux usées]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageMunicipalSystem">SewageMunicipalSystem</td>
-        <td></td>
+        <td><p>11904 -- en [Municipal system] ---- fr [Système municipal]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewagePrivyOuthouse">SewagePrivyOuthouse</td>
-        <td></td>
+        <td><p>11903 -- en [Privy-Outhouse] ---- fr [Fosse des latrines]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageStart">SewageStart</td>
-        <td></td>
+        <td><p>11900 -- en [Sewage] ---- fr [Égoûts]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineBuildings">ShorelineBuildings</td>
-        <td></td>
+        <td><p>17101 -- en [Building] ---- fr [Édifices]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineDayuse">ShorelineDayuse</td>
-        <td></td>
+        <td><p>17105 -- en [Dayuse] ---- fr [Intra-jour]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineIssueStart">ShorelineIssueStart</td>
-        <td></td>
+        <td><p>17100 -- en [Items on shoreline] ---- fr [Éléments sur le rivage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineLandFill">ShorelineLandFill</td>
-        <td></td>
+        <td><p>17103 -- en [Landfill] ---- fr [Site d&apos;enfouissement]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRocky">ShorelineRocky</td>
-        <td></td>
+        <td><p>17002 -- en [Rocky Shoreline] ---- fr [Littoral rocheux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineSandy">ShorelineSandy</td>
-        <td></td>
+        <td><p>17001 -- en [Sandy Shoreline] ---- fr [Littoral de sable]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineSlipway">ShorelineSlipway</td>
-        <td></td>
+        <td><p>17104 -- en [Slipway] ---- fr [Mise à l&apos;eau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineStart">ShorelineStart</td>
-        <td></td>
+        <td><p>17000 -- en [Type of substrate] ---- fr [Type de substrat]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineWildlife">ShorelineWildlife</td>
-        <td></td>
+        <td><p>17102 -- en [Wildlife] ---- fr [Faune]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SlipwayPaved">SlipwayPaved</td>
-        <td></td>
+        <td><p>18001 -- en [Paved slipway] ---- fr [Mise à l&apos;eau pavé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SlipwayRocks">SlipwayRocks</td>
-        <td></td>
+        <td><p>18002 -- en [Natural slipway] ---- fr [Mise à l&apos;eau, surface naturelle]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SlipwayStart">SlipwayStart</td>
-        <td></td>
+        <td><p>18000 -- en [Type of Slipway] ---- fr [Genre de mise à l&apos;eau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceDirectInputToMarine">SourceDirectInputToMarine</td>
-        <td></td>
+        <td><p>16601 -- en [Directly to water] ---- fr [Directement vers un cours d&apos;eau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceManureDitch">SourceManureDitch</td>
-        <td></td>
+        <td><p>14402 -- en [Ditch] ---- fr [Fossé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceManureLandDrainage">SourceManureLandDrainage</td>
-        <td></td>
+        <td><p>14401 -- en [Drainage] ---- fr [Écoulement]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceSandBar">SourceSandBar</td>
-        <td></td>
+        <td><p>15206 -- en [Sandbar or Rock Outcrop] ---- fr [Banc de sable]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeDirectInputToMarine">SourceTypeDirectInputToMarine</td>
-        <td></td>
+        <td><p>14306 -- en [Directly to water] ---- fr [Directement vers un cours d&apos;eau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandAgriculture">SourceTypeLandAgriculture</td>
-        <td></td>
+        <td><p>10501 -- en [Agriculture] ---- fr [Agricole]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandCulvert">SourceTypeLandCulvert</td>
-        <td></td>
+        <td><p>14301 -- en [Culvert] ---- fr [Aqueduc]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandDitch">SourceTypeLandDitch</td>
-        <td></td>
+        <td><p>14304 -- en [Ditch] ---- fr [Fossé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandDrainage">SourceTypeLandDrainage</td>
-        <td></td>
+        <td><p>14305 -- en [Surface Drainage] ---- fr [Débit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandForested">SourceTypeLandForested</td>
-        <td></td>
+        <td><p>10502 -- en [Forested] ---- fr [Forestier]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandIndustry">SourceTypeLandIndustry</td>
-        <td></td>
+        <td><p>10503 -- en [Industry] ---- fr [Industriel]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandMarine">SourceTypeLandMarine</td>
-        <td></td>
+        <td><p>10504 -- en [Marine] ---- fr [Activités maritimes]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandPipe">SourceTypeLandPipe</td>
-        <td></td>
+        <td><p>14302 -- en [Pipe] ---- fr [Tuyau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandRecreation">SourceTypeLandRecreation</td>
-        <td></td>
+        <td><p>10505 -- en [Recreational ] ---- fr [Récréatives]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandStart">SourceTypeLandStart</td>
-        <td></td>
+        <td><p>10500 -- en [Land Type] ---- fr [Type de milieu]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandUrban">SourceTypeLandUrban</td>
-        <td></td>
+        <td><p>10506 -- en [Urban] ---- fr [Urbain]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeLandWaterCourse">SourceTypeLandWaterCourse</td>
-        <td></td>
+        <td><p>14303 -- en [Water course] ---- fr [Cours d&apos;eau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeMarine">SourceTypeMarine</td>
-        <td></td>
+        <td><p>19002 -- en [Marine Structure] ---- fr [Structure marine]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeShore">SourceTypeShore</td>
-        <td></td>
+        <td><p>10507 -- en [Shoreline] ---- fr [Sur la côte]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeShoreline">SourceTypeShoreline</td>
-        <td></td>
+        <td><p>19001 -- en [Shore structure] ---- fr [Rivage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeShoreStart">SourceTypeShoreStart</td>
-        <td></td>
+        <td><p>19000 -- en [Shoreline] ---- fr [Rivage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeWaterAnchorageMooringSite">SourceTypeWaterAnchorageMooringSite</td>
-        <td></td>
+        <td><p>15202 -- en [Anchorage mooring site] ---- fr [Site de mouillage ou de amarrage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeWaterAquacultureSite">SourceTypeWaterAquacultureSite</td>
-        <td></td>
+        <td><p>15201 -- en [Aquaculture site] ---- fr [Site de l&apos;aquaculture]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeWaterDisposalAtSea">SourceTypeWaterDisposalAtSea</td>
-        <td></td>
+        <td><p>15203 -- en [Disposal -Dredging] ---- fr [Décharge en haute mer]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeWaterMarinePark">SourceTypeWaterMarinePark</td>
-        <td></td>
+        <td><p>15204 -- en [Marine park] ---- fr [Parc marin]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeWaterSeaport">SourceTypeWaterSeaport</td>
-        <td></td>
+        <td><p>15205 -- en [Seaport] ---- fr [Port de mer]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SourceTypeWaterStart">SourceTypeWaterStart</td>
-        <td></td>
+        <td><p>15200 -- en [Source type ] ---- fr [Source définie]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_Start">Start</td>
-        <td></td>
+        <td><p>10100 -- en [Pollution source and type] ---- fr [Source et type de pollution]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StatusDefinite">StatusDefinite</td>
-        <td></td>
+        <td><p>90001 -- en [  Definite] ---- fr [Définitif,]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StatusNonPollutionSource">StatusNonPollutionSource</td>
-        <td></td>
+        <td><p>90003 -- en [    Non Active] ---- fr [Non Active]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StatusPotential">StatusPotential</td>
-        <td></td>
+        <td><p>90002 -- en [   Potential] ---- fr [Potentiel,]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StatusStart">StatusStart</td>
-        <td></td>
+        <td><p>90000 -- en [Status as a pollutant source ] ---- fr [Évaluation de la source de pollution]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StorageTankChemicals">StorageTankChemicals</td>
-        <td></td>
+        <td><p>12403 -- en [Chemical Tank] ---- fr [Produits chimiques]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StorageTankFuel">StorageTankFuel</td>
-        <td></td>
+        <td><p>12401 -- en [Fuel Tank] ---- fr [Carburant]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StorageTankPropane">StorageTankPropane</td>
-        <td></td>
+        <td><p>12402 -- en [Propane Tank] ---- fr [Propane]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_StorageTankStart">StorageTankStart</td>
-        <td></td>
+        <td><p>12400 -- en [StorageTank] ---- fr [Réservoir de stockage]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TankSizeLarge">TankSizeLarge</td>
-        <td></td>
+        <td><p>12502 -- en [Large Tank] ---- fr [Grand]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TankSizeSmall">TankSizeSmall</td>
-        <td></td>
+        <td><p>12501 -- en [Small Tank] ---- fr [Petit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TankSizeStart">TankSizeStart</td>
-        <td></td>
+        <td><p>12500 -- en [Tank Size] ---- fr [Taille du réservoir]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TransportationCommerical">TransportationCommerical</td>
-        <td></td>
+        <td><p>11601 -- en [Ship] ---- fr [Navire]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TransportationFerry">TransportationFerry</td>
-        <td></td>
+        <td><p>11602 -- en [Ferry] ---- fr [Traversier]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypeOfFishStart">TypeOfFishStart</td>
-        <td></td>
+        <td><p>11300 -- en [Type of fish] ---- fr [Type de poisson]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualDomesticBirds">TypesEqualDomesticBirds</td>
-        <td></td>
+        <td><p>13703 -- en [Domestic birds] ---- fr [Oiseaux domestiques]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualDomesticMixture">TypesEqualDomesticMixture</td>
-        <td></td>
+        <td><p>13705 -- en [A mixture of domestic animals] ---- fr [Domestique mixte]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualFurFarms">TypesEqualFurFarms</td>
-        <td></td>
+        <td><p>13704 -- en [Fur farm animals] ---- fr [Commerce de la fourrure]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualLargeBirds">TypesEqualLargeBirds</td>
-        <td></td>
+        <td><p>13803 -- en [  Large birds] ---- fr [Grands oiseaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualLargeDomestic">TypesEqualLargeDomestic</td>
-        <td></td>
+        <td><p>13701 -- en [Large domestic livestock] ---- fr [Grands, domestiques]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualLargeWildAnimals">TypesEqualLargeWildAnimals</td>
-        <td></td>
+        <td><p>13802 -- en [ Large wild animals] ---- fr [Grands animaux sauvages]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualMediumBirds">TypesEqualMediumBirds</td>
-        <td></td>
+        <td><p>13804 -- en [   Medium birds] ---- fr [Moyens oiseaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualSmallBirds">TypesEqualSmallBirds</td>
-        <td></td>
+        <td><p>13805 -- en [     Small birds] ---- fr [Petits oiseaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualSmallDomestic">TypesEqualSmallDomestic</td>
-        <td></td>
+        <td><p>13702 -- en [Small domestic livestock] ---- fr [Petits, domestiques]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesEqualSmallWildAnimals">TypesEqualSmallWildAnimals</td>
-        <td></td>
+        <td><p>13801 -- en [Small wild animals] ---- fr [Petits animaux sauvages]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesOfLivestockStart">TypesOfLivestockStart</td>
-        <td></td>
+        <td><p>13700 -- en [Type of livestock] ---- fr [Type de bétail]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_TypesOfWildlifeStart">TypesOfWildlifeStart</td>
-        <td></td>
+        <td><p>13800 -- en [Type of wildlife] ---- fr [Type d&apos;animal]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_UrbanDumpStation">UrbanDumpStation</td>
-        <td></td>
+        <td><p>12107 -- en [Dump Station] ---- fr [Station d’élimination des eaux usées]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_UrbanStart">UrbanStart</td>
-        <td></td>
+        <td><p>12100 -- en [Urban] ---- fr [Urbain]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_UrbanStormWater">UrbanStormWater</td>
-        <td></td>
+        <td><p>12104 -- en [Storm water] ---- fr [Eaux pluviales]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_UrbanSurfaceRunoff">UrbanSurfaceRunoff</td>
-        <td></td>
+        <td><p>12106 -- en [Surface runoff] ---- fr [Ruisellement de surface]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterAquacultureSiteActive">WaterAquacultureSiteActive</td>
-        <td></td>
+        <td><p>15301 -- en [Active] ---- fr [Actif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterAquacultureSiteFallow">WaterAquacultureSiteFallow</td>
-        <td></td>
+        <td><p>15302 -- en [Fallow] ---- fr [Inutilisé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterAquacultureStart">WaterAquacultureStart</td>
-        <td></td>
+        <td><p>15300 -- en [Aquaculture site] ---- fr [Site de l&apos;aquaculture]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterAquacultureTypeStart">WaterAquacultureTypeStart</td>
-        <td></td>
+        <td><p>15400 -- en [Aquaculture type] ---- fr [Type d&apos;aquaculture  ]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterAreaSizeLarge">WaterAreaSizeLarge</td>
-        <td></td>
+        <td><p>16002 -- en [Large] ---- fr [Grand]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterAreaSizeSmall">WaterAreaSizeSmall</td>
-        <td></td>
+        <td><p>16001 -- en [Small] ---- fr [Petit]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterAreaSizeStart">WaterAreaSizeStart</td>
-        <td></td>
+        <td><p>16000 -- en [Area size] ---- fr [Superficie]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterBased">WaterBased</td>
-        <td></td>
+        <td><p>10102 -- en [Water] ---- fr [Marine]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCountNumberBetween10and25">WaterCountNumberBetween10and25</td>
-        <td></td>
+        <td><p>16203 -- en [ 10 - 25] ---- fr [ 10 à 25.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCountNumberBetween5and10">WaterCountNumberBetween5and10</td>
-        <td></td>
+        <td><p>16202 -- en [ 5 - 10] ---- fr [ 5 à 10.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCountNumberGreaterThan25">WaterCountNumberGreaterThan25</td>
-        <td></td>
+        <td><p>16204 -- en [25 and more] ---- fr [ 25 et plus.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCountNumberLessThan5">WaterCountNumberLessThan5</td>
-        <td></td>
+        <td><p>16201 -- en [   less than 5] ---- fr [ moins que 5.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCountNumberStart">WaterCountNumberStart</td>
-        <td></td>
+        <td><p>16200 -- en [Number of units] ---- fr [Nombre d&apos;unités]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterDisposalAtSeaStart">WaterDisposalAtSeaStart</td>
-        <td></td>
+        <td><p>15600 -- en [Disposal at sea] ---- fr [Décharge en haute mer]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterDumpSiteActive">WaterDumpSiteActive</td>
-        <td></td>
+        <td><p>15601 -- en [Dump site active] ---- fr [Site de décharge actif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterDumpSiteNotActive">WaterDumpSiteNotActive</td>
-        <td></td>
+        <td><p>15602 -- en [Dump site not active] ---- fr [Site de décharge inactif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterFecalSourceAbsent">WaterFecalSourceAbsent</td>
-        <td></td>
+        <td><p>16103 -- en [Absent] ---- fr [Absent]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterFecalSourcePeople">WaterFecalSourcePeople</td>
-        <td></td>
+        <td><p>16101 -- en [People] ---- fr [Humain]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterFecalSourceStart">WaterFecalSourceStart</td>
-        <td></td>
+        <td><p>16100 -- en [Fecal source] ---- fr [Source de coliformes fécaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterFecalSourceWildlife">WaterFecalSourceWildlife</td>
-        <td></td>
+        <td><p>16102 -- en [Wildlife] ---- fr [Faune]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterNumberPresentBetween10and25">WaterNumberPresentBetween10and25</td>
-        <td></td>
+        <td><p>16403 -- en [ 10 - 25] ---- fr [10 à 25.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterNumberPresentBetween5and10">WaterNumberPresentBetween5and10</td>
-        <td></td>
+        <td><p>16402 -- en [  5 - 10] ---- fr [5 à 10.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterNumberPresentGreaterThan25">WaterNumberPresentGreaterThan25</td>
-        <td></td>
+        <td><p>16404 -- en [25 and more] ---- fr [25 et plus.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterNumberPresentLessThan5">WaterNumberPresentLessThan5</td>
-        <td></td>
+        <td><p>16401 -- en [   less than 5] ---- fr [moins que 5.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterNumberPresentStart">WaterNumberPresentStart</td>
-        <td></td>
+        <td><p>16400 -- en [Number present] ---- fr [Nombre présents.]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterSeaportStart">WaterSeaportStart</td>
-        <td></td>
+        <td><p>15700 -- en [Seaport] ---- fr [Port de mer]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterSepticSystemFullRention">WaterSepticSystemFullRention</td>
-        <td></td>
+        <td><p>16302 -- en [Full retention] ---- fr [Accumulation totale]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterSewageDirectDischarge">WaterSewageDirectDischarge</td>
-        <td></td>
+        <td><p>16301 -- en [Direct discharge] ---- fr [Décharge directe]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterSewageStart">WaterSewageStart</td>
-        <td></td>
+        <td><p>16300 -- en [Sewage] ---- fr [Eaux usées]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterSizeStart">WaterSizeStart</td>
-        <td></td>
+        <td><p>15800 -- en [Size] ---- fr [Grandeure]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterStructureBarge">WaterStructureBarge</td>
-        <td></td>
+        <td><p>15502 -- en [Barge] ---- fr [Barque]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterStructureCommercial">WaterStructureCommercial</td>
-        <td></td>
+        <td><p>15504 -- en [Commerical] ---- fr [Commercial]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterStructureNotActive">WaterStructureNotActive</td>
-        <td></td>
+        <td><p>15505 -- en [Not Active] ---- fr [  Inactif]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterStructureResidental">WaterStructureResidental</td>
-        <td></td>
+        <td><p>15503 -- en [Residental] ---- fr [Résidentiel]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterStructureSiteStart">WaterStructureSiteStart</td>
-        <td></td>
+        <td><p>15500 -- en [Structure] ---- fr [Structure]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterStructureVessel">WaterStructureVessel</td>
-        <td></td>
+        <td><p>15501 -- en [Vessels] ---- fr [Embarcation]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypeBrachish">WaterTypeBrachish</td>
-        <td></td>
+        <td><p>15902 -- en [Brackish] ---- fr [Brackish]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypeFresh">WaterTypeFresh</td>
-        <td></td>
+        <td><p>15903 -- en [Fresh] ---- fr [Fresh]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypeSalt">WaterTypeSalt</td>
-        <td></td>
+        <td><p>15901 -- en [Salt] ---- fr [Salt]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypesEqualLargeBirds">WaterTypesEqualLargeBirds</td>
-        <td></td>
+        <td><p>16503 -- en [Large birds] ---- fr [Grands oiseaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypesEqualLargeMammals">WaterTypesEqualLargeMammals</td>
-        <td></td>
+        <td><p>16502 -- en [Large marine animals] ---- fr [Grands animaux marins]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypesEqualMediumBirds">WaterTypesEqualMediumBirds</td>
-        <td></td>
+        <td><p>16504 -- en [Medium birds] ---- fr [Oiseaux de taille moyenne]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypesEqualSmallBirds">WaterTypesEqualSmallBirds</td>
-        <td></td>
+        <td><p>16505 -- en [Small birds] ---- fr [Petits oiseaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypesEqualSmallMammals">WaterTypesEqualSmallMammals</td>
-        <td></td>
+        <td><p>16501 -- en [Small marine animals] ---- fr [Petits animaux marins]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypesOfMarineLifeStart">WaterTypesOfMarineLifeStart</td>
-        <td></td>
+        <td><p>16500 -- en [Type of wildlife] ---- fr [Type de faune]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WaterTypeStart">WaterTypeStart</td>
-        <td></td>
+        <td><p>15900 -- en [Water Type] ---- fr [percentage of salt]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfAbandoned">WharfAbandoned</td>
-        <td></td>
+        <td><p>11505 -- en [Abandoned] ---- fr [Abandonné]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfCommercialTransportation">WharfCommercialTransportation</td>
-        <td></td>
+        <td><p>11501 -- en [Commercial transportation] ---- fr [Transport commercial]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfFishing">WharfFishing</td>
-        <td></td>
+        <td><p>11502 -- en [Fishing] ---- fr [Pêche]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfMarina">WharfMarina</td>
-        <td></td>
+        <td><p>11504 -- en [Marina] ---- fr [Marina]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfPrivate">WharfPrivate</td>
-        <td></td>
+        <td><p>11503 -- en [Private] ---- fr [Privé]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfStart">WharfStart</td>
-        <td></td>
+        <td><p>11500 -- en [Wharf] ---- fr [Quai]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationStart">WharfTransportationStart</td>
-        <td></td>
+        <td><p>11600 -- en [Vessel Type] ---- fr [Type de bateau]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersBetween1And5">WidthInMetersBetween1And5</td>
-        <td></td>
+        <td><p>14802 -- en [ 1 - 5] ---- fr [1 à 5]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersBetween5And25">WidthInMetersBetween5And25</td>
-        <td></td>
+        <td><p>14803 -- en [ 5 - 25] ---- fr [5 à 25]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersLessThan1">WidthInMetersLessThan1</td>
-        <td></td>
+        <td><p>14801 -- en [  less than 1] ---- fr [moins que 1]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersMoreThan25">WidthInMetersMoreThan25</td>
-        <td></td>
+        <td><p>14804 -- en [25 and more] ---- fr [25 et plus]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersStart">WidthInMetersStart</td>
-        <td></td>
+        <td><p>14800 -- en [Width (meters)] ---- fr [Largeur (mètres)]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WildlifeBirds">WildlifeBirds</td>
-        <td></td>
+        <td><p>12201 -- en [Birds] ---- fr [Oiseaux]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WildlifeLandMammals">WildlifeLandMammals</td>
-        <td></td>
+        <td><p>12202 -- en [Land mammals] ---- fr [Mammifères terrestres]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WildlifeMarineMammals">WildlifeMarineMammals</td>
-        <td></td>
+        <td><p>12203 -- en [Marine Mammals] ---- fr [Mammifères marins]</p>
+</td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WildlifeStart">WildlifeStart</td>
-        <td></td>
+        <td><p>12200 -- en [Wildlife] ---- fr [Faune]</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>
@@ -1419,7 +2084,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPEnums/new/master/apiSpec/new?filename=CSSPEnums_PolSourceObsInfoEnum.md&amp;value=---%0Auid%3A%20CSSPEnums.PolSourceObsInfoEnum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPEnums/blob/master/CSSPEnums/PolSourceObsInfoEnumGenerated.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPEnums/blob/master/CSSPEnums/PolSourceObsInfoEnumGenerated.cs/#L349" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

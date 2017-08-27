@@ -97,6 +97,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="_site\api\CSSPDoc.CSSPDocForm.html" />
+    <Content Include="_site\api\CSSPDoc.html" />
     <Content Include="_site\api\CSSPEnums.ActionDBTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.AddressTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.AerationTypeEnum.html" />
@@ -135,6 +137,7 @@
     <Content Include="_site\api\CSSPEnums.PolSourceInactiveReasonEnum.html" />
     <Content Include="_site\api\CSSPEnums.PolSourceIssueRiskEnum.html" />
     <Content Include="_site\api\CSSPEnums.PolSourceObsInfoEnum.html" />
+    <Content Include="_site\api\CSSPEnums.PolSourceObsInfoTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.PreliminaryTreatmentTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.PrimaryTreatmentTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.ReportConditionEnum.html" />
