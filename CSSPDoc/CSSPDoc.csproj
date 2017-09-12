@@ -97,12 +97,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="_site\api\CSSPDoc.CSSPDocForm.html" />
-    <Content Include="_site\api\CSSPDoc.html" />
     <Content Include="_site\api\CSSPEnums.ActionDBTypeEnum.html" />
+    <Content Include="_site\api\CSSPEnums.AddContactTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.AddressTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.AerationTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.AlarmSystemTypeEnum.html" />
+    <Content Include="_site\api\CSSPEnums.AnalysisCalculationTypeEnum.html" />
     <Content Include="_site\api\CSSPEnums.AnalyzeMethodEnum.html" />
     <Content Include="_site\api\CSSPEnums.AppTaskCommandEnum.html" />
     <Content Include="_site\api\CSSPEnums.AppTaskStatusEnum.html" />
@@ -212,6 +212,8 @@
     <Content Include="_site\api\CSSPModels.Email.html" />
     <Content Include="_site\api\CSSPModels.EmailDistributionList.html" />
     <Content Include="_site\api\CSSPModels.EmailDistributionListContact.html" />
+    <Content Include="_site\api\CSSPModels.EmailDistributionListContactLanguage.html" />
+    <Content Include="_site\api\CSSPModels.EmailDistributionListLanguage.html" />
     <Content Include="_site\api\CSSPModels.FileItem.html" />
     <Content Include="_site\api\CSSPModels.FileItemList.html" />
     <Content Include="_site\api\CSSPModels.FilePurposeAndText.html" />
@@ -239,6 +241,7 @@
     <Content Include="_site\api\CSSPModels.MikeScenario.html" />
     <Content Include="_site\api\CSSPModels.MikeSource.html" />
     <Content Include="_site\api\CSSPModels.MikeSourceStartEnd.html" />
+    <Content Include="_site\api\CSSPModels.MWQMAnalysisReportParameter.html" />
     <Content Include="_site\api\CSSPModels.MWQMLookupMPN.html" />
     <Content Include="_site\api\CSSPModels.MWQMRun.html" />
     <Content Include="_site\api\CSSPModels.MWQMRunLanguage.html" />
@@ -324,7 +327,6 @@
     <Content Include="_site\api\CSSPServices.ContactOKService.html" />
     <Content Include="_site\api\CSSPServices.ContactPreferenceService.html" />
     <Content Include="_site\api\CSSPServices.ContactSearchService.html" />
-    <Content Include="_site\api\CSSPServices.ContactService.AddContactType.html" />
     <Content Include="_site\api\CSSPServices.ContactService.html" />
     <Content Include="_site\api\CSSPServices.ContactShortcutService.html" />
     <Content Include="_site\api\CSSPServices.ContourPolygonService.html" />
@@ -448,6 +450,7 @@
     <Content Include="_site\styles\docfx.js" />
     <Content Include="_site\styles\docfx.vendor.css" />
     <Content Include="_site\styles\docfx.vendor.js" />
+    <Content Include="_site\styles\lunr.js" />
     <Content Include="_site\styles\lunr.min.js" />
     <Content Include="_site\styles\main.css" />
     <Content Include="_site\styles\main.js" />
