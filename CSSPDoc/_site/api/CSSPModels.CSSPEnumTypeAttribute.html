@@ -72,11 +72,13 @@
   
   <h1 id="CSSPModels_CSSPEnumTypeAttribute" data-uid="CSSPModels.CSSPEnumTypeAttribute" class="text-break">Class CSSPEnumTypeAttribute
   </h1>
-  <div class="markdown level0 summary"><p>Custom validation attribute used when creating code
-<p>Used when creating [class]ServiceGenerated.cs and [class]ServiceTestGenerated.cs codes</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p>Custom validation attribute used when generating code
+<p>Used when generating [class]ServiceGenerated.cs and [class]ServiceTestGenerated.cs codes</p>
 <p>Used on type: Enumeration properties</p>
 <p>Only valid if the Enum value is one of existing Enum</p>
-<p>No parameter</p></p>
+<p>No parameter</p>
+<p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -266,12 +268,12 @@ public class CSSPEnumTypeAttribute : ValidationAttribute, _Attribute</code></pre
   </div>
   <h5 id="CSSPModels_CSSPEnumTypeAttribute_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p><p>Validation code produced</p></p>
-<pre><code>retStr = enums.AddressTypeOK(address.AddressType);
-if (address.AddressType == AddressTypeEnum.Error || !string.IsNullOrWhiteSpace(retStr))
-{
-    address.HasErrors = true;
-    yield return new ValidationResult(string.Format(ServicesRes._IsRequired, ModelsRes.AddressAddressType), new[] { &quot;AddressType&quot; });
-}</code></pre>
+<pre><code>    retStr = enums.AddressTypeOK(address.AddressType);
+    if (address.AddressType == AddressTypeEnum.Error || !string.IsNullOrWhiteSpace(retStr))
+    {
+        address.HasErrors = true;
+        yield return new ValidationResult(string.Format(ServicesRes._IsRequired, ModelsRes.AddressAddressType), new[] { &quot;AddressType&quot; });
+    }</code></pre>
 </div>
   <h5 id="CSSPModels_CSSPEnumTypeAttribute_examples"><strong>Examples</strong></h5>
   <pre><code>    [CSSPEnumType]
@@ -284,11 +286,13 @@ if (address.AddressType == AddressTypeEnum.Error || !string.IsNullOrWhiteSpace(r
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPEnumTypeAttribute_IsValid_System_Object_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPEnumTypeAttribute.IsValid(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L155">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L176">View Source</a>
   </span>
   <a id="CSSPModels_CSSPEnumTypeAttribute_IsValid_" data-uid="CSSPModels.CSSPEnumTypeAttribute.IsValid*"></a>
   <h4 id="CSSPModels_CSSPEnumTypeAttribute_IsValid_System_Object_" data-uid="CSSPModels.CSSPEnumTypeAttribute.IsValid(System.Object)">IsValid(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Not used. Using own validation system.</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -307,7 +311,8 @@ if (address.AddressType == AddressTypeEnum.Error || !string.IsNullOrWhiteSpace(r
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>Not used</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -339,7 +344,7 @@ if (address.AddressType == AddressTypeEnum.Error || !string.IsNullOrWhiteSpace(r
                     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPEnumTypeAttribute.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPEnumTypeAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L147" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L167" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

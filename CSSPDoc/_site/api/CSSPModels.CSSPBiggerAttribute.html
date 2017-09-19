@@ -72,11 +72,13 @@
   
   <h1 id="CSSPModels_CSSPBiggerAttribute" data-uid="CSSPModels.CSSPBiggerAttribute" class="text-break">Class CSSPBiggerAttribute
   </h1>
-  <div class="markdown level0 summary"><p>Custom validation attribute used when creating code
-<p>Used when creating [class]ServiceGenerated.cs and [class]ServiceTestGenerated.cs codes</p>
-<p>Used on type: <span class="xref">System.DateTime</span></p>
-<p>DateTime only valid if DateTime of <code>OtherField</code> is smaller or equal</p>
-<p>OtherField: Determine the other field for which the DateTime has to be bigger</p></p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p>Custom validation attribute used when generating code
+<p>Used when generating [class]ServiceGenerated.cs and [class]ServiceTestGenerated.cs codes</p>
+<p>Used on type: <strong>DateTime</strong></p>
+<p>DateTime only valid if DateTime of <strong>OtherField</strong> is smaller or equal</p>
+<p><strong>OtherField</strong> : Determine the other field for which the DateTime has to be bigger</p>
+<p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -266,11 +268,11 @@ public class CSSPBiggerAttribute : ValidationAttribute, _Attribute</code></pre>
   </div>
   <h5 id="CSSPModels_CSSPBiggerAttribute_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p><p>Validation code produced</p></p>
-<pre><code>if (appTask.StartDateTime_UTC > appTask.EndDateTime_UTC)
-{
-    appTask.HasErrors = true;
-    yield return new ValidationResult(string.Format(ServicesRes._DateIsBiggerThan_, ModelsRes.AppTaskEndDateTime_UTC, ModelsRes.AppTaskStartDateTime_UTC), new[] { ModelsRes.AppTaskEndDateTime_UTC });
-}</code></pre>
+<pre><code>    if (appTask.StartDateTime_UTC > appTask.EndDateTime_UTC)
+    {
+        appTask.HasErrors = true;
+        yield return new ValidationResult(string.Format(ServicesRes._DateIsBiggerThan_, ModelsRes.AppTaskEndDateTime_UTC, ModelsRes.AppTaskStartDateTime_UTC), new[] { ModelsRes.AppTaskEndDateTime_UTC });
+    }</code></pre>
 </div>
   <h5 id="CSSPModels_CSSPBiggerAttribute_examples"><strong>Examples</strong></h5>
   <pre><code>    [CSSPAfter(Year = 1980)]
@@ -286,11 +288,12 @@ public class CSSPBiggerAttribute : ValidationAttribute, _Attribute</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPBiggerAttribute_OtherField.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPBiggerAttribute.OtherField%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L110">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L127">View Source</a>
   </span>
   <a id="CSSPModels_CSSPBiggerAttribute_OtherField_" data-uid="CSSPModels.CSSPBiggerAttribute.OtherField*"></a>
   <h4 id="CSSPModels_CSSPBiggerAttribute_OtherField" data-uid="CSSPModels.CSSPBiggerAttribute.OtherField">OtherField</h4>
-  <div class="markdown level1 summary"><p>Represent the other date field for which it has to be bigger</p>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Represent the other date field for which it has to be bigger</p>
+</div>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -319,11 +322,12 @@ public class CSSPBiggerAttribute : ValidationAttribute, _Attribute</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPBiggerAttribute_IsValid_System_Object_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPBiggerAttribute.IsValid(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L117">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L135">View Source</a>
   </span>
   <a id="CSSPModels_CSSPBiggerAttribute_IsValid_" data-uid="CSSPModels.CSSPBiggerAttribute.IsValid*"></a>
   <h4 id="CSSPModels_CSSPBiggerAttribute_IsValid_System_Object_" data-uid="CSSPModels.CSSPBiggerAttribute.IsValid(System.Object)">IsValid(Object)</h4>
-  <div class="markdown level1 summary"><p>No used. Using own validation system.</p>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Not used. Using own validation system.</p>
+</div>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -343,7 +347,8 @@ public class CSSPBiggerAttribute : ValidationAttribute, _Attribute</code></pre>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>Not used</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -358,7 +363,8 @@ public class CSSPBiggerAttribute : ValidationAttribute, _Attribute</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Not used</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -375,7 +381,7 @@ public class CSSPBiggerAttribute : ValidationAttribute, _Attribute</code></pre>
                     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPBiggerAttribute.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPBiggerAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L104" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/__Base.cs/#L120" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

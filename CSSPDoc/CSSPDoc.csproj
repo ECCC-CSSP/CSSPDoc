@@ -269,8 +269,8 @@
     <Content Include="_site\api\CSSPModels.RatingCurveValue.html" />
     <Content Include="_site\api\CSSPModels.Register.html" />
     <Content Include="_site\api\CSSPModels.ResetPassword.html" />
+    <Content Include="_site\api\CSSPModels.Resources.CSSPModelsRes.html" />
     <Content Include="_site\api\CSSPModels.Resources.html" />
-    <Content Include="_site\api\CSSPModels.Resources.ModelsRes.html" />
     <Content Include="_site\api\CSSPModels.RTBStringPos.html" />
     <Content Include="_site\api\CSSPModels.SamplingPlan.html" />
     <Content Include="_site\api\CSSPModels.SamplingPlanAndFilesLabSheetCount.html" />
@@ -339,7 +339,9 @@
     <Content Include="_site\api\CSSPServices.DocTemplateService.html" />
     <Content Include="_site\api\CSSPServices.ElementLayerService.html" />
     <Content Include="_site\api\CSSPServices.ElementService.html" />
+    <Content Include="_site\api\CSSPServices.EmailDistributionListContactLanguageService.html" />
     <Content Include="_site\api\CSSPServices.EmailDistributionListContactService.html" />
+    <Content Include="_site\api\CSSPServices.EmailDistributionListLanguageService.html" />
     <Content Include="_site\api\CSSPServices.EmailDistributionListService.html" />
     <Content Include="_site\api\CSSPServices.EmailService.html" />
     <Content Include="_site\api\CSSPServices.FileItemListService.html" />
@@ -396,8 +398,8 @@
     <Content Include="_site\api\CSSPServices.RatingCurveValueService.html" />
     <Content Include="_site\api\CSSPServices.RegisterService.html" />
     <Content Include="_site\api\CSSPServices.ResetPasswordService.html" />
+    <Content Include="_site\api\CSSPServices.Resources.CSSPServicesRes.html" />
     <Content Include="_site\api\CSSPServices.Resources.html" />
-    <Content Include="_site\api\CSSPServices.Resources.ServicesRes.html" />
     <Content Include="_site\api\CSSPServices.RTBStringPosService.html" />
     <Content Include="_site\api\CSSPServices.SamplingPlanAndFilesLabSheetCountService.html" />
     <Content Include="_site\api\CSSPServices.SamplingPlanService.html" />

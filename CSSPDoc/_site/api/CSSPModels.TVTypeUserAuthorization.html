@@ -72,7 +72,13 @@
   
   <h1 id="CSSPModels_TVTypeUserAuthorization" data-uid="CSSPModels.TVTypeUserAuthorization" class="text-break">Class TVTypeUserAuthorization
   </h1>
-  <div class="markdown level0 summary"><p>Entity object for CSSPModels.TVTypeUserAuthorizations DB Table</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table TVTypeUserAuthorizations</strong> : <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationID">TVTypeUserAuthorizationID</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ContactTVItemID">ContactTVItemID</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType">TVType</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVAuth">TVAuth</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ContactTVText">ContactTVText</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeText">TVTypeText</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVAuthText">TVAuthText</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_HasErrors">HasErrors</a>, <a href="CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ValidationResults">ValidationResults</a>, </p>
+
+<p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.TVTypeUserAuthorizationService.html">TVTypeUserAuthorizationService</a></p>
+<p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a>, <a href="CSSPEnums.TVAuthEnum.html">TVAuthEnum</a></p>
+<p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -117,7 +123,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L57">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L133">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization__ctor_" data-uid="CSSPModels.TVTypeUserAuthorization.#ctor*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization__ctor" data-uid="CSSPModels.TVTypeUserAuthorization.#ctor">TVTypeUserAuthorization()</h4>
@@ -134,11 +140,16 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_ContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.ContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L17">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L39">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_ContactTVItemID_" data-uid="CSSPModels.TVTypeUserAuthorization.ContactTVItemID*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_ContactTVItemID" data-uid="CSSPModels.TVTypeUserAuthorization.ContactTVItemID">ContactTVItemID</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
+<p>5 == Contact</p>
+<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -164,11 +175,15 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_ContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.ContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L30">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L80">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_ContactTVText_" data-uid="CSSPModels.TVTypeUserAuthorization.ContactTVText*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_ContactTVText" data-uid="CSSPModels.TVTypeUserAuthorization.ContactTVText">ContactTVText</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
+<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;ContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -196,11 +211,13 @@ public string ContactTVText { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L50">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L122">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_HasErrors_" data-uid="CSSPModels.TVTypeUserAuthorization.HasErrors*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_HasErrors" data-uid="CSSPModels.TVTypeUserAuthorization.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.TVTypeUserAuthorization">TVTypeUserAuthorization</a></p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -227,11 +244,16 @@ public bool HasErrors { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L25">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L69">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVItemID_" data-uid="CSSPModels.TVTypeUserAuthorization.LastUpdateContactTVItemID*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVItemID" data-uid="CSSPModels.TVTypeUserAuthorization.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
+<p>5 == Contact</p>
+<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -257,11 +279,15 @@ public bool HasErrors { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L35">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L91">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVText_" data-uid="CSSPModels.TVTypeUserAuthorization.LastUpdateContactTVText*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVText" data-uid="CSSPModels.TVTypeUserAuthorization.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
+<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -289,11 +315,14 @@ public string LastUpdateContactTVText { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L23">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L60">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_LastUpdateDate_UTC_" data-uid="CSSPModels.TVTypeUserAuthorization.LastUpdateDate_UTC*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_LastUpdateDate_UTC" data-uid="CSSPModels.TVTypeUserAuthorization.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -319,11 +348,14 @@ public string LastUpdateContactTVText { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_TVAuth.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.TVAuth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L21">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L53">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_TVAuth_" data-uid="CSSPModels.TVTypeUserAuthorization.TVAuth*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_TVAuth" data-uid="CSSPModels.TVTypeUserAuthorization.TVAuth">TVAuth</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPEnumTypeAttribute.html">CSSPEnumType</a>]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,11 +381,15 @@ public string LastUpdateContactTVText { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_TVAuthText.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.TVAuthText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L45">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L113">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_TVAuthText_" data-uid="CSSPModels.TVTypeUserAuthorization.TVAuthText*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_TVAuthText" data-uid="CSSPModels.TVTypeUserAuthorization.TVAuthText">TVAuthText</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
+<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;TVAuthEnum&quot;, EnumType = &quot;TVAuth&quot;)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -381,11 +417,14 @@ public string TVAuthText { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_TVType.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.TVType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L19">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L46">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_TVType_" data-uid="CSSPModels.TVTypeUserAuthorization.TVType*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_TVType" data-uid="CSSPModels.TVTypeUserAuthorization.TVType">TVType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPEnumTypeAttribute.html">CSSPEnumType</a>]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -411,11 +450,15 @@ public string TVAuthText { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_TVTypeText.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.TVTypeText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L40">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L102">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_TVTypeText_" data-uid="CSSPModels.TVTypeUserAuthorization.TVTypeText*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_TVTypeText" data-uid="CSSPModels.TVTypeUserAuthorization.TVTypeText">TVTypeText</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
+<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;TVTypeEnum&quot;, EnumType = &quot;TVType&quot;)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -443,7 +486,7 @@ public string TVTypeText { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationID.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.TVTypeUserAuthorizationID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L15">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L30">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationID_" data-uid="CSSPModels.TVTypeUserAuthorization.TVTypeUserAuthorizationID*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationID" data-uid="CSSPModels.TVTypeUserAuthorization.TVTypeUserAuthorizationID">TVTypeUserAuthorizationID</h4>
@@ -474,11 +517,13 @@ public int TVTypeUserAuthorizationID { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L52">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L128">View Source</a>
   </span>
   <a id="CSSPModels_TVTypeUserAuthorization_ValidationResults_" data-uid="CSSPModels.TVTypeUserAuthorization.ValidationResults*"></a>
   <h4 id="CSSPModels_TVTypeUserAuthorization_ValidationResults" data-uid="CSSPModels.TVTypeUserAuthorization.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.TVTypeUserAuthorization">TVTypeUserAuthorization</a></p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -511,7 +556,7 @@ public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code
                     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVTypeUserAuthorization.md&amp;value=---%0Auid%3A%20CSSPModels.TVTypeUserAuthorization%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVTypeUserAuthorization.cs/#L27" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
