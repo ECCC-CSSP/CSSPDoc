@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_ContactPreference" data-uid="CSSPModels.ContactPreference" class="text-break">Class ContactPreference
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table ContactPreferences</strong> : <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceID">ContactPreferenceID</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactID">ContactID</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType">TVType</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_MarkerSize">MarkerSize</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVTypeText">TVTypeText</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_HasErrors">HasErrors</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceWeb">ContactPreferenceWeb</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceReport">ContactPreferenceReport</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_HasErrors">HasErrors</a>, <a href="CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.ContactPreferenceService.html">ContactPreferenceService</a></p>
 <p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a></p>
@@ -84,10 +84,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ContactPreference</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">ContactPreference</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -114,7 +128,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_ContactPreference_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ContactPreference</code></pre>
+    <pre><code class="lang-csharp hljs">public class ContactPreference : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -123,7 +137,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L104">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L60">View Source</a>
   </span>
   <a id="CSSPModels_ContactPreference__ctor_" data-uid="CSSPModels.ContactPreference.#ctor*"></a>
   <h4 id="CSSPModels_ContactPreference__ctor" data-uid="CSSPModels.ContactPreference.#ctor">ContactPreference()</h4>
@@ -201,21 +215,19 @@ public int ContactPreferenceID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_ContactPreferenceReport.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.ContactPreferenceReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L93">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L54">View Source</a>
   </span>
-  <a id="CSSPModels_ContactPreference_HasErrors_" data-uid="CSSPModels.ContactPreference.HasErrors*"></a>
-  <h4 id="CSSPModels_ContactPreference_HasErrors" data-uid="CSSPModels.ContactPreference.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.ContactPreference">ContactPreference</a></p>
-</div>
-</div>
+  <a id="CSSPModels_ContactPreference_ContactPreferenceReport_" data-uid="CSSPModels.ContactPreference.ContactPreferenceReport*"></a>
+  <h4 id="CSSPModels_ContactPreference_ContactPreferenceReport" data-uid="CSSPModels.ContactPreference.ContactPreferenceReport">ContactPreferenceReport</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
+public ContactPreferenceReport ContactPreferenceReport { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,66 +239,26 @@ public bool HasErrors { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="CSSPModels.ContactPreferenceReport.html">ContactPreferenceReport</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_ContactPreferenceWeb.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.ContactPreferenceWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L62">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L51">View Source</a>
   </span>
-  <a id="CSSPModels_ContactPreference_LastUpdateContactTVItemID_" data-uid="CSSPModels.ContactPreference.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_ContactPreference_LastUpdateContactTVItemID" data-uid="CSSPModels.ContactPreference.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L73">View Source</a>
-  </span>
-  <a id="CSSPModels_ContactPreference_LastUpdateContactTVText_" data-uid="CSSPModels.ContactPreference.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_ContactPreference_LastUpdateContactTVText" data-uid="CSSPModels.ContactPreference.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
+  <a id="CSSPModels_ContactPreference_ContactPreferenceWeb_" data-uid="CSSPModels.ContactPreference.ContactPreferenceWeb*"></a>
+  <h4 id="CSSPModels_ContactPreference_ContactPreferenceWeb" data-uid="CSSPModels.ContactPreference.ContactPreferenceWeb">ContactPreferenceWeb</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
+public ContactPreferenceWeb ContactPreferenceWeb { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -298,40 +270,7 @@ public string LastUpdateContactTVText { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L53">View Source</a>
-  </span>
-  <a id="CSSPModels_ContactPreference_LastUpdateDate_UTC_" data-uid="CSSPModels.ContactPreference.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_ContactPreference_LastUpdateDate_UTC" data-uid="CSSPModels.ContactPreference.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><a class="xref" href="CSSPModels.ContactPreferenceWeb.html">ContactPreferenceWeb</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -395,76 +334,7 @@ public int MarkerSize { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_TVTypeText.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.TVTypeText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L84">View Source</a>
-  </span>
-  <a id="CSSPModels_ContactPreference_TVTypeText_" data-uid="CSSPModels.ContactPreference.TVTypeText*"></a>
-  <h4 id="CSSPModels_ContactPreference_TVTypeText" data-uid="CSSPModels.ContactPreference.TVTypeText">TVTypeText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;TVTypeEnum&quot;, EnumType = &quot;TVType&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string TVTypeText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_ContactPreference_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.ContactPreference.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/ContactPreference.cs/#L99">View Source</a>
-  </span>
-  <a id="CSSPModels_ContactPreference_ValidationResults_" data-uid="CSSPModels.ContactPreference.ValidationResults*"></a>
-  <h4 id="CSSPModels_ContactPreference_ValidationResults" data-uid="CSSPModels.ContactPreference.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.ContactPreference">ContactPreference</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
+        <td><span class="xref">CSSPEnums.TVTypeEnum</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -72,8 +72,8 @@
   
   <h1 id="CSSPModels_TideLocation" data-uid="CSSPModels.TideLocation" class="text-break">Class TideLocation
   </h1>
-  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table TideLocations</strong> : <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationID">TideLocationID</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Zone">Zone</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Name">Name</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Prov">Prov</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_sid">sid</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lat">Lat</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lng">Lng</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_HasErrors">HasErrors</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_ValidationResults">ValidationResults</a>, </p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table TideLocations</strong> : <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationID">TideLocationID</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Zone">Zone</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Name">Name</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Prov">Prov</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_sid">sid</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lat">Lat</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lng">Lng</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationWeb">TideLocationWeb</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationReport">TideLocationReport</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_HasErrors">HasErrors</a>, <a href="CSSPModels.TideLocation.html#CSSPModels_TideLocation_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.TideLocationService.html">TideLocationService</a></p>
 <p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
@@ -83,10 +83,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">TideLocation</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">TideLocation</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -113,7 +127,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_TideLocation_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TideLocation</code></pre>
+    <pre><code class="lang-csharp hljs">public class TideLocation : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -122,7 +136,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TideLocation__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.TideLocation.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TideLocation.cs/#L61">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TideLocation.cs/#L55">View Source</a>
   </span>
   <a id="CSSPModels_TideLocation__ctor_" data-uid="CSSPModels.TideLocation.#ctor*"></a>
   <h4 id="CSSPModels_TideLocation__ctor" data-uid="CSSPModels.TideLocation.#ctor">TideLocation()</h4>
@@ -134,39 +148,6 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TideLocation_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.TideLocation.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TideLocation.cs/#L50">View Source</a>
-  </span>
-  <a id="CSSPModels_TideLocation_HasErrors_" data-uid="CSSPModels.TideLocation.HasErrors*"></a>
-  <h4 id="CSSPModels_TideLocation_HasErrors" data-uid="CSSPModels.TideLocation.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.TideLocation">TideLocation</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TideLocation_Lat.md&amp;value=---%0Auid%3A%20CSSPModels.TideLocation.Lat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -355,21 +336,19 @@ public int TideLocationID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TideLocation_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.TideLocation.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TideLocation_TideLocationReport.md&amp;value=---%0Auid%3A%20CSSPModels.TideLocation.TideLocationReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TideLocation.cs/#L56">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TideLocation.cs/#L49">View Source</a>
   </span>
-  <a id="CSSPModels_TideLocation_ValidationResults_" data-uid="CSSPModels.TideLocation.ValidationResults*"></a>
-  <h4 id="CSSPModels_TideLocation_ValidationResults" data-uid="CSSPModels.TideLocation.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.TideLocation">TideLocation</a></p>
-</div>
-</div>
+  <a id="CSSPModels_TideLocation_TideLocationReport_" data-uid="CSSPModels.TideLocation.TideLocationReport*"></a>
+  <h4 id="CSSPModels_TideLocation_TideLocationReport" data-uid="CSSPModels.TideLocation.TideLocationReport">TideLocationReport</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
+public TideLocationReport TideLocationReport { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -381,7 +360,38 @@ public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
+        <td><a class="xref" href="CSSPModels.TideLocationReport.html">TideLocationReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TideLocation_TideLocationWeb.md&amp;value=---%0Auid%3A%20CSSPModels.TideLocation.TideLocationWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TideLocation.cs/#L46">View Source</a>
+  </span>
+  <a id="CSSPModels_TideLocation_TideLocationWeb_" data-uid="CSSPModels.TideLocation.TideLocationWeb*"></a>
+  <h4 id="CSSPModels_TideLocation_TideLocationWeb" data-uid="CSSPModels.TideLocation.TideLocationWeb">TideLocationWeb</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public TideLocationWeb TideLocationWeb { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.TideLocationWeb.html">TideLocationWeb</a></td>
         <td></td>
       </tr>
     </tbody>

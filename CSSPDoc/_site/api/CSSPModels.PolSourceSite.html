@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_PolSourceSite" data-uid="CSSPModels.PolSourceSite" class="text-break">Class PolSourceSite
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table PolSourceSites</strong> : <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteID">PolSourceSiteID</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteTVItemID">PolSourceSiteTVItemID</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Temp_Locator_CanDelete">Temp_Locator_CanDelete</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Oldsiteid">Oldsiteid</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Site">Site</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_SiteID">SiteID</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_IsPointSource">IsPointSource</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason">InactiveReason</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_CivicAddressTVItemID">CivicAddressTVItemID</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteTVText">PolSourceSiteTVText</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReasonText">InactiveReasonText</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_HasErrors">HasErrors</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteWeb">PolSourceSiteWeb</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteReport">PolSourceSiteReport</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_HasErrors">HasErrors</a>, <a href="CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.PolSourceSiteService.html">PolSourceSiteService</a></p>
 <p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.PolSourceInactiveReasonEnum.html">PolSourceInactiveReasonEnum</a></p>
@@ -84,10 +84,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">PolSourceSite</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">PolSourceSite</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -114,7 +128,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_PolSourceSite_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PolSourceSite</code></pre>
+    <pre><code class="lang-csharp hljs">public class PolSourceSite : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -123,7 +137,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L141">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L86">View Source</a>
   </span>
   <a id="CSSPModels_PolSourceSite__ctor_" data-uid="CSSPModels.PolSourceSite.#ctor*"></a>
   <h4 id="CSSPModels_PolSourceSite__ctor" data-uid="CSSPModels.PolSourceSite.#ctor">PolSourceSite()</h4>
@@ -172,39 +186,6 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L130">View Source</a>
-  </span>
-  <a id="CSSPModels_PolSourceSite_HasErrors_" data-uid="CSSPModels.PolSourceSite.HasErrors*"></a>
-  <h4 id="CSSPModels_PolSourceSite_HasErrors" data-uid="CSSPModels.PolSourceSite.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.PolSourceSite">PolSourceSite</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_InactiveReason.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.InactiveReason%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -232,43 +213,7 @@ public bool HasErrors { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="CSSPEnums.PolSourceInactiveReasonEnum.html">PolSourceInactiveReasonEnum</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_InactiveReasonText.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.InactiveReasonText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L121">View Source</a>
-  </span>
-  <a id="CSSPModels_PolSourceSite_InactiveReasonText_" data-uid="CSSPModels.PolSourceSite.InactiveReasonText*"></a>
-  <h4 id="CSSPModels_PolSourceSite_InactiveReasonText" data-uid="CSSPModels.PolSourceSite.InactiveReasonText">InactiveReasonText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;PolSourceInactiveReasonEnum&quot;, EnumType = &quot;InactiveReason&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string InactiveReasonText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">CSSPEnums.PolSourceInactiveReasonEnum</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -299,110 +244,6 @@ public string InactiveReasonText { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L88">View Source</a>
-  </span>
-  <a id="CSSPModels_PolSourceSite_LastUpdateContactTVItemID_" data-uid="CSSPModels.PolSourceSite.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_PolSourceSite_LastUpdateContactTVItemID" data-uid="CSSPModels.PolSourceSite.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L110">View Source</a>
-  </span>
-  <a id="CSSPModels_PolSourceSite_LastUpdateContactTVText_" data-uid="CSSPModels.PolSourceSite.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_PolSourceSite_LastUpdateContactTVText" data-uid="CSSPModels.PolSourceSite.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L79">View Source</a>
-  </span>
-  <a id="CSSPModels_PolSourceSite_LastUpdateDate_UTC_" data-uid="CSSPModels.PolSourceSite.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_PolSourceSite_LastUpdateDate_UTC" data-uid="CSSPModels.PolSourceSite.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -471,6 +312,37 @@ public int PolSourceSiteID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_PolSourceSiteReport.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.PolSourceSiteReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L80">View Source</a>
+  </span>
+  <a id="CSSPModels_PolSourceSite_PolSourceSiteReport_" data-uid="CSSPModels.PolSourceSite.PolSourceSiteReport*"></a>
+  <h4 id="CSSPModels_PolSourceSite_PolSourceSiteReport" data-uid="CSSPModels.PolSourceSite.PolSourceSiteReport">PolSourceSiteReport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public PolSourceSiteReport PolSourceSiteReport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.PolSourceSiteReport.html">PolSourceSiteReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_PolSourceSiteTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.PolSourceSiteTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -506,24 +378,19 @@ public int PolSourceSiteID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_PolSourceSiteTVText.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.PolSourceSiteTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_PolSourceSiteWeb.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.PolSourceSiteWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L99">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L77">View Source</a>
   </span>
-  <a id="CSSPModels_PolSourceSite_PolSourceSiteTVText_" data-uid="CSSPModels.PolSourceSite.PolSourceSiteTVText*"></a>
-  <h4 id="CSSPModels_PolSourceSite_PolSourceSiteTVText" data-uid="CSSPModels.PolSourceSite.PolSourceSiteTVText">PolSourceSiteTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;PolSourceSiteTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
+  <a id="CSSPModels_PolSourceSite_PolSourceSiteWeb_" data-uid="CSSPModels.PolSourceSite.PolSourceSiteWeb*"></a>
+  <h4 id="CSSPModels_PolSourceSite_PolSourceSiteWeb" data-uid="CSSPModels.PolSourceSite.PolSourceSiteWeb">PolSourceSiteWeb</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string PolSourceSiteTVText { get; set; }</code></pre>
+public PolSourceSiteWeb PolSourceSiteWeb { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -535,7 +402,7 @@ public string PolSourceSiteTVText { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="CSSPModels.PolSourceSiteWeb.html">PolSourceSiteWeb</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -632,39 +499,6 @@ public string Temp_Locator_CanDelete { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_PolSourceSite_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.PolSourceSite.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/PolSourceSite.cs/#L136">View Source</a>
-  </span>
-  <a id="CSSPModels_PolSourceSite_ValidationResults_" data-uid="CSSPModels.PolSourceSite.ValidationResults*"></a>
-  <h4 id="CSSPModels_PolSourceSite_ValidationResults" data-uid="CSSPModels.PolSourceSite.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.PolSourceSite">PolSourceSite</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

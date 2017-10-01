@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_MikeSourceStartEnd" data-uid="CSSPModels.MikeSourceStartEnd" class="text-break">Class MikeSourceStartEnd
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table MikeSourceStartEnds</strong> : <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndID">MikeSourceStartEndID</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceID">MikeSourceID</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_StartDateAndTime_Local">StartDateAndTime_Local</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_EndDateAndTime_Local">EndDateAndTime_Local</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowStart_m3_day">SourceFlowStart_m3_day</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowEnd_m3_day">SourceFlowEnd_m3_day</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionStart_MPN_100ml">SourcePollutionStart_MPN_100ml</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionEnd_MPN_100ml">SourcePollutionEnd_MPN_100ml</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureStart_C">SourceTemperatureStart_C</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureEnd_C">SourceTemperatureEnd_C</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityStart_PSU">SourceSalinityStart_PSU</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityEnd_PSU">SourceSalinityEnd_PSU</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_HasErrors">HasErrors</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndWeb">MikeSourceStartEndWeb</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndReport">MikeSourceStartEndReport</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_HasErrors">HasErrors</a>, <a href="CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.MikeSourceStartEndService.html">MikeSourceStartEndService</a></p>
 <p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
@@ -83,10 +83,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">MikeSourceStartEnd</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">MikeSourceStartEnd</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -113,7 +127,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_MikeSourceStartEnd_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MikeSourceStartEnd</code></pre>
+    <pre><code class="lang-csharp hljs">public class MikeSourceStartEnd : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -122,7 +136,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L115">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L82">View Source</a>
   </span>
   <a id="CSSPModels_MikeSourceStartEnd__ctor_" data-uid="CSSPModels.MikeSourceStartEnd.#ctor*"></a>
   <h4 id="CSSPModels_MikeSourceStartEnd__ctor" data-uid="CSSPModels.MikeSourceStartEnd.#ctor">MikeSourceStartEnd()</h4>
@@ -152,143 +166,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DateTime EndDateAndTime_Local { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L104">View Source</a>
-  </span>
-  <a id="CSSPModels_MikeSourceStartEnd_HasErrors_" data-uid="CSSPModels.MikeSourceStartEnd.HasErrors*"></a>
-  <h4 id="CSSPModels_MikeSourceStartEnd_HasErrors" data-uid="CSSPModels.MikeSourceStartEnd.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.MikeSourceStartEnd">MikeSourceStartEnd</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L84">View Source</a>
-  </span>
-  <a id="CSSPModels_MikeSourceStartEnd_LastUpdateContactTVItemID_" data-uid="CSSPModels.MikeSourceStartEnd.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_MikeSourceStartEnd_LastUpdateContactTVItemID" data-uid="CSSPModels.MikeSourceStartEnd.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L95">View Source</a>
-  </span>
-  <a id="CSSPModels_MikeSourceStartEnd_LastUpdateContactTVText_" data-uid="CSSPModels.MikeSourceStartEnd.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_MikeSourceStartEnd_LastUpdateContactTVText" data-uid="CSSPModels.MikeSourceStartEnd.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L75">View Source</a>
-  </span>
-  <a id="CSSPModels_MikeSourceStartEnd_LastUpdateDate_UTC_" data-uid="CSSPModels.MikeSourceStartEnd.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_MikeSourceStartEnd_LastUpdateDate_UTC" data-uid="CSSPModels.MikeSourceStartEnd.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -365,6 +242,68 @@ public int MikeSourceStartEndID { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd_MikeSourceStartEndReport.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.MikeSourceStartEndReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L76">View Source</a>
+  </span>
+  <a id="CSSPModels_MikeSourceStartEnd_MikeSourceStartEndReport_" data-uid="CSSPModels.MikeSourceStartEnd.MikeSourceStartEndReport*"></a>
+  <h4 id="CSSPModels_MikeSourceStartEnd_MikeSourceStartEndReport" data-uid="CSSPModels.MikeSourceStartEnd.MikeSourceStartEndReport">MikeSourceStartEndReport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public MikeSourceStartEndReport MikeSourceStartEndReport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.MikeSourceStartEndReport.html">MikeSourceStartEndReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd_MikeSourceStartEndWeb.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.MikeSourceStartEndWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L73">View Source</a>
+  </span>
+  <a id="CSSPModels_MikeSourceStartEnd_MikeSourceStartEndWeb_" data-uid="CSSPModels.MikeSourceStartEnd.MikeSourceStartEndWeb*"></a>
+  <h4 id="CSSPModels_MikeSourceStartEnd_MikeSourceStartEndWeb" data-uid="CSSPModels.MikeSourceStartEnd.MikeSourceStartEndWeb">MikeSourceStartEndWeb</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public MikeSourceStartEndWeb MikeSourceStartEndWeb { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.MikeSourceStartEndWeb.html">MikeSourceStartEndWeb</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -646,39 +585,6 @@ public double SourceTemperatureStart_C { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MikeSourceStartEnd_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.MikeSourceStartEnd.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MikeSourceStartEnd.cs/#L110">View Source</a>
-  </span>
-  <a id="CSSPModels_MikeSourceStartEnd_ValidationResults_" data-uid="CSSPModels.MikeSourceStartEnd.ValidationResults*"></a>
-  <h4 id="CSSPModels_MikeSourceStartEnd_ValidationResults" data-uid="CSSPModels.MikeSourceStartEnd.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.MikeSourceStartEnd">MikeSourceStartEnd</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

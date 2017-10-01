@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_LastUpdateAndTVText" data-uid="CSSPModels.LastUpdateAndTVText" class="text-break">Class LastUpdateAndTVText
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>No DB properties</strong> :</p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_Error">Error</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateDate_Local">LastUpdateDate_Local</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_TVText">TVText</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_HasErrors">HasErrors</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_Error">Error</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC">LastUpdateAndTVTextDate_UTC</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateDate_Local">LastUpdateDate_Local</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_TVText">TVText</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_HasErrors">HasErrors</a>, <a href="CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.LastUpdateAndTVTextService.html">LastUpdateAndTVTextService</a></p>
 <p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
@@ -83,10 +83,17 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">LastUpdateAndTVText</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><span class="xref">LastUpdateAndTVText</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -114,7 +121,7 @@
   <h5 id="CSSPModels_LastUpdateAndTVText_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-public class LastUpdateAndTVText</code></pre>
+public class LastUpdateAndTVText : Error</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -123,7 +130,7 @@ public class LastUpdateAndTVText</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_LastUpdateAndTVText__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.LastUpdateAndTVText.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/_LastUpdateAndTVText.cs/#L63">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/_LastUpdateAndTVText.cs/#L53">View Source</a>
   </span>
   <a id="CSSPModels_LastUpdateAndTVText__ctor_" data-uid="CSSPModels.LastUpdateAndTVText.#ctor*"></a>
   <h4 id="CSSPModels_LastUpdateAndTVText__ctor" data-uid="CSSPModels.LastUpdateAndTVText.#ctor">LastUpdateAndTVText()</h4>
@@ -167,20 +174,21 @@ public class LastUpdateAndTVText</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_LastUpdateAndTVText_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.LastUpdateAndTVText.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.LastUpdateAndTVText.LastUpdateAndTVTextDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/_LastUpdateAndTVText.cs/#L54">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/_LastUpdateAndTVText.cs/#L39">View Source</a>
   </span>
-  <a id="CSSPModels_LastUpdateAndTVText_HasErrors_" data-uid="CSSPModels.LastUpdateAndTVText.HasErrors*"></a>
-  <h4 id="CSSPModels_LastUpdateAndTVText_HasErrors" data-uid="CSSPModels.LastUpdateAndTVText.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.LastUpdateAndTVText">LastUpdateAndTVText</a></p>
+  <a id="CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC_" data-uid="CSSPModels.LastUpdateAndTVText.LastUpdateAndTVTextDate_UTC*"></a>
+  <h4 id="CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC" data-uid="CSSPModels.LastUpdateAndTVText.LastUpdateAndTVTextDate_UTC">LastUpdateAndTVTextDate_UTC</h4>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
 </div>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasErrors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTime LastUpdateAndTVTextDate_UTC { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -192,7 +200,7 @@ public class LastUpdateAndTVText</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -214,39 +222,6 @@ public class LastUpdateAndTVText</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_Local { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_LastUpdateAndTVText_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.LastUpdateAndTVText.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/_LastUpdateAndTVText.cs/#L39">View Source</a>
-  </span>
-  <a id="CSSPModels_LastUpdateAndTVText_LastUpdateDate_UTC_" data-uid="CSSPModels.LastUpdateAndTVText.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_LastUpdateAndTVText_LastUpdateDate_UTC" data-uid="CSSPModels.LastUpdateAndTVText.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -290,38 +265,6 @@ public string TVText { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_LastUpdateAndTVText_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.LastUpdateAndTVText.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/_LastUpdateAndTVText.cs/#L59">View Source</a>
-  </span>
-  <a id="CSSPModels_LastUpdateAndTVText_ValidationResults_" data-uid="CSSPModels.LastUpdateAndTVText.ValidationResults*"></a>
-  <h4 id="CSSPModels_LastUpdateAndTVText_ValidationResults" data-uid="CSSPModels.LastUpdateAndTVText.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.LastUpdateAndTVText">LastUpdateAndTVText</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

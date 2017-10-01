@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_SamplingPlanSubsectorSite" data-uid="CSSPModels.SamplingPlanSubsectorSite" class="text-break">Class SamplingPlanSubsectorSite
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table SamplingPlanSubsectorSites</strong> : <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteID">SamplingPlanSubsectorSiteID</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorID">SamplingPlanSubsectorID</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_MWQMSiteTVItemID">MWQMSiteTVItemID</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_IsDuplicate">IsDuplicate</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_MWQMSiteTVText">MWQMSiteTVText</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_HasErrors">HasErrors</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteWeb">SamplingPlanSubsectorSiteWeb</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteReport">SamplingPlanSubsectorSiteReport</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_HasErrors">HasErrors</a>, <a href="CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.SamplingPlanSubsectorSiteService.html">SamplingPlanSubsectorSiteService</a></p>
 <p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
@@ -83,10 +83,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">SamplingPlanSubsectorSite</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">SamplingPlanSubsectorSite</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -113,7 +127,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_SamplingPlanSubsectorSite_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SamplingPlanSubsectorSite</code></pre>
+    <pre><code class="lang-csharp hljs">public class SamplingPlanSubsectorSite : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -122,7 +136,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L104">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L60">View Source</a>
   </span>
   <a id="CSSPModels_SamplingPlanSubsectorSite__ctor_" data-uid="CSSPModels.SamplingPlanSubsectorSite.#ctor*"></a>
   <h4 id="CSSPModels_SamplingPlanSubsectorSite__ctor" data-uid="CSSPModels.SamplingPlanSubsectorSite.#ctor">SamplingPlanSubsectorSite()</h4>
@@ -134,39 +148,6 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L93">View Source</a>
-  </span>
-  <a id="CSSPModels_SamplingPlanSubsectorSite_HasErrors_" data-uid="CSSPModels.SamplingPlanSubsectorSite.HasErrors*"></a>
-  <h4 id="CSSPModels_SamplingPlanSubsectorSite_HasErrors" data-uid="CSSPModels.SamplingPlanSubsectorSite.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.SamplingPlanSubsectorSite">SamplingPlanSubsectorSite</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_IsDuplicate.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.IsDuplicate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -193,110 +174,6 @@ public bool HasErrors { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L62">View Source</a>
-  </span>
-  <a id="CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVItemID_" data-uid="CSSPModels.SamplingPlanSubsectorSite.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVItemID" data-uid="CSSPModels.SamplingPlanSubsectorSite.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L84">View Source</a>
-  </span>
-  <a id="CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVText_" data-uid="CSSPModels.SamplingPlanSubsectorSite.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVText" data-uid="CSSPModels.SamplingPlanSubsectorSite.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L53">View Source</a>
-  </span>
-  <a id="CSSPModels_SamplingPlanSubsectorSite_LastUpdateDate_UTC_" data-uid="CSSPModels.SamplingPlanSubsectorSite.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_SamplingPlanSubsectorSite_LastUpdateDate_UTC" data-uid="CSSPModels.SamplingPlanSubsectorSite.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -332,42 +209,6 @@ public string LastUpdateContactTVText { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_MWQMSiteTVText.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.MWQMSiteTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L73">View Source</a>
-  </span>
-  <a id="CSSPModels_SamplingPlanSubsectorSite_MWQMSiteTVText_" data-uid="CSSPModels.SamplingPlanSubsectorSite.MWQMSiteTVText*"></a>
-  <h4 id="CSSPModels_SamplingPlanSubsectorSite_MWQMSiteTVText" data-uid="CSSPModels.SamplingPlanSubsectorSite.MWQMSiteTVText">MWQMSiteTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;MWQMSiteTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string MWQMSiteTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -438,21 +279,19 @@ public int SamplingPlanSubsectorSiteID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteReport.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.SamplingPlanSubsectorSiteReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L99">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L54">View Source</a>
   </span>
-  <a id="CSSPModels_SamplingPlanSubsectorSite_ValidationResults_" data-uid="CSSPModels.SamplingPlanSubsectorSite.ValidationResults*"></a>
-  <h4 id="CSSPModels_SamplingPlanSubsectorSite_ValidationResults" data-uid="CSSPModels.SamplingPlanSubsectorSite.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.SamplingPlanSubsectorSite">SamplingPlanSubsectorSite</a></p>
-</div>
-</div>
+  <a id="CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteReport_" data-uid="CSSPModels.SamplingPlanSubsectorSite.SamplingPlanSubsectorSiteReport*"></a>
+  <h4 id="CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteReport" data-uid="CSSPModels.SamplingPlanSubsectorSite.SamplingPlanSubsectorSiteReport">SamplingPlanSubsectorSiteReport</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
+public SamplingPlanSubsectorSiteReport SamplingPlanSubsectorSiteReport { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -464,7 +303,38 @@ public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
+        <td><a class="xref" href="CSSPModels.SamplingPlanSubsectorSiteReport.html">SamplingPlanSubsectorSiteReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteWeb.md&amp;value=---%0Auid%3A%20CSSPModels.SamplingPlanSubsectorSite.SamplingPlanSubsectorSiteWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/SamplingPlanSubsectorSite.cs/#L51">View Source</a>
+  </span>
+  <a id="CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteWeb_" data-uid="CSSPModels.SamplingPlanSubsectorSite.SamplingPlanSubsectorSiteWeb*"></a>
+  <h4 id="CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteWeb" data-uid="CSSPModels.SamplingPlanSubsectorSite.SamplingPlanSubsectorSiteWeb">SamplingPlanSubsectorSiteWeb</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public SamplingPlanSubsectorSiteWeb SamplingPlanSubsectorSiteWeb { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.SamplingPlanSubsectorSiteWeb.html">SamplingPlanSubsectorSiteWeb</a></td>
         <td></td>
       </tr>
     </tbody>

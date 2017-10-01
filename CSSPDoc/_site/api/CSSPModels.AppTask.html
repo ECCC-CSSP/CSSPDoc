@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_AppTask" data-uid="CSSPModels.AppTask" class="text-break">Class AppTask
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table AppTasks</strong> : <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskID">AppTaskID</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID">TVItemID</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID2">TVItemID2</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskCommand">AppTaskCommand</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskStatus">AppTaskStatus</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_PercentCompleted">PercentCompleted</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_Parameters">Parameters</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_Language">Language</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_StartDateTime_UTC">StartDateTime_UTC</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_EndDateTime_UTC">EndDateTime_UTC</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_EstimatedLength_second">EstimatedLength_second</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_RemainingTime_second">RemainingTime_second</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemTVText">TVItemTVText</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_TVItem2TVText">TVItem2TVText</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskCommandText">AppTaskCommandText</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskStatusText">AppTaskStatusText</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_LanguageText">LanguageText</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_HasErrors">HasErrors</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskWeb">AppTaskWeb</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskReport">AppTaskReport</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_HasErrors">HasErrors</a>, <a href="CSSPModels.AppTask.html#CSSPModels_AppTask_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.AppTaskService.html">AppTaskService</a></p>
 <p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.AppTaskCommandEnum.html">AppTaskCommandEnum</a>, <a href="CSSPEnums.AppTaskStatusEnum.html">AppTaskStatusEnum</a>, <a href="CSSPEnums.LanguageEnum.html">LanguageEnum</a></p>
@@ -84,10 +84,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AppTask</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">AppTask</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -114,7 +128,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_AppTask_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppTask</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppTask : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -123,7 +137,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L194">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L106">View Source</a>
   </span>
   <a id="CSSPModels_AppTask__ctor_" data-uid="CSSPModels.AppTask.#ctor*"></a>
   <h4 id="CSSPModels_AppTask__ctor" data-uid="CSSPModels.AppTask.#ctor">AppTask()</h4>
@@ -163,43 +177,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.AppTaskCommandEnum.html">AppTaskCommandEnum</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_AppTaskCommandText.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.AppTaskCommandText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L152">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_AppTaskCommandText_" data-uid="CSSPModels.AppTask.AppTaskCommandText*"></a>
-  <h4 id="CSSPModels_AppTask_AppTaskCommandText" data-uid="CSSPModels.AppTask.AppTaskCommandText">AppTaskCommandText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;AppTaskCommandEnum&quot;, EnumType = &quot;AppTaskCommand&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string AppTaskCommandText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">CSSPEnums.AppTaskCommandEnum</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -237,6 +215,37 @@ public int AppTaskID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_AppTaskReport.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.AppTaskReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L100">View Source</a>
+  </span>
+  <a id="CSSPModels_AppTask_AppTaskReport_" data-uid="CSSPModels.AppTask.AppTaskReport*"></a>
+  <h4 id="CSSPModels_AppTask_AppTaskReport" data-uid="CSSPModels.AppTask.AppTaskReport">AppTaskReport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public AppTaskReport AppTaskReport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.AppTaskReport.html">AppTaskReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_AppTaskStatus.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.AppTaskStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -263,31 +272,26 @@ public int AppTaskID { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.AppTaskStatusEnum.html">AppTaskStatusEnum</a></td>
+        <td><span class="xref">CSSPEnums.AppTaskStatusEnum</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_AppTaskStatusText.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.AppTaskStatusText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_AppTaskWeb.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.AppTaskWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L163">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L97">View Source</a>
   </span>
-  <a id="CSSPModels_AppTask_AppTaskStatusText_" data-uid="CSSPModels.AppTask.AppTaskStatusText*"></a>
-  <h4 id="CSSPModels_AppTask_AppTaskStatusText" data-uid="CSSPModels.AppTask.AppTaskStatusText">AppTaskStatusText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;AppTaskStatusEnum&quot;, EnumType = &quot;AppTaskStatus&quot;)]</p>
-</div>
-</div>
+  <a id="CSSPModels_AppTask_AppTaskWeb_" data-uid="CSSPModels.AppTask.AppTaskWeb*"></a>
+  <h4 id="CSSPModels_AppTask_AppTaskWeb" data-uid="CSSPModels.AppTask.AppTaskWeb">AppTaskWeb</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string AppTaskStatusText { get; set; }</code></pre>
+public AppTaskWeb AppTaskWeb { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -299,7 +303,7 @@ public string AppTaskStatusText { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="CSSPModels.AppTaskWeb.html">AppTaskWeb</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -371,39 +375,6 @@ public int ? EstimatedLength_second { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L183">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_HasErrors_" data-uid="CSSPModels.AppTask.HasErrors*"></a>
-  <h4 id="CSSPModels_AppTask_HasErrors" data-uid="CSSPModels.AppTask.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.AppTask">AppTask</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_Language.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.Language%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -430,147 +401,7 @@ public bool HasErrors { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.LanguageEnum.html">LanguageEnum</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_LanguageText.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.LanguageText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L174">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_LanguageText_" data-uid="CSSPModels.AppTask.LanguageText*"></a>
-  <h4 id="CSSPModels_AppTask_LanguageText" data-uid="CSSPModels.AppTask.LanguageText">LanguageText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;LanguageEnum&quot;, EnumType = &quot;Language&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string LanguageText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L108">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_LastUpdateContactTVItemID_" data-uid="CSSPModels.AppTask.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_AppTask_LastUpdateContactTVItemID" data-uid="CSSPModels.AppTask.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L141">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_LastUpdateContactTVText_" data-uid="CSSPModels.AppTask.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_AppTask_LastUpdateContactTVText" data-uid="CSSPModels.AppTask.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L99">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_LastUpdateDate_UTC_" data-uid="CSSPModels.AppTask.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_AppTask_LastUpdateDate_UTC" data-uid="CSSPModels.AppTask.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">CSSPEnums.LanguageEnum</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -702,42 +533,6 @@ public int ? RemainingTime_second { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_TVItem2TVText.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.TVItem2TVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L130">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_TVItem2TVText_" data-uid="CSSPModels.AppTask.TVItem2TVText*"></a>
-  <h4 id="CSSPModels_AppTask_TVItem2TVText" data-uid="CSSPModels.AppTask.TVItem2TVText">TVItem2TVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;TVItemID2&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string TVItem2TVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_TVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.TVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -802,75 +597,6 @@ public string TVItem2TVText { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_TVItemTVText.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.TVItemTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L119">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_TVItemTVText_" data-uid="CSSPModels.AppTask.TVItemTVText*"></a>
-  <h4 id="CSSPModels_AppTask_TVItemTVText" data-uid="CSSPModels.AppTask.TVItemTVText">TVItemTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;TVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string TVItemTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_AppTask_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.AppTask.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/AppTask.cs/#L189">View Source</a>
-  </span>
-  <a id="CSSPModels_AppTask_ValidationResults_" data-uid="CSSPModels.AppTask.ValidationResults*"></a>
-  <h4 id="CSSPModels_AppTask_ValidationResults" data-uid="CSSPModels.AppTask.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.AppTask">AppTask</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

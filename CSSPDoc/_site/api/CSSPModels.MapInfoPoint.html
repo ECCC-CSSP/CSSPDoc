@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_MapInfoPoint" data-uid="CSSPModels.MapInfoPoint" class="text-break">Class MapInfoPoint
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table MapInfoPoints</strong> : <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointID">MapInfoPointID</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoID">MapInfoID</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Ordinal">Ordinal</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lat">Lat</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lng">Lng</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_HasErrors">HasErrors</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointWeb">MapInfoPointWeb</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointReport">MapInfoPointReport</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_HasErrors">HasErrors</a>, <a href="CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.MapInfoPointService.html">MapInfoPointService</a></p>
 <p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
@@ -83,10 +83,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">MapInfoPoint</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">MapInfoPoint</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -113,7 +127,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_MapInfoPoint_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MapInfoPoint</code></pre>
+    <pre><code class="lang-csharp hljs">public class MapInfoPoint : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -122,7 +136,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L89">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L56">View Source</a>
   </span>
   <a id="CSSPModels_MapInfoPoint__ctor_" data-uid="CSSPModels.MapInfoPoint.#ctor*"></a>
   <h4 id="CSSPModels_MapInfoPoint__ctor" data-uid="CSSPModels.MapInfoPoint.#ctor">MapInfoPoint()</h4>
@@ -134,143 +148,6 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L78">View Source</a>
-  </span>
-  <a id="CSSPModels_MapInfoPoint_HasErrors_" data-uid="CSSPModels.MapInfoPoint.HasErrors*"></a>
-  <h4 id="CSSPModels_MapInfoPoint_HasErrors" data-uid="CSSPModels.MapInfoPoint.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.MapInfoPoint">MapInfoPoint</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L58">View Source</a>
-  </span>
-  <a id="CSSPModels_MapInfoPoint_LastUpdateContactTVItemID_" data-uid="CSSPModels.MapInfoPoint.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_MapInfoPoint_LastUpdateContactTVItemID" data-uid="CSSPModels.MapInfoPoint.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L69">View Source</a>
-  </span>
-  <a id="CSSPModels_MapInfoPoint_LastUpdateContactTVText_" data-uid="CSSPModels.MapInfoPoint.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_MapInfoPoint_LastUpdateContactTVText" data-uid="CSSPModels.MapInfoPoint.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L49">View Source</a>
-  </span>
-  <a id="CSSPModels_MapInfoPoint_LastUpdateDate_UTC_" data-uid="CSSPModels.MapInfoPoint.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_MapInfoPoint_LastUpdateDate_UTC" data-uid="CSSPModels.MapInfoPoint.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_Lat.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.Lat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -399,6 +276,68 @@ public int MapInfoPointID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_MapInfoPointReport.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.MapInfoPointReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L50">View Source</a>
+  </span>
+  <a id="CSSPModels_MapInfoPoint_MapInfoPointReport_" data-uid="CSSPModels.MapInfoPoint.MapInfoPointReport*"></a>
+  <h4 id="CSSPModels_MapInfoPoint_MapInfoPointReport" data-uid="CSSPModels.MapInfoPoint.MapInfoPointReport">MapInfoPointReport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public MapInfoPointReport MapInfoPointReport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.MapInfoPointReport.html">MapInfoPointReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_MapInfoPointWeb.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.MapInfoPointWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L47">View Source</a>
+  </span>
+  <a id="CSSPModels_MapInfoPoint_MapInfoPointWeb_" data-uid="CSSPModels.MapInfoPoint.MapInfoPointWeb*"></a>
+  <h4 id="CSSPModels_MapInfoPoint_MapInfoPointWeb" data-uid="CSSPModels.MapInfoPoint.MapInfoPointWeb">MapInfoPointWeb</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public MapInfoPointWeb MapInfoPointWeb { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.MapInfoPointWeb.html">MapInfoPointWeb</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_Ordinal.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.Ordinal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -424,39 +363,6 @@ public int Ordinal { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_MapInfoPoint_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.MapInfoPoint.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/MapInfoPoint.cs/#L84">View Source</a>
-  </span>
-  <a id="CSSPModels_MapInfoPoint_ValidationResults_" data-uid="CSSPModels.MapInfoPoint.ValidationResults*"></a>
-  <h4 id="CSSPModels_MapInfoPoint_ValidationResults" data-uid="CSSPModels.MapInfoPoint.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.MapInfoPoint">MapInfoPoint</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

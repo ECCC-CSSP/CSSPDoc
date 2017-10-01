@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_EmailDistributionListContact" data-uid="CSSPModels.EmailDistributionListContact" class="text-break">Class EmailDistributionListContact
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table EmailDistributionListContacts</strong> : <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListContactID">EmailDistributionListContactID</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListID">EmailDistributionListID</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_IsCC">IsCC</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_Name">Name</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_Email">Email</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_CMPRainfallSeasonal">CMPRainfallSeasonal</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_CMPWastewater">CMPWastewater</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmergencyWeather">EmergencyWeather</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmergencyWastewater">EmergencyWastewater</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_ReopeningAllTypes">ReopeningAllTypes</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_HasErrors">HasErrors</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListContactWeb">EmailDistributionListContactWeb</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListContactReport">EmailDistributionListContactReport</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_HasErrors">HasErrors</a>, <a href="CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.EmailDistributionListContactService.html">EmailDistributionListContactService</a></p>
 <p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
@@ -83,10 +83,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">EmailDistributionListContact</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">EmailDistributionListContact</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -113,7 +127,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_EmailDistributionListContact_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EmailDistributionListContact</code></pre>
+    <pre><code class="lang-csharp hljs">public class EmailDistributionListContact : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -122,7 +136,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L94">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L61">View Source</a>
   </span>
   <a id="CSSPModels_EmailDistributionListContact__ctor_" data-uid="CSSPModels.EmailDistributionListContact.#ctor*"></a>
   <h4 id="CSSPModels_EmailDistributionListContact__ctor" data-uid="CSSPModels.EmailDistributionListContact.#ctor">EmailDistributionListContact()</h4>
@@ -259,6 +273,68 @@ public int EmailDistributionListContactID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_EmailDistributionListContactReport.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.EmailDistributionListContactReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L55">View Source</a>
+  </span>
+  <a id="CSSPModels_EmailDistributionListContact_EmailDistributionListContactReport_" data-uid="CSSPModels.EmailDistributionListContact.EmailDistributionListContactReport*"></a>
+  <h4 id="CSSPModels_EmailDistributionListContact_EmailDistributionListContactReport" data-uid="CSSPModels.EmailDistributionListContact.EmailDistributionListContactReport">EmailDistributionListContactReport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public EmailDistributionListContactReport EmailDistributionListContactReport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.EmailDistributionListContactReport.html">EmailDistributionListContactReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_EmailDistributionListContactWeb.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.EmailDistributionListContactWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L52">View Source</a>
+  </span>
+  <a id="CSSPModels_EmailDistributionListContact_EmailDistributionListContactWeb_" data-uid="CSSPModels.EmailDistributionListContact.EmailDistributionListContactWeb*"></a>
+  <h4 id="CSSPModels_EmailDistributionListContact_EmailDistributionListContactWeb" data-uid="CSSPModels.EmailDistributionListContact.EmailDistributionListContactWeb">EmailDistributionListContactWeb</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public EmailDistributionListContactWeb EmailDistributionListContactWeb { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.EmailDistributionListContactWeb.html">EmailDistributionListContactWeb</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_EmailDistributionListID.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.EmailDistributionListID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -352,39 +428,6 @@ public int EmailDistributionListContactID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L83">View Source</a>
-  </span>
-  <a id="CSSPModels_EmailDistributionListContact_HasErrors_" data-uid="CSSPModels.EmailDistributionListContact.HasErrors*"></a>
-  <h4 id="CSSPModels_EmailDistributionListContact_HasErrors" data-uid="CSSPModels.EmailDistributionListContact.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.EmailDistributionListContact">EmailDistributionListContact</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_IsCC.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.IsCC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -409,110 +452,6 @@ public bool HasErrors { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L63">View Source</a>
-  </span>
-  <a id="CSSPModels_EmailDistributionListContact_LastUpdateContactTVItemID_" data-uid="CSSPModels.EmailDistributionListContact.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_EmailDistributionListContact_LastUpdateContactTVItemID" data-uid="CSSPModels.EmailDistributionListContact.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L74">View Source</a>
-  </span>
-  <a id="CSSPModels_EmailDistributionListContact_LastUpdateContactTVText_" data-uid="CSSPModels.EmailDistributionListContact.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_EmailDistributionListContact_LastUpdateContactTVText" data-uid="CSSPModels.EmailDistributionListContact.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L54">View Source</a>
-  </span>
-  <a id="CSSPModels_EmailDistributionListContact_LastUpdateDate_UTC_" data-uid="CSSPModels.EmailDistributionListContact.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_EmailDistributionListContact_LastUpdateDate_UTC" data-uid="CSSPModels.EmailDistributionListContact.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -574,39 +513,6 @@ public string Name { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_EmailDistributionListContact_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.EmailDistributionListContact.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/EmailDistributionListContact.cs/#L89">View Source</a>
-  </span>
-  <a id="CSSPModels_EmailDistributionListContact_ValidationResults_" data-uid="CSSPModels.EmailDistributionListContact.ValidationResults*"></a>
-  <h4 id="CSSPModels_EmailDistributionListContact_ValidationResults" data-uid="CSSPModels.EmailDistributionListContact.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.EmailDistributionListContact">EmailDistributionListContact</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

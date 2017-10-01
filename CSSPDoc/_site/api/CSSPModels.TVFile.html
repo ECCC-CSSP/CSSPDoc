@@ -73,7 +73,7 @@
   <h1 id="CSSPModels_TVFile" data-uid="CSSPModels.TVFile" class="text-break">Class TVFile
   </h1>
   <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table TVFiles</strong> : <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileID">TVFileID</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileTVItemID">TVFileTVItemID</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType">TemplateTVType</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_Language">Language</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurpose">FilePurpose</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FileType">FileType</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FileSize_kb">FileSize_kb</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FileInfo">FileInfo</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FileCreatedDate_UTC">FileCreatedDate_UTC</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FromWater">FromWater</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_ClientFilePath">ClientFilePath</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFileName">ServerFileName</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFilePath">ServerFilePath</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
-<p><strong>Other properties</strong> : <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileTVText">TVFileTVText</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateContactTVText">LastUpdateContactTVText</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVTypeText">TemplateTVTypeText</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_LanguageText">LanguageText</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurposeText">FilePurposeText</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_FileTypeText">FileTypeText</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_HasErrors">HasErrors</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_ValidationResults">ValidationResults</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileWeb">TVFileWeb</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileReport">TVFileReport</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_HasErrors">HasErrors</a>, <a href="CSSPModels.TVFile.html#CSSPModels_TVFile_ValidationResults">ValidationResults</a>, </p>
 
 <p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.TVFileService.html">TVFileService</a></p>
 <p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a>, <a href="CSSPEnums.LanguageEnum.html">LanguageEnum</a>, <a href="CSSPEnums.FilePurposeEnum.html">FilePurposeEnum</a>, <a href="CSSPEnums.FileTypeEnum.html">FileTypeEnum</a></p>
@@ -84,10 +84,24 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">TVFile</span></div>
+    <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
+    <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
+    <div class="level3"><span class="xref">TVFile</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC">LastUpdate.LastUpdateDate_UTC</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID">LastUpdate.LastUpdateContactTVItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_HasErrors">Error.HasErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPModels.Error.html#CSSPModels_Error_ValidationResults">Error.ValidationResults</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -114,7 +128,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_TVFile_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TVFile</code></pre>
+    <pre><code class="lang-csharp hljs">public class TVFile : LastUpdate</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -123,7 +137,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L198">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L110">View Source</a>
   </span>
   <a id="CSSPModels_TVFile__ctor_" data-uid="CSSPModels.TVFile.#ctor*"></a>
   <h4 id="CSSPModels_TVFile__ctor" data-uid="CSSPModels.TVFile.#ctor">TVFile()</h4>
@@ -263,43 +277,7 @@ public string ClientFilePath { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.FilePurposeEnum.html">FilePurposeEnum</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_FilePurposeText.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.FilePurposeText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L167">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_FilePurposeText_" data-uid="CSSPModels.TVFile.FilePurposeText*"></a>
-  <h4 id="CSSPModels_TVFile_FilePurposeText" data-uid="CSSPModels.TVFile.FilePurposeText">FilePurposeText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;FilePurposeEnum&quot;, EnumType = &quot;FilePurpose&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string FilePurposeText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">CSSPEnums.FilePurposeEnum</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -363,43 +341,7 @@ public int FileSize_kb { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.FileTypeEnum.html">FileTypeEnum</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_FileTypeText.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.FileTypeText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L178">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_FileTypeText_" data-uid="CSSPModels.TVFile.FileTypeText*"></a>
-  <h4 id="CSSPModels_TVFile_FileTypeText" data-uid="CSSPModels.TVFile.FileTypeText">FileTypeText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;FileTypeEnum&quot;, EnumType = &quot;FileType&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string FileTypeText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">CSSPEnums.FileTypeEnum</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -436,39 +378,6 @@ public string FileTypeText { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_HasErrors.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L187">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_HasErrors_" data-uid="CSSPModels.TVFile.HasErrors*"></a>
-  <h4 id="CSSPModels_TVFile_HasErrors" data-uid="CSSPModels.TVFile.HasErrors">HasErrors</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.TVFile">TVFile</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public bool HasErrors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_Language.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.Language%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -495,147 +404,7 @@ public bool HasErrors { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.LanguageEnum.html">LanguageEnum</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_LanguageText.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.LanguageText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L156">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_LanguageText_" data-uid="CSSPModels.TVFile.LanguageText*"></a>
-  <h4 id="CSSPModels_TVFile_LanguageText" data-uid="CSSPModels.TVFile.LanguageText">LanguageText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;LanguageEnum&quot;, EnumType = &quot;Language&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string LanguageText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_LastUpdateContactTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.LastUpdateContactTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L112">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_LastUpdateContactTVItemID_" data-uid="CSSPModels.TVFile.LastUpdateContactTVItemID*"></a>
-  <h4 id="CSSPModels_TVFile_LastUpdateContactTVItemID" data-uid="CSSPModels.TVFile.LastUpdateContactTVItemID">LastUpdateContactTVItemID</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
-<p>5 == Contact</p>
-<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;5&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastUpdateContactTVItemID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_LastUpdateContactTVText.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.LastUpdateContactTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L134">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_LastUpdateContactTVText_" data-uid="CSSPModels.TVFile.LastUpdateContactTVText*"></a>
-  <h4 id="CSSPModels_TVFile_LastUpdateContactTVText" data-uid="CSSPModels.TVFile.LastUpdateContactTVText">LastUpdateContactTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;LastUpdateContactTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string LastUpdateContactTVText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_LastUpdateDate_UTC.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.LastUpdateDate_UTC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L103">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_LastUpdateDate_UTC_" data-uid="CSSPModels.TVFile.LastUpdateDate_UTC*"></a>
-  <h4 id="CSSPModels_TVFile_LastUpdateDate_UTC" data-uid="CSSPModels.TVFile.LastUpdateDate_UTC">LastUpdateDate_UTC</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAfterAttribute.html">CSSPAfter</a>(Year = 1980)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastUpdateDate_UTC { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">CSSPEnums.LanguageEnum</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -730,43 +499,7 @@ public string ServerFilePath { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_TemplateTVTypeText.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.TemplateTVTypeText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L145">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_TemplateTVTypeText_" data-uid="CSSPModels.TVFile.TemplateTVTypeText*"></a>
-  <h4 id="CSSPModels_TVFile_TemplateTVTypeText" data-uid="CSSPModels.TVFile.TemplateTVTypeText">TemplateTVTypeText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPEnumTypeTextAttribute.html">CSSPEnumTypeText</a>(EnumTypeName = &quot;TVTypeEnum&quot;, EnumType = &quot;TemplateTVType&quot;)]</p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(100)]
-public string TemplateTVTypeText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">CSSPEnums.TVTypeEnum</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -798,6 +531,37 @@ public int TVFileID { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_TVFileReport.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.TVFileReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L104">View Source</a>
+  </span>
+  <a id="CSSPModels_TVFile_TVFileReport_" data-uid="CSSPModels.TVFile.TVFileReport*"></a>
+  <h4 id="CSSPModels_TVFile_TVFileReport" data-uid="CSSPModels.TVFile.TVFileReport">TVFileReport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public TVFileReport TVFileReport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.TVFileReport.html">TVFileReport</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -839,24 +603,19 @@ public int TVFileID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_TVFileTVText.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.TVFileTVText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_TVFileWeb.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.TVFileWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L123">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L101">View Source</a>
   </span>
-  <a id="CSSPModels_TVFile_TVFileTVText_" data-uid="CSSPModels.TVFile.TVFileTVText*"></a>
-  <h4 id="CSSPModels_TVFile_TVFileTVText" data-uid="CSSPModels.TVFile.TVFileTVText">TVFileTVText</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
-<p>[<a href="CSSPModels.CSSPAllowNullAttribute.html">CSSPAllowNull</a>]</p>
-<p>[<a href="CSSPModels.CSSPFillAttribute.html">CSSPFill</a>(FillTypeName = &quot;TVItemLanguage&quot;, FillPlurial = &quot;s&quot;, FillFieldID = &quot;TVItemID&quot;, FillEqualField = &quot;TVFileTVItemID&quot;, FillReturnField = &quot;TVText&quot;, FillNeedLanguage = true)]</p>
-</div>
-</div>
+  <a id="CSSPModels_TVFile_TVFileWeb_" data-uid="CSSPModels.TVFile.TVFileWeb*"></a>
+  <h4 id="CSSPModels_TVFile_TVFileWeb" data-uid="CSSPModels.TVFile.TVFileWeb">TVFileWeb</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[NotMapped]
-[StringLength(200)]
-public string TVFileTVText { get; set; }</code></pre>
+public TVFileWeb TVFileWeb { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -868,40 +627,7 @@ public string TVFileTVText { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_TVFile_ValidationResults.md&amp;value=---%0Auid%3A%20CSSPModels.TVFile.ValidationResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithHelp/TVFile.cs/#L193">View Source</a>
-  </span>
-  <a id="CSSPModels_TVFile_ValidationResults_" data-uid="CSSPModels.TVFile.ValidationResults*"></a>
-  <h4 id="CSSPModels_TVFile_ValidationResults" data-uid="CSSPModels.TVFile.ValidationResults">ValidationResults</h4>
-  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of <a href="CSSPModels.TVFile">TVFile</a></p>
-</div>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IEnumerable&lt;ValidationResult&gt; ValidationResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
+        <td><a class="xref" href="CSSPModels.TVFileWeb.html">TVFileWeb</a></td>
         <td></td>
       </tr>
     </tbody>
