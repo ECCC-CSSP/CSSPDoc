@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CSSPWebToolsDBContext
    ">
-    <meta name="generator" content="docfx 2.33.2.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -87,6 +87,7 @@
     <div><span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure</span>&lt;<span class="xref">System.IServiceProvider</span>&gt;</div>
     <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</span></div>
     <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbQueryCache</span></div>
     <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span></div>
   </div>
   <div class="inheritedMembers">
@@ -95,7 +96,13 @@
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbSetCache.GetOrAddSet(Microsoft.EntityFrameworkCore.Internal.IDbSetSource, System.Type)</span>
     </div>
     <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbQueryCache.GetOrAddQuery(Microsoft.EntityFrameworkCore.Internal.IDbQuerySource, System.Type)</span>
+    </div>
+    <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Query&lt;TQuery&gt;()</span>
     </div>
     <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges()</span>
@@ -221,7 +228,10 @@
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.SetSource</span>
     </div>
     <div>
-      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityFinderSource</span>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.QuerySource</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityFinderFactory</span>
     </div>
     <div>
       <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.QueryProvider</span>
@@ -270,7 +280,7 @@
   <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
   <h5 id="CSSPModels_CSSPWebToolsDBContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CSSPWebToolsDBContext : DbContext, IDisposable, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbContextPoolable</code></pre>
+    <pre><code class="lang-csharp hljs">public class CSSPWebToolsDBContext : DbContext, IDisposable, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbQueryCache, IDbContextPoolable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -279,7 +289,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L105">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L106">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext__ctor_" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext__ctor" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor">CSSPWebToolsDBContext()</h4>
@@ -294,7 +304,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext__ctor_CSSPEnums_DatabaseTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.%23ctor(CSSPEnums.DatabaseTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L110">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L111">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext__ctor_" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext__ctor_CSSPEnums_DatabaseTypeEnum_" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor(CSSPEnums.DatabaseTypeEnum)">CSSPWebToolsDBContext(DatabaseTypeEnum)</h4>
@@ -565,10 +575,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ClimateDataValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ClimateDataValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Classifications.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Classifications%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L33">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Classifications_" data-uid="CSSPModels.CSSPWebToolsDBContext.Classifications*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Classifications" data-uid="CSSPModels.CSSPWebToolsDBContext.Classifications">Classifications</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Classification&gt; Classifications { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Classification.html">Classification</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ClimateDataValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ClimateDataValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L34">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ClimateDataValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateDataValues*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ClimateDataValues" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateDataValues">ClimateDataValues</h4>
@@ -598,7 +638,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ClimateSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ClimateSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L34">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L35">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ClimateSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateSites*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ClimateSites" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateSites">ClimateSites</h4>
@@ -628,7 +668,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ContactPreferences.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ContactPreferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L37">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L38">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ContactPreferences_" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactPreferences*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ContactPreferences" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactPreferences">ContactPreferences</h4>
@@ -658,7 +698,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Contacts.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Contacts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L35">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L36">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_Contacts_" data-uid="CSSPModels.CSSPWebToolsDBContext.Contacts*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_Contacts" data-uid="CSSPModels.CSSPWebToolsDBContext.Contacts">Contacts</h4>
@@ -688,7 +728,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ContactShortcuts.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ContactShortcuts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L38">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L39">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ContactShortcuts_" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactShortcuts*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ContactShortcuts" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactShortcuts">ContactShortcuts</h4>
@@ -748,7 +788,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_DocTemplates.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.DocTemplates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L39">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L40">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_DocTemplates_" data-uid="CSSPModels.CSSPWebToolsDBContext.DocTemplates*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_DocTemplates" data-uid="CSSPModels.CSSPWebToolsDBContext.DocTemplates">DocTemplates</h4>
@@ -778,7 +818,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContactLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContactLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L44">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L45">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContactLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContactLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContactLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContactLanguages">EmailDistributionListContactLanguages</h4>
@@ -808,7 +848,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContacts.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContacts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L43">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L44">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContacts_" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContacts*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContacts" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContacts">EmailDistributionListContacts</h4>
@@ -838,7 +878,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_EmailDistributionListLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.EmailDistributionListLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L42">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L43">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListLanguages">EmailDistributionListLanguages</h4>
@@ -868,7 +908,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_EmailDistributionLists.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.EmailDistributionLists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L41">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L42">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionLists_" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionLists*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionLists" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionLists">EmailDistributionLists</h4>
@@ -898,7 +938,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Emails.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Emails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L40">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L41">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_Emails_" data-uid="CSSPModels.CSSPWebToolsDBContext.Emails*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_Emails" data-uid="CSSPModels.CSSPWebToolsDBContext.Emails">Emails</h4>
@@ -958,7 +998,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_HydrometricDataValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.HydrometricDataValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L45">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L46">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_HydrometricDataValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricDataValues*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_HydrometricDataValues" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricDataValues">HydrometricDataValues</h4>
@@ -988,7 +1028,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_HydrometricSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.HydrometricSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L46">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L47">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_HydrometricSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricSites*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_HydrometricSites" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricSites">HydrometricSites</h4>
@@ -1018,7 +1058,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_InfrastructureLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.InfrastructureLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L48">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L49">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_InfrastructureLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.InfrastructureLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_InfrastructureLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.InfrastructureLanguages">InfrastructureLanguages</h4>
@@ -1048,7 +1088,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Infrastructures.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Infrastructures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L47">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L48">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_Infrastructures_" data-uid="CSSPModels.CSSPWebToolsDBContext.Infrastructures*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_Infrastructures" data-uid="CSSPModels.CSSPWebToolsDBContext.Infrastructures">Infrastructures</h4>
@@ -1078,7 +1118,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_LabSheetDetails.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.LabSheetDetails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L49">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L50">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_LabSheetDetails_" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetDetails*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_LabSheetDetails" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetDetails">LabSheetDetails</h4>
@@ -1108,7 +1148,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_LabSheets.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.LabSheets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L51">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L52">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_LabSheets_" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheets*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_LabSheets" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheets">LabSheets</h4>
@@ -1138,7 +1178,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_LabSheetTubeMPNDetails.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.LabSheetTubeMPNDetails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L50">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L51">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_LabSheetTubeMPNDetails_" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetTubeMPNDetails*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_LabSheetTubeMPNDetails" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetTubeMPNDetails">LabSheetTubeMPNDetails</h4>
@@ -1168,7 +1208,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Logs.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Logs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L52">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L53">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_Logs_" data-uid="CSSPModels.CSSPWebToolsDBContext.Logs*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_Logs" data-uid="CSSPModels.CSSPWebToolsDBContext.Logs">Logs</h4>
@@ -1198,7 +1238,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MapInfoPoints.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MapInfoPoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L53">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L54">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MapInfoPoints_" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfoPoints*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MapInfoPoints" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfoPoints">MapInfoPoints</h4>
@@ -1228,7 +1268,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MapInfos.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MapInfos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L54">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L55">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MapInfos_" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfos*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MapInfos" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfos">MapInfos</h4>
@@ -1258,7 +1298,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeBoundaryConditions.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeBoundaryConditions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L55">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L56">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MikeBoundaryConditions_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeBoundaryConditions*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeBoundaryConditions" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeBoundaryConditions">MikeBoundaryConditions</h4>
@@ -1288,7 +1328,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeScenarios.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeScenarios%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L56">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L57">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MikeScenarios_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeScenarios*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeScenarios" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeScenarios">MikeScenarios</h4>
@@ -1318,7 +1358,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeSources.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeSources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L59">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L60">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MikeSources_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSources*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeSources" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSources">MikeSources</h4>
@@ -1348,7 +1388,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeSourceStartEnds.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeSourceStartEnds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L57">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L58">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MikeSourceStartEnds_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSourceStartEnds*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeSourceStartEnds" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSourceStartEnds">MikeSourceStartEnds</h4>
@@ -1378,7 +1418,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMAnalysisReportParameters.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMAnalysisReportParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L58">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L59">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMAnalysisReportParameters_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMAnalysisReportParameters*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMAnalysisReportParameters" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMAnalysisReportParameters">MWQMAnalysisReportParameters</h4>
@@ -1408,7 +1448,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMLookupMPNs.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMLookupMPNs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L60">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L61">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMLookupMPNs_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMLookupMPNs*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMLookupMPNs" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMLookupMPNs">MWQMLookupMPNs</h4>
@@ -1438,7 +1478,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMRunLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMRunLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L61">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L62">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMRunLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRunLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMRunLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRunLanguages">MWQMRunLanguages</h4>
@@ -1468,7 +1508,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMRuns.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMRuns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L62">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L63">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMRuns_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRuns*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMRuns" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRuns">MWQMRuns</h4>
@@ -1498,7 +1538,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSampleLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSampleLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L63">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L64">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSampleLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSampleLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSampleLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSampleLanguages">MWQMSampleLanguages</h4>
@@ -1528,7 +1568,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSamples.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSamples%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L64">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L65">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSamples_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSamples*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSamples" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSamples">MWQMSamples</h4>
@@ -1558,7 +1598,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L66">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L67">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSites*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSites" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSites">MWQMSites</h4>
@@ -1588,7 +1628,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSiteStartEndDates.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSiteStartEndDates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L65">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L66">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSiteStartEndDates_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSiteStartEndDates*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSiteStartEndDates" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSiteStartEndDates">MWQMSiteStartEndDates</h4>
@@ -1618,7 +1658,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSubsectorLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSubsectorLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L67">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L68">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectorLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectorLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectorLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectorLanguages">MWQMSubsectorLanguages</h4>
@@ -1648,7 +1688,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSubsectors.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSubsectors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L68">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L69">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectors_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectors*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectors" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectors">MWQMSubsectors</h4>
@@ -1678,7 +1718,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_PolSourceObservationIssues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.PolSourceObservationIssues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L69">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L70">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservationIssues_" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservationIssues*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservationIssues" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservationIssues">PolSourceObservationIssues</h4>
@@ -1708,7 +1748,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_PolSourceObservations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.PolSourceObservations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L70">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L71">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservations_" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservations*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservations" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservations">PolSourceObservations</h4>
@@ -1738,7 +1778,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_PolSourceSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.PolSourceSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L71">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L72">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_PolSourceSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceSites*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_PolSourceSites" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceSites">PolSourceSites</h4>
@@ -1768,7 +1808,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_RainExceedances.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.RainExceedances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L73">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L74">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_RainExceedances_" data-uid="CSSPModels.CSSPWebToolsDBContext.RainExceedances*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_RainExceedances" data-uid="CSSPModels.CSSPWebToolsDBContext.RainExceedances">RainExceedances</h4>
@@ -1798,7 +1838,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_RatingCurves.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.RatingCurves%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L74">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L75">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_RatingCurves_" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurves*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_RatingCurves" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurves">RatingCurves</h4>
@@ -1828,7 +1868,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_RatingCurveValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.RatingCurveValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L72">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L73">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_RatingCurveValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurveValues*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_RatingCurveValues" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurveValues">RatingCurveValues</h4>
@@ -1858,7 +1898,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ReportSectionLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ReportSectionLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L76">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L77">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ReportSectionLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportSectionLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ReportSectionLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportSectionLanguages">ReportSectionLanguages</h4>
@@ -1888,7 +1928,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ReportSections.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ReportSections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L77">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L78">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ReportSections_" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportSections*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ReportSections" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportSections">ReportSections</h4>
@@ -1918,7 +1958,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ReportTypeLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ReportTypeLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L78">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L79">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ReportTypeLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportTypeLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ReportTypeLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportTypeLanguages">ReportTypeLanguages</h4>
@@ -1948,7 +1988,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ReportTypes.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ReportTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L79">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L80">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ReportTypes_" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportTypes*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ReportTypes" data-uid="CSSPModels.CSSPWebToolsDBContext.ReportTypes">ReportTypes</h4>
@@ -1978,7 +2018,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ResetPasswords.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ResetPasswords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L75">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L76">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_ResetPasswords_" data-uid="CSSPModels.CSSPWebToolsDBContext.ResetPasswords*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_ResetPasswords" data-uid="CSSPModels.CSSPWebToolsDBContext.ResetPasswords">ResetPasswords</h4>
@@ -2008,7 +2048,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SamplingPlans.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SamplingPlans%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L82">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L83">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_SamplingPlans_" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlans*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_SamplingPlans" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlans">SamplingPlans</h4>
@@ -2038,7 +2078,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectors.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L81">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L82">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectors_" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectors*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectors" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectors">SamplingPlanSubsectors</h4>
@@ -2068,7 +2108,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectorSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectorSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L80">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L81">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectorSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectorSites*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectorSites" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectorSites">SamplingPlanSubsectorSites</h4>
@@ -2098,7 +2138,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SpillLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SpillLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L83">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L84">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_SpillLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.SpillLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_SpillLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.SpillLanguages">SpillLanguages</h4>
@@ -2128,7 +2168,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Spills.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Spills%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L84">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L85">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_Spills_" data-uid="CSSPModels.CSSPWebToolsDBContext.Spills*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_Spills" data-uid="CSSPModels.CSSPWebToolsDBContext.Spills">Spills</h4>
@@ -2158,7 +2198,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Tels.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Tels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L85">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L86">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_Tels_" data-uid="CSSPModels.CSSPWebToolsDBContext.Tels*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_Tels" data-uid="CSSPModels.CSSPWebToolsDBContext.Tels">Tels</h4>
@@ -2188,7 +2228,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TideDataValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TideDataValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L86">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L87">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TideDataValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.TideDataValues*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TideDataValues" data-uid="CSSPModels.CSSPWebToolsDBContext.TideDataValues">TideDataValues</h4>
@@ -2218,7 +2258,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TideLocations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TideLocations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L87">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L88">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TideLocations_" data-uid="CSSPModels.CSSPWebToolsDBContext.TideLocations*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TideLocations" data-uid="CSSPModels.CSSPWebToolsDBContext.TideLocations">TideLocations</h4>
@@ -2248,7 +2288,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TideSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TideSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L88">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L89">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TideSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.TideSites*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TideSites" data-uid="CSSPModels.CSSPWebToolsDBContext.TideSites">TideSites</h4>
@@ -2278,7 +2318,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVFileLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVFileLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L89">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L90">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVFileLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFileLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVFileLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFileLanguages">TVFileLanguages</h4>
@@ -2308,7 +2348,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVFiles.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L90">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L91">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVFiles_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFiles*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVFiles" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFiles">TVFiles</h4>
@@ -2338,7 +2378,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L91">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L92">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVItemLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLanguages">TVItemLanguages</h4>
@@ -2368,7 +2408,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemLinks.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemLinks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L92">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L93">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVItemLinks_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLinks*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemLinks" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLinks">TVItemLinks</h4>
@@ -2398,7 +2438,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItems.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L95">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L96">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVItems_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItems*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItems" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItems">TVItems</h4>
@@ -2428,7 +2468,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemStats.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L93">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L94">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVItemStats_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemStats*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemStats" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemStats">TVItemStats</h4>
@@ -2458,7 +2498,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemUserAuthorizations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemUserAuthorizations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L94">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L95">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVItemUserAuthorizations_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemUserAuthorizations*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemUserAuthorizations" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemUserAuthorizations">TVItemUserAuthorizations</h4>
@@ -2488,7 +2528,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVTypeUserAuthorizations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVTypeUserAuthorizations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L96">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L97">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_TVTypeUserAuthorizations_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVTypeUserAuthorizations*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_TVTypeUserAuthorizations" data-uid="CSSPModels.CSSPWebToolsDBContext.TVTypeUserAuthorizations">TVTypeUserAuthorizations</h4>
@@ -2518,7 +2558,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_UseOfSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.UseOfSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L97">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L98">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_UseOfSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.UseOfSites*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_UseOfSites" data-uid="CSSPModels.CSSPWebToolsDBContext.UseOfSites">UseOfSites</h4>
@@ -2548,7 +2588,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPAmbients.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPAmbients%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L98">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L99">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_VPAmbients_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPAmbients*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_VPAmbients" data-uid="CSSPModels.CSSPWebToolsDBContext.VPAmbients">VPAmbients</h4>
@@ -2578,7 +2618,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPResults.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L99">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L100">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_VPResults_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPResults*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_VPResults" data-uid="CSSPModels.CSSPWebToolsDBContext.VPResults">VPResults</h4>
@@ -2608,7 +2648,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPScenarioLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPScenarioLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L100">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L101">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_VPScenarioLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarioLanguages*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_VPScenarioLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarioLanguages">VPScenarioLanguages</h4>
@@ -2638,7 +2678,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPScenarios.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPScenarios%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L101">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L102">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_VPScenarios_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarios*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_VPScenarios" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarios">VPScenarios</h4>
@@ -2670,7 +2710,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L134">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L135">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_OnConfiguring_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnConfiguring*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">OnConfiguring(DbContextOptionsBuilder)</h4>
@@ -2704,7 +2744,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L169">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L170">View Source</a>
   </span>
   <a id="CSSPModels_CSSPWebToolsDBContext_OnModelCreating_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnModelCreating*"></a>
   <h4 id="CSSPModels_CSSPWebToolsDBContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">OnModelCreating(ModelBuilder)</h4>
@@ -2745,6 +2785,9 @@
   </div>
   <div>
       <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbQueryCache</span>
   </div>
   <div>
       <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span>
