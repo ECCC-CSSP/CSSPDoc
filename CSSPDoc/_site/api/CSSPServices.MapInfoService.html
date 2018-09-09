@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MapInfoService
    ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,6 +88,18 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageListAllowable">BaseService.LanguageListAllowable</a>
     </div>
     <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_BasePath">BaseService.BasePath</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_R">BaseService.R</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_d2r">BaseService.d2r</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_r2d">BaseService.r2d</a>
+    </div>
+    <div>
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_db">BaseService.db</a>
     </div>
     <div>
@@ -103,7 +115,16 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageRequest">BaseService.LanguageRequest</a>
     </div>
     <div>
-      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_GetParam">BaseService.GetParam</a>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_Query">BaseService.Query</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_ValidateQuery_System_ComponentModel_DataAnnotations_ValidationContext_">BaseService.ValidateQuery(ValidationContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_EnhanceQueryStatements__1_System_Object_">BaseService.EnhanceQueryStatements&lt;T&gt;(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_">BaseService.FillQuery(Type, String, Int32, Int32, String, String, String)</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -137,18 +158,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.%23ctor(CSSPModels.GetParam%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L31">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoService__ctor_" data-uid="CSSPServices.MapInfoService.#ctor*"></a>
-  <h4 id="CSSPServices_MapInfoService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.MapInfoService.#ctor(CSSPModels.GetParam,CSSPModels.CSSPWebToolsDBContext,System.Int32)">MapInfoService(GetParam, CSSPWebToolsDBContext, Int32)</h4>
+  <h4 id="CSSPServices_MapInfoService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.MapInfoService.#ctor(CSSPModels.Query,CSSPModels.CSSPWebToolsDBContext,System.Int32)">MapInfoService(Query, CSSPWebToolsDBContext, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MapInfoService(GetParam getParam, CSSPWebToolsDBContext db, int ContactID)</code></pre>
+    <pre><code class="lang-csharp hljs">public MapInfoService(Query query, CSSPWebToolsDBContext db, int ContactID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,8 +182,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
+        <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
+        <td><span class="parametername">query</span></td>
         <td></td>
       </tr>
       <tr>
@@ -184,7 +205,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_Add_CSSPModels_MapInfo_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.Add(CSSPModels.MapInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L251">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L236">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoService_Add_" data-uid="CSSPServices.MapInfoService.Add*"></a>
   <h4 id="CSSPServices_MapInfoService_Add_CSSPModels_MapInfo_" data-uid="CSSPServices.MapInfoService.Add(CSSPModels.MapInfo)">Add(MapInfo)</h4>
@@ -231,7 +252,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_Delete_CSSPModels_MapInfo_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.Delete(CSSPModels.MapInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L262">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L247">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoService_Delete_" data-uid="CSSPServices.MapInfoService.Delete*"></a>
   <h4 id="CSSPServices_MapInfoService_Delete_CSSPModels_MapInfo_" data-uid="CSSPServices.MapInfoService.Delete(CSSPModels.MapInfo)">Delete(MapInfo)</h4>
@@ -275,18 +296,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetEdit.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetEdit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfo_AList.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfo_AList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L295">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L212">View Source</a>
   </span>
-  <a id="CSSPServices_MapInfoService_GetEdit_" data-uid="CSSPServices.MapInfoService.GetEdit*"></a>
-  <h4 id="CSSPServices_MapInfoService_GetEdit" data-uid="CSSPServices.MapInfoService.GetEdit">GetEdit()</h4>
+  <a id="CSSPServices_MapInfoService_GetMapInfo_AList_" data-uid="CSSPServices.MapInfoService.GetMapInfo_AList*"></a>
+  <h4 id="CSSPServices_MapInfoService_GetMapInfo_AList" data-uid="CSSPServices.MapInfoService.GetMapInfo_AList">GetMapInfo_AList()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;MapInfo&gt; GetEdit()</code></pre>
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;MapInfo_A&gt; GetMapInfo_AList()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -298,77 +319,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfo.html">MapInfo</a>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfo_A.html">MapInfo_A</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfoList_CSSPModels_GetParam_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfoList(CSSPModels.GetParam%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfo_AWithMapInfoID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfo_AWithMapInfoID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L210">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L207">View Source</a>
   </span>
-  <a id="CSSPServices_MapInfoService_GetMapInfoList_" data-uid="CSSPServices.MapInfoService.GetMapInfoList*"></a>
-  <h4 id="CSSPServices_MapInfoService_GetMapInfoList_CSSPModels_GetParam_System_String_" data-uid="CSSPServices.MapInfoService.GetMapInfoList(CSSPModels.GetParam,System.String)">GetMapInfoList(GetParam, String)</h4>
+  <a id="CSSPServices_MapInfoService_GetMapInfo_AWithMapInfoID_" data-uid="CSSPServices.MapInfoService.GetMapInfo_AWithMapInfoID*"></a>
+  <h4 id="CSSPServices_MapInfoService_GetMapInfo_AWithMapInfoID_System_Int32_" data-uid="CSSPServices.MapInfoService.GetMapInfo_AWithMapInfoID(System.Int32)">GetMapInfo_AWithMapInfoID(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;MapInfo&gt; GetMapInfoList(GetParam getParam, string FilterAndOrderText = &quot;&quot;)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FilterAndOrderText</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfo.html">MapInfo</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfoWithMapInfoID_System_Int32_CSSPModels_GetParam_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfoWithMapInfoID(System.Int32%2CCSSPModels.GetParam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L192">View Source</a>
-  </span>
-  <a id="CSSPServices_MapInfoService_GetMapInfoWithMapInfoID_" data-uid="CSSPServices.MapInfoService.GetMapInfoWithMapInfoID*"></a>
-  <h4 id="CSSPServices_MapInfoService_GetMapInfoWithMapInfoID_System_Int32_CSSPModels_GetParam_" data-uid="CSSPServices.MapInfoService.GetMapInfoWithMapInfoID(System.Int32,CSSPModels.GetParam)">GetMapInfoWithMapInfoID(Int32, GetParam)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MapInfo GetMapInfoWithMapInfoID(int MapInfoID, GetParam getParam)</code></pre>
+    <pre><code class="lang-csharp hljs">public MapInfo_A GetMapInfo_AWithMapInfoID(int MapInfoID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -385,9 +354,158 @@
         <td><span class="parametername">MapInfoID</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.MapInfo_A.html">MapInfo_A</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfo_BList.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfo_BList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L225">View Source</a>
+  </span>
+  <a id="CSSPServices_MapInfoService_GetMapInfo_BList_" data-uid="CSSPServices.MapInfoService.GetMapInfo_BList*"></a>
+  <h4 id="CSSPServices_MapInfoService_GetMapInfo_BList" data-uid="CSSPServices.MapInfoService.GetMapInfo_BList">GetMapInfo_BList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;MapInfo_B&gt; GetMapInfo_BList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfo_B.html">MapInfo_B</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfo_BWithMapInfoID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfo_BWithMapInfoID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L220">View Source</a>
+  </span>
+  <a id="CSSPServices_MapInfoService_GetMapInfo_BWithMapInfoID_" data-uid="CSSPServices.MapInfoService.GetMapInfo_BWithMapInfoID*"></a>
+  <h4 id="CSSPServices_MapInfoService_GetMapInfo_BWithMapInfoID_System_Int32_" data-uid="CSSPServices.MapInfoService.GetMapInfo_BWithMapInfoID(System.Int32)">GetMapInfo_BWithMapInfoID(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapInfo_B GetMapInfo_BWithMapInfoID(int MapInfoID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">MapInfoID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.MapInfo_B.html">MapInfo_B</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfoList.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfoList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L199">View Source</a>
+  </span>
+  <a id="CSSPServices_MapInfoService_GetMapInfoList_" data-uid="CSSPServices.MapInfoService.GetMapInfoList*"></a>
+  <h4 id="CSSPServices_MapInfoService_GetMapInfoList" data-uid="CSSPServices.MapInfoService.GetMapInfoList">GetMapInfoList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;MapInfo&gt; GetMapInfoList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfo.html">MapInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetMapInfoWithMapInfoID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetMapInfoWithMapInfoID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L192">View Source</a>
+  </span>
+  <a id="CSSPServices_MapInfoService_GetMapInfoWithMapInfoID_" data-uid="CSSPServices.MapInfoService.GetMapInfoWithMapInfoID*"></a>
+  <h4 id="CSSPServices_MapInfoService_GetMapInfoWithMapInfoID_System_Int32_" data-uid="CSSPServices.MapInfoService.GetMapInfoWithMapInfoID(System.Int32)">GetMapInfoWithMapInfoID(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapInfo GetMapInfoWithMapInfoID(int MapInfoID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">MapInfoID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -409,40 +527,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_GetRead.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.GetRead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L284">View Source</a>
-  </span>
-  <a id="CSSPServices_MapInfoService_GetRead_" data-uid="CSSPServices.MapInfoService.GetRead*"></a>
-  <h4 id="CSSPServices_MapInfoService_GetRead" data-uid="CSSPServices.MapInfoService.GetRead">GetRead()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;MapInfo&gt; GetRead()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfo.html">MapInfo</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_Update_CSSPModels_MapInfo_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.Update(CSSPModels.MapInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L273">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L258">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoService_Update_" data-uid="CSSPServices.MapInfoService.Update*"></a>
   <h4 id="CSSPServices_MapInfoService_Update_CSSPModels_MapInfo_" data-uid="CSSPServices.MapInfoService.Update(CSSPModels.MapInfo)">Update(MapInfo)</h4>
@@ -489,7 +577,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L38">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L38">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoService_Validate_" data-uid="CSSPServices.MapInfoService.Validate*"></a>
   <h4 id="CSSPServices_MapInfoService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.MapInfoService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
@@ -547,7 +635,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoService.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/MapInfoServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

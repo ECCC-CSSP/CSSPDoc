@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TVItemService
    ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,6 +88,18 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageListAllowable">BaseService.LanguageListAllowable</a>
     </div>
     <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_BasePath">BaseService.BasePath</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_R">BaseService.R</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_d2r">BaseService.d2r</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_r2d">BaseService.r2d</a>
+    </div>
+    <div>
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_db">BaseService.db</a>
     </div>
     <div>
@@ -103,7 +115,16 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageRequest">BaseService.LanguageRequest</a>
     </div>
     <div>
-      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_GetParam">BaseService.GetParam</a>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_Query">BaseService.Query</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_ValidateQuery_System_ComponentModel_DataAnnotations_ValidationContext_">BaseService.ValidateQuery(ValidationContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_EnhanceQueryStatements__1_System_Object_">BaseService.EnhanceQueryStatements&lt;T&gt;(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_">BaseService.FillQuery(Type, String, Int32, Int32, String, String, String)</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -137,18 +158,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.%23ctor(CSSPModels.GetParam%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L31">View Source</a>
   </span>
   <a id="CSSPServices_TVItemService__ctor_" data-uid="CSSPServices.TVItemService.#ctor*"></a>
-  <h4 id="CSSPServices_TVItemService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.TVItemService.#ctor(CSSPModels.GetParam,CSSPModels.CSSPWebToolsDBContext,System.Int32)">TVItemService(GetParam, CSSPWebToolsDBContext, Int32)</h4>
+  <h4 id="CSSPServices_TVItemService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.TVItemService.#ctor(CSSPModels.Query,CSSPModels.CSSPWebToolsDBContext,System.Int32)">TVItemService(Query, CSSPWebToolsDBContext, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TVItemService(GetParam getParam, CSSPWebToolsDBContext db, int ContactID)</code></pre>
+    <pre><code class="lang-csharp hljs">public TVItemService(Query query, CSSPWebToolsDBContext db, int ContactID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,8 +182,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
+        <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
+        <td><span class="parametername">query</span></td>
         <td></td>
       </tr>
       <tr>
@@ -184,7 +205,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_Add_CSSPModels_TVItem_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.Add(CSSPModels.TVItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L245">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L230">View Source</a>
   </span>
   <a id="CSSPServices_TVItemService_Add_" data-uid="CSSPServices.TVItemService.Add*"></a>
   <h4 id="CSSPServices_TVItemService_Add_CSSPModels_TVItem_" data-uid="CSSPServices.TVItemService.Add(CSSPModels.TVItem)">Add(TVItem)</h4>
@@ -228,181 +249,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_AddChildContactTVItemDB_System_Int32_System_String_CSSPEnums_TVTypeEnum_CSSPModels_TVItem_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.AddChildContactTVItemDB(System.Int32%2CSystem.String%2CCSSPEnums.TVTypeEnum%2CCSSPModels.TVItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceExtra.cs/#L173">View Source</a>
-  </span>
-  <a id="CSSPServices_TVItemService_AddChildContactTVItemDB_" data-uid="CSSPServices.TVItemService.AddChildContactTVItemDB*"></a>
-  <h4 id="CSSPServices_TVItemService_AddChildContactTVItemDB_System_Int32_System_String_CSSPEnums_TVTypeEnum_CSSPModels_TVItem_" data-uid="CSSPServices.TVItemService.AddChildContactTVItemDB(System.Int32,System.String,CSSPEnums.TVTypeEnum,CSSPModels.TVItem)">AddChildContactTVItemDB(Int32, String, TVTypeEnum, TVItem)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AddChildContactTVItemDB(int ParentTVItemID, string TVText, TVTypeEnum TVType, TVItem tvItem)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">ParentTVItemID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">TVText</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a></td>
-        <td><span class="parametername">TVType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPModels.TVItem.html">TVItem</a></td>
-        <td><span class="parametername">tvItem</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_AddChildTVItemDB_System_Int32_System_String_CSSPEnums_TVTypeEnum_CSSPModels_TVItem_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.AddChildTVItemDB(System.Int32%2CSystem.String%2CCSSPEnums.TVTypeEnum%2CCSSPModels.TVItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceExtra.cs/#L97">View Source</a>
-  </span>
-  <a id="CSSPServices_TVItemService_AddChildTVItemDB_" data-uid="CSSPServices.TVItemService.AddChildTVItemDB*"></a>
-  <h4 id="CSSPServices_TVItemService_AddChildTVItemDB_System_Int32_System_String_CSSPEnums_TVTypeEnum_CSSPModels_TVItem_" data-uid="CSSPServices.TVItemService.AddChildTVItemDB(System.Int32,System.String,CSSPEnums.TVTypeEnum,CSSPModels.TVItem)">AddChildTVItemDB(Int32, String, TVTypeEnum, TVItem)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AddChildTVItemDB(int ParentTVItemID, string TVText, TVTypeEnum TVType, TVItem tvItem)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">ParentTVItemID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">TVText</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a></td>
-        <td><span class="parametername">TVType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPModels.TVItem.html">TVItem</a></td>
-        <td><span class="parametername">tvItem</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_AddRoot_CSSPModels_TVItem_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.AddRoot(CSSPModels.TVItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceExtra.cs/#L62">View Source</a>
-  </span>
-  <a id="CSSPServices_TVItemService_AddRoot_" data-uid="CSSPServices.TVItemService.AddRoot*"></a>
-  <h4 id="CSSPServices_TVItemService_AddRoot_CSSPModels_TVItem_" data-uid="CSSPServices.TVItemService.AddRoot(CSSPModels.TVItem)">AddRoot(TVItem)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AddRoot(TVItem tvItem)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.TVItem.html">TVItem</a></td>
-        <td><span class="parametername">tvItem</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_Delete_CSSPModels_TVItem_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.Delete(CSSPModels.TVItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L256">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L241">View Source</a>
   </span>
   <a id="CSSPServices_TVItemService_Delete_" data-uid="CSSPServices.TVItemService.Delete*"></a>
   <h4 id="CSSPServices_TVItemService_Delete_CSSPModels_TVItem_" data-uid="CSSPServices.TVItemService.Delete(CSSPModels.TVItem)">Delete(TVItem)</h4>
@@ -446,18 +296,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetEdit.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetEdit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItem_AList.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItem_AList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L289">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L206">View Source</a>
   </span>
-  <a id="CSSPServices_TVItemService_GetEdit_" data-uid="CSSPServices.TVItemService.GetEdit*"></a>
-  <h4 id="CSSPServices_TVItemService_GetEdit" data-uid="CSSPServices.TVItemService.GetEdit">GetEdit()</h4>
+  <a id="CSSPServices_TVItemService_GetTVItem_AList_" data-uid="CSSPServices.TVItemService.GetTVItem_AList*"></a>
+  <h4 id="CSSPServices_TVItemService_GetTVItem_AList" data-uid="CSSPServices.TVItemService.GetTVItem_AList">GetTVItem_AList()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;TVItem&gt; GetEdit()</code></pre>
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;TVItem_A&gt; GetTVItem_AList()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -469,154 +319,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItem.html">TVItem</a>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItem_A.html">TVItem_A</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetRead.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetRead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItem_AWithTVItemID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItem_AWithTVItemID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L278">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L201">View Source</a>
   </span>
-  <a id="CSSPServices_TVItemService_GetRead_" data-uid="CSSPServices.TVItemService.GetRead*"></a>
-  <h4 id="CSSPServices_TVItemService_GetRead" data-uid="CSSPServices.TVItemService.GetRead">GetRead()</h4>
+  <a id="CSSPServices_TVItemService_GetTVItem_AWithTVItemID_" data-uid="CSSPServices.TVItemService.GetTVItem_AWithTVItemID*"></a>
+  <h4 id="CSSPServices_TVItemService_GetTVItem_AWithTVItemID_System_Int32_" data-uid="CSSPServices.TVItemService.GetTVItem_AWithTVItemID(System.Int32)">GetTVItem_AWithTVItemID(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;TVItem&gt; GetRead()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItem.html">TVItem</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTop_TVItem_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTop_TVItem(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceExtra.cs/#L34">View Source</a>
-  </span>
-  <a id="CSSPServices_TVItemService_GetTop_TVItem_" data-uid="CSSPServices.TVItemService.GetTop_TVItem*"></a>
-  <h4 id="CSSPServices_TVItemService_GetTop_TVItem_System_Int32_" data-uid="CSSPServices.TVItemService.GetTop_TVItem(System.Int32)">GetTop_TVItem(Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;TVItem&gt; GetTop_TVItem(int Take)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">Take</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="CSSPModels.TVItem.html">TVItem</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItemList_CSSPModels_GetParam_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItemList(CSSPModels.GetParam%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L204">View Source</a>
-  </span>
-  <a id="CSSPServices_TVItemService_GetTVItemList_" data-uid="CSSPServices.TVItemService.GetTVItemList*"></a>
-  <h4 id="CSSPServices_TVItemService_GetTVItemList_CSSPModels_GetParam_System_String_" data-uid="CSSPServices.TVItemService.GetTVItemList(CSSPModels.GetParam,System.String)">GetTVItemList(GetParam, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;TVItem&gt; GetTVItemList(GetParam getParam, string FilterAndOrderText = &quot;&quot;)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FilterAndOrderText</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItem.html">TVItem</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItemWithTVItemID_System_Int32_CSSPModels_GetParam_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItemWithTVItemID(System.Int32%2CCSSPModels.GetParam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L186">View Source</a>
-  </span>
-  <a id="CSSPServices_TVItemService_GetTVItemWithTVItemID_" data-uid="CSSPServices.TVItemService.GetTVItemWithTVItemID*"></a>
-  <h4 id="CSSPServices_TVItemService_GetTVItemWithTVItemID_System_Int32_CSSPModels_GetParam_" data-uid="CSSPServices.TVItemService.GetTVItemWithTVItemID(System.Int32,CSSPModels.GetParam)">GetTVItemWithTVItemID(Int32, GetParam)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TVItem GetTVItemWithTVItemID(int TVItemID, GetParam getParam)</code></pre>
+    <pre><code class="lang-csharp hljs">public TVItem_A GetTVItem_AWithTVItemID(int TVItemID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -633,9 +354,158 @@
         <td><span class="parametername">TVItemID</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.TVItem_A.html">TVItem_A</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItem_BList.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItem_BList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L219">View Source</a>
+  </span>
+  <a id="CSSPServices_TVItemService_GetTVItem_BList_" data-uid="CSSPServices.TVItemService.GetTVItem_BList*"></a>
+  <h4 id="CSSPServices_TVItemService_GetTVItem_BList" data-uid="CSSPServices.TVItemService.GetTVItem_BList">GetTVItem_BList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;TVItem_B&gt; GetTVItem_BList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItem_B.html">TVItem_B</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItem_BWithTVItemID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItem_BWithTVItemID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L214">View Source</a>
+  </span>
+  <a id="CSSPServices_TVItemService_GetTVItem_BWithTVItemID_" data-uid="CSSPServices.TVItemService.GetTVItem_BWithTVItemID*"></a>
+  <h4 id="CSSPServices_TVItemService_GetTVItem_BWithTVItemID_System_Int32_" data-uid="CSSPServices.TVItemService.GetTVItem_BWithTVItemID(System.Int32)">GetTVItem_BWithTVItemID(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TVItem_B GetTVItem_BWithTVItemID(int TVItemID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">TVItemID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.TVItem_B.html">TVItem_B</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItemList.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItemList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L193">View Source</a>
+  </span>
+  <a id="CSSPServices_TVItemService_GetTVItemList_" data-uid="CSSPServices.TVItemService.GetTVItemList*"></a>
+  <h4 id="CSSPServices_TVItemService_GetTVItemList" data-uid="CSSPServices.TVItemService.GetTVItemList">GetTVItemList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;TVItem&gt; GetTVItemList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItem.html">TVItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_GetTVItemWithTVItemID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.GetTVItemWithTVItemID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L186">View Source</a>
+  </span>
+  <a id="CSSPServices_TVItemService_GetTVItemWithTVItemID_" data-uid="CSSPServices.TVItemService.GetTVItemWithTVItemID*"></a>
+  <h4 id="CSSPServices_TVItemService_GetTVItemWithTVItemID_System_Int32_" data-uid="CSSPServices.TVItemService.GetTVItemWithTVItemID(System.Int32)">GetTVItemWithTVItemID(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TVItem GetTVItemWithTVItemID(int TVItemID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">TVItemID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -660,7 +530,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_Update_CSSPModels_TVItem_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.Update(CSSPModels.TVItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L267">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L252">View Source</a>
   </span>
   <a id="CSSPServices_TVItemService_Update_" data-uid="CSSPServices.TVItemService.Update*"></a>
   <h4 id="CSSPServices_TVItemService_Update_CSSPModels_TVItem_" data-uid="CSSPServices.TVItemService.Update(CSSPModels.TVItem)">Update(TVItem)</h4>
@@ -707,7 +577,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L38">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L38">View Source</a>
   </span>
   <a id="CSSPServices_TVItemService_Validate_" data-uid="CSSPServices.TVItemService.Validate*"></a>
   <h4 id="CSSPServices_TVItemService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.TVItemService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
@@ -765,7 +635,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemService.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/TVItemServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

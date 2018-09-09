@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ContactService
    ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,6 +88,18 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageListAllowable">BaseService.LanguageListAllowable</a>
     </div>
     <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_BasePath">BaseService.BasePath</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_R">BaseService.R</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_d2r">BaseService.d2r</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_r2d">BaseService.r2d</a>
+    </div>
+    <div>
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_db">BaseService.db</a>
     </div>
     <div>
@@ -103,7 +115,16 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageRequest">BaseService.LanguageRequest</a>
     </div>
     <div>
-      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_GetParam">BaseService.GetParam</a>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_Query">BaseService.Query</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_ValidateQuery_System_ComponentModel_DataAnnotations_ValidationContext_">BaseService.ValidateQuery(ValidationContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_EnhanceQueryStatements__1_System_Object_">BaseService.EnhanceQueryStatements&lt;T&gt;(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_">BaseService.FillQuery(Type, String, Int32, Int32, String, String, String)</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -137,18 +158,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.%23ctor(CSSPModels.GetParam%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L31">View Source</a>
   </span>
   <a id="CSSPServices_ContactService__ctor_" data-uid="CSSPServices.ContactService.#ctor*"></a>
-  <h4 id="CSSPServices_ContactService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.ContactService.#ctor(CSSPModels.GetParam,CSSPModels.CSSPWebToolsDBContext,System.Int32)">ContactService(GetParam, CSSPWebToolsDBContext, Int32)</h4>
+  <h4 id="CSSPServices_ContactService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.ContactService.#ctor(CSSPModels.Query,CSSPModels.CSSPWebToolsDBContext,System.Int32)">ContactService(Query, CSSPWebToolsDBContext, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ContactService(GetParam getParam, CSSPWebToolsDBContext db, int ContactID)</code></pre>
+    <pre><code class="lang-csharp hljs">public ContactService(Query query, CSSPWebToolsDBContext db, int ContactID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,8 +182,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
+        <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
+        <td><span class="parametername">query</span></td>
         <td></td>
       </tr>
       <tr>
@@ -184,7 +205,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_Add_CSSPModels_Contact_CSSPEnums_AddContactTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.Add(CSSPModels.Contact%2CCSSPEnums.AddContactTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L284">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L269">View Source</a>
   </span>
   <a id="CSSPServices_ContactService_Add_" data-uid="CSSPServices.ContactService.Add*"></a>
   <h4 id="CSSPServices_ContactService_Add_CSSPModels_Contact_CSSPEnums_AddContactTypeEnum_" data-uid="CSSPServices.ContactService.Add(CSSPModels.Contact,CSSPEnums.AddContactTypeEnum)">Add(Contact, AddContactTypeEnum)</h4>
@@ -233,520 +254,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_AddContact_CSSPModels_Contact_CSSPEnums_AddContactTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.AddContact(CSSPModels.Contact%2CCSSPEnums.AddContactTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L1002">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_AddContact_" data-uid="CSSPServices.ContactService.AddContact*"></a>
-  <h4 id="CSSPServices_ContactService_AddContact_CSSPModels_Contact_CSSPEnums_AddContactTypeEnum_" data-uid="CSSPServices.ContactService.AddContact(CSSPModels.Contact,CSSPEnums.AddContactTypeEnum)">AddContact(Contact, AddContactTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AddContact(Contact contact, AddContactTypeEnum addContactType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.Contact.html">Contact</a></td>
-        <td><span class="parametername">contact</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.AddContactTypeEnum.html">AddContactTypeEnum</a></td>
-        <td><span class="parametername">addContactType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_AddTVTypeUserAuthorization_CSSPModels_TVTypeUserAuthorization_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.AddTVTypeUserAuthorization(CSSPModels.TVTypeUserAuthorization)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L566">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_AddTVTypeUserAuthorization_" data-uid="CSSPServices.ContactService.AddTVTypeUserAuthorization*"></a>
-  <h4 id="CSSPServices_ContactService_AddTVTypeUserAuthorization_CSSPModels_TVTypeUserAuthorization_" data-uid="CSSPServices.ContactService.AddTVTypeUserAuthorization(CSSPModels.TVTypeUserAuthorization)">AddTVTypeUserAuthorization(TVTypeUserAuthorization)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string AddTVTypeUserAuthorization(TVTypeUserAuthorization tvTypeUserAuthorizationNew)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.TVTypeUserAuthorization.html">TVTypeUserAuthorization</a></td>
-        <td><span class="parametername">tvTypeUserAuthorizationNew</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CheckCodeEmailExistDB_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CheckCodeEmailExistDB(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L299">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CheckCodeEmailExistDB_" data-uid="CSSPServices.ContactService.CheckCodeEmailExistDB*"></a>
-  <h4 id="CSSPServices_ContactService_CheckCodeEmailExistDB_System_String_" data-uid="CSSPServices.ContactService.CheckCodeEmailExistDB(System.String)">CheckCodeEmailExistDB(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CheckCodeEmailExistDB(string CodeEmail)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">CodeEmail</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CheckEmailExistDB_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CheckEmailExistDB(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L348">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CheckEmailExistDB_" data-uid="CSSPServices.ContactService.CheckEmailExistDB*"></a>
-  <h4 id="CSSPServices_ContactService_CheckEmailExistDB_System_String_" data-uid="CSSPServices.ContactService.CheckEmailExistDB(System.String)">CheckEmailExistDB(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CheckEmailExistDB(string Email)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Email</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CheckEmailUniquenessDB_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CheckEmailUniquenessDB(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L378">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CheckEmailUniquenessDB_" data-uid="CSSPServices.ContactService.CheckEmailUniquenessDB*"></a>
-  <h4 id="CSSPServices_ContactService_CheckEmailUniquenessDB_System_String_" data-uid="CSSPServices.ContactService.CheckEmailUniquenessDB(System.String)">CheckEmailUniquenessDB(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CheckEmailUniquenessDB(string Email)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Email</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CheckFullNameUniquenessDB_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CheckFullNameUniquenessDB(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L408">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CheckFullNameUniquenessDB_" data-uid="CSSPServices.ContactService.CheckFullNameUniquenessDB*"></a>
-  <h4 id="CSSPServices_ContactService_CheckFullNameUniquenessDB_System_String_" data-uid="CSSPServices.ContactService.CheckFullNameUniquenessDB(System.String)">CheckFullNameUniquenessDB(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CheckFullNameUniquenessDB(string FullName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FullName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CheckWebNameUniquenessDB_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CheckWebNameUniquenessDB(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L466">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CheckWebNameUniquenessDB_" data-uid="CSSPServices.ContactService.CheckWebNameUniquenessDB*"></a>
-  <h4 id="CSSPServices_ContactService_CheckWebNameUniquenessDB_System_String_" data-uid="CSSPServices.ContactService.CheckWebNameUniquenessDB(System.String)">CheckWebNameUniquenessDB(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CheckWebNameUniquenessDB(string WebName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">WebName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_ContactTVItemIDIsBeingUsed_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.ContactTVItemIDIsBeingUsed(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L589">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_ContactTVItemIDIsBeingUsed_" data-uid="CSSPServices.ContactService.ContactTVItemIDIsBeingUsed*"></a>
-  <h4 id="CSSPServices_ContactService_ContactTVItemIDIsBeingUsed_System_Int32_" data-uid="CSSPServices.ContactService.ContactTVItemIDIsBeingUsed(System.Int32)">ContactTVItemIDIsBeingUsed(Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ContactTVItemIDIsBeingUsed(int ContactTVItemID)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">ContactTVItemID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CreateTVText_CSSPModels_Contact_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CreateTVText(CSSPModels.Contact)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L617">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CreateTVText_" data-uid="CSSPServices.ContactService.CreateTVText*"></a>
-  <h4 id="CSSPServices_ContactService_CreateTVText_CSSPModels_Contact_" data-uid="CSSPServices.ContactService.CreateTVText(CSSPModels.Contact)">CreateTVText(Contact)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CreateTVText(Contact contact)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.Contact.html">Contact</a></td>
-        <td><span class="parametername">contact</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CreateUniquePassword.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CreateUniquePassword%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L621">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CreateUniquePassword_" data-uid="CSSPServices.ContactService.CreateUniquePassword*"></a>
-  <h4 id="CSSPServices_ContactService_CreateUniquePassword" data-uid="CSSPServices.ContactService.CreateUniquePassword">CreateUniquePassword()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CreateUniquePassword()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_CreateUniqueWebName_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.CreateUniqueWebName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L632">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_CreateUniqueWebName_" data-uid="CSSPServices.ContactService.CreateUniqueWebName*"></a>
-  <h4 id="CSSPServices_ContactService_CreateUniqueWebName_System_String_System_String_" data-uid="CSSPServices.ContactService.CreateUniqueWebName(System.String,System.String)">CreateUniqueWebName(String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CreateUniqueWebName(string FirstName, string LastName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FirstName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LastName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_Delete_CSSPModels_Contact_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.Delete(CSSPModels.Contact)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L295">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L280">View Source</a>
   </span>
   <a id="CSSPServices_ContactService_Delete_" data-uid="CSSPServices.ContactService.Delete*"></a>
   <h4 id="CSSPServices_ContactService_Delete_CSSPModels_Contact_" data-uid="CSSPServices.ContactService.Delete(CSSPModels.Contact)">Delete(Contact)</h4>
@@ -790,18 +301,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GenerateUniqueCodeForResetPasswordDB.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GenerateUniqueCodeForResetPasswordDB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContact_AList.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContact_AList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L662">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L245">View Source</a>
   </span>
-  <a id="CSSPServices_ContactService_GenerateUniqueCodeForResetPasswordDB_" data-uid="CSSPServices.ContactService.GenerateUniqueCodeForResetPasswordDB*"></a>
-  <h4 id="CSSPServices_ContactService_GenerateUniqueCodeForResetPasswordDB" data-uid="CSSPServices.ContactService.GenerateUniqueCodeForResetPasswordDB">GenerateUniqueCodeForResetPasswordDB()</h4>
+  <a id="CSSPServices_ContactService_GetContact_AList_" data-uid="CSSPServices.ContactService.GetContact_AList*"></a>
+  <h4 id="CSSPServices_ContactService_GetContact_AList" data-uid="CSSPServices.ContactService.GetContact_AList">GetContact_AList()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GenerateUniqueCodeForResetPasswordDB()</code></pre>
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact_A&gt; GetContact_AList()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -813,263 +324,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.Contact_A.html">Contact_A</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetAdminContactListDB.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetAdminContactListDB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContact_AWithContactID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContact_AWithContactID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L494">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L240">View Source</a>
   </span>
-  <a id="CSSPServices_ContactService_GetAdminContactListDB_" data-uid="CSSPServices.ContactService.GetAdminContactListDB*"></a>
-  <h4 id="CSSPServices_ContactService_GetAdminContactListDB" data-uid="CSSPServices.ContactService.GetAdminContactListDB">GetAdminContactListDB()</h4>
+  <a id="CSSPServices_ContactService_GetContact_AWithContactID_" data-uid="CSSPServices.ContactService.GetContact_AWithContactID*"></a>
+  <h4 id="CSSPServices_ContactService_GetContact_AWithContactID_System_Int32_" data-uid="CSSPServices.ContactService.GetContact_AWithContactID(System.Int32)">GetContact_AWithContactID(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact&gt; GetAdminContactListDB()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.Contact.html">Contact</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetBodyForSendEmailWithCode_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetBodyForSendEmailWithCode(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L675">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetBodyForSendEmailWithCode_" data-uid="CSSPServices.ContactService.GetBodyForSendEmailWithCode*"></a>
-  <h4 id="CSSPServices_ContactService_GetBodyForSendEmailWithCode_System_String_System_String_" data-uid="CSSPServices.ContactService.GetBodyForSendEmailWithCode(System.String,System.String)">GetBodyForSendEmailWithCode(String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetBodyForSendEmailWithCode(string Email, string Code)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Email</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Code</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetBodyOfCreateNewContactAndEmail_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetBodyOfCreateNewContactAndEmail(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L686">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetBodyOfCreateNewContactAndEmail_" data-uid="CSSPServices.ContactService.GetBodyOfCreateNewContactAndEmail*"></a>
-  <h4 id="CSSPServices_ContactService_GetBodyOfCreateNewContactAndEmail_System_String_System_String_System_String_" data-uid="CSSPServices.ContactService.GetBodyOfCreateNewContactAndEmail(System.String,System.String,System.String)">GetBodyOfCreateNewContactAndEmail(String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetBodyOfCreateNewContactAndEmail(string FullNameLoggedIn, string FullNameAdded, string CreatorEmail)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FullNameLoggedIn</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FullNameAdded</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">CreatorEmail</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContactAndTelEmailAddressListWithContactTVItemIDDB_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContactAndTelEmailAddressListWithContactTVItemIDDB(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L503">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetContactAndTelEmailAddressListWithContactTVItemIDDB_" data-uid="CSSPServices.ContactService.GetContactAndTelEmailAddressListWithContactTVItemIDDB*"></a>
-  <h4 id="CSSPServices_ContactService_GetContactAndTelEmailAddressListWithContactTVItemIDDB_System_Int32_" data-uid="CSSPServices.ContactService.GetContactAndTelEmailAddressListWithContactTVItemIDDB(System.Int32)">GetContactAndTelEmailAddressListWithContactTVItemIDDB(Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact&gt; GetContactAndTelEmailAddressListWithContactTVItemIDDB(int ContactTVItemID)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">ContactTVItemID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.Contact.html">Contact</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContactList_CSSPModels_GetParam_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContactList(CSSPModels.GetParam%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L243">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetContactList_" data-uid="CSSPServices.ContactService.GetContactList*"></a>
-  <h4 id="CSSPServices_ContactService_GetContactList_CSSPModels_GetParam_System_String_" data-uid="CSSPServices.ContactService.GetContactList(CSSPModels.GetParam,System.String)">GetContactList(GetParam, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact&gt; GetContactList(GetParam getParam, string FilterAndOrderText = &quot;&quot;)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FilterAndOrderText</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.Contact.html">Contact</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContactWithContactID_System_Int32_CSSPModels_GetParam_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContactWithContactID(System.Int32%2CCSSPModels.GetParam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L225">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetContactWithContactID_" data-uid="CSSPServices.ContactService.GetContactWithContactID*"></a>
-  <h4 id="CSSPServices_ContactService_GetContactWithContactID_System_Int32_CSSPModels_GetParam_" data-uid="CSSPServices.ContactService.GetContactWithContactID(System.Int32,CSSPModels.GetParam)">GetContactWithContactID(Int32, GetParam)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Contact GetContactWithContactID(int ContactID, GetParam getParam)</code></pre>
+    <pre><code class="lang-csharp hljs">public Contact_A GetContact_AWithContactID(int ContactID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1086,9 +359,81 @@
         <td><span class="parametername">ContactID</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.Contact_A.html">Contact_A</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContact_BList.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContact_BList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L258">View Source</a>
+  </span>
+  <a id="CSSPServices_ContactService_GetContact_BList_" data-uid="CSSPServices.ContactService.GetContact_BList*"></a>
+  <h4 id="CSSPServices_ContactService_GetContact_BList" data-uid="CSSPServices.ContactService.GetContact_BList">GetContact_BList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact_B&gt; GetContact_BList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.Contact_B.html">Contact_B</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContact_BWithContactID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContact_BWithContactID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L253">View Source</a>
+  </span>
+  <a id="CSSPServices_ContactService_GetContact_BWithContactID_" data-uid="CSSPServices.ContactService.GetContact_BWithContactID*"></a>
+  <h4 id="CSSPServices_ContactService_GetContact_BWithContactID_System_Int32_" data-uid="CSSPServices.ContactService.GetContact_BWithContactID(System.Int32)">GetContact_BWithContactID(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Contact_B GetContact_BWithContactID(int ContactID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ContactID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1103,25 +448,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPModels.Contact.html">Contact</a></td>
+        <td><a class="xref" href="CSSPModels.Contact_B.html">Contact_B</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetEdit.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetEdit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContactList.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContactList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L328">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L232">View Source</a>
   </span>
-  <a id="CSSPServices_ContactService_GetEdit_" data-uid="CSSPServices.ContactService.GetEdit*"></a>
-  <h4 id="CSSPServices_ContactService_GetEdit" data-uid="CSSPServices.ContactService.GetEdit">GetEdit()</h4>
+  <a id="CSSPServices_ContactService_GetContactList_" data-uid="CSSPServices.ContactService.GetContactList*"></a>
+  <h4 id="CSSPServices_ContactService_GetContactList" data-uid="CSSPServices.ContactService.GetContactList">GetContactList()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact&gt; GetEdit()</code></pre>
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact&gt; GetContactList()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1140,78 +485,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetFirstLettersOfLastNameDB.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetFirstLettersOfLastNameDB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetContactWithContactID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetContactWithContactID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L536">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L225">View Source</a>
   </span>
-  <a id="CSSPServices_ContactService_GetFirstLettersOfLastNameDB_" data-uid="CSSPServices.ContactService.GetFirstLettersOfLastNameDB*"></a>
-  <h4 id="CSSPServices_ContactService_GetFirstLettersOfLastNameDB" data-uid="CSSPServices.ContactService.GetFirstLettersOfLastNameDB">GetFirstLettersOfLastNameDB()</h4>
+  <a id="CSSPServices_ContactService_GetContactWithContactID_" data-uid="CSSPServices.ContactService.GetContactWithContactID*"></a>
+  <h4 id="CSSPServices_ContactService_GetContactWithContactID_System_Int32_" data-uid="CSSPServices.ContactService.GetContactWithContactID(System.Int32)">GetContactWithContactID(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetFirstLettersOfLastNameDB()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetRead.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetRead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L317">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetRead_" data-uid="CSSPServices.ContactService.GetRead*"></a>
-  <h4 id="CSSPServices_ContactService_GetRead" data-uid="CSSPServices.ContactService.GetRead">GetRead()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;Contact&gt; GetRead()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.Contact.html">Contact</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetResetPasswordWithEmail_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetResetPasswordWithEmail(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L556">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetResetPasswordWithEmail_" data-uid="CSSPServices.ContactService.GetResetPasswordWithEmail*"></a>
-  <h4 id="CSSPServices_ContactService_GetResetPasswordWithEmail_System_String_" data-uid="CSSPServices.ContactService.GetResetPasswordWithEmail(System.String)">GetResetPasswordWithEmail(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ResetPassword&gt; GetResetPasswordWithEmail(string LoginEmail)</code></pre>
+    <pre><code class="lang-csharp hljs">public Contact GetContactWithContactID(int ContactID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1223,195 +508,9 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LoginEmail</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="CSSPModels.ResetPassword.html">ResetPassword</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetResetPasswordWithExpireDate_LocalSmallerThanToday.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetResetPasswordWithExpireDate_LocalSmallerThanToday%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L548">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetResetPasswordWithExpireDate_LocalSmallerThanToday_" data-uid="CSSPServices.ContactService.GetResetPasswordWithExpireDate_LocalSmallerThanToday*"></a>
-  <h4 id="CSSPServices_ContactService_GetResetPasswordWithExpireDate_LocalSmallerThanToday" data-uid="CSSPServices.ContactService.GetResetPasswordWithExpireDate_LocalSmallerThanToday">GetResetPasswordWithExpireDate_LocalSmallerThanToday()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ResetPassword&gt; GetResetPasswordWithExpireDate_LocalSmallerThanToday()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="CSSPModels.ResetPassword.html">ResetPassword</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_GetSubjectOfCreateNewContactAndEmail_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.GetSubjectOfCreateNewContactAndEmail(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L697">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_GetSubjectOfCreateNewContactAndEmail_" data-uid="CSSPServices.ContactService.GetSubjectOfCreateNewContactAndEmail*"></a>
-  <h4 id="CSSPServices_ContactService_GetSubjectOfCreateNewContactAndEmail_System_String_System_String_System_String_" data-uid="CSSPServices.ContactService.GetSubjectOfCreateNewContactAndEmail(System.String,System.String,System.String)">GetSubjectOfCreateNewContactAndEmail(String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetSubjectOfCreateNewContactAndEmail(string FullNameLoggedIn, string FullNameAdded, string CreatorEmail)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FullNameLoggedIn</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FullNameAdded</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">CreatorEmail</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_SendEmail_System_Net_Mail_MailMessage_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.SendEmail(System.Net.Mail.MailMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L1543">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_SendEmail_" data-uid="CSSPServices.ContactService.SendEmail*"></a>
-  <h4 id="CSSPServices_ContactService_SendEmail_System_Net_Mail_MailMessage_" data-uid="CSSPServices.ContactService.SendEmail(System.Net.Mail.MailMessage)">SendEmail(MailMessage)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SendEmail(MailMessage mail)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.Mail.MailMessage</span></td>
-        <td><span class="parametername">mail</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_SetAddProvinceDB_CSSPModels_Contact_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.SetAddProvinceDB(CSSPModels.Contact%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L1416">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_SetAddProvinceDB_" data-uid="CSSPServices.ContactService.SetAddProvinceDB*"></a>
-  <h4 id="CSSPServices_ContactService_SetAddProvinceDB_CSSPModels_Contact_System_Int32_" data-uid="CSSPServices.ContactService.SetAddProvinceDB(CSSPModels.Contact,System.Int32)">SetAddProvinceDB(Contact, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SetAddProvinceDB(Contact contact, int ProvinceTVItemID)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.Contact.html">Contact</a></td>
-        <td><span class="parametername">contact</span></td>
-        <td></td>
-      </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">ProvinceTVItemID</span></td>
+        <td><span class="parametername">ContactID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1421,163 +520,12 @@
     <thead>
       <tr>
         <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_SetContactDisabledOrEnableForContactDB_CSSPModels_Contact_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.SetContactDisabledOrEnableForContactDB(CSSPModels.Contact)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L1348">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_SetContactDisabledOrEnableForContactDB_" data-uid="CSSPServices.ContactService.SetContactDisabledOrEnableForContactDB*"></a>
-  <h4 id="CSSPServices_ContactService_SetContactDisabledOrEnableForContactDB_CSSPModels_Contact_" data-uid="CSSPServices.ContactService.SetContactDisabledOrEnableForContactDB(CSSPModels.Contact)">SetContactDisabledOrEnableForContactDB(Contact)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SetContactDisabledOrEnableForContactDB(Contact contact)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.Contact.html">Contact</a></td>
-        <td><span class="parametername">contact</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_SetRemoveProvinceDB_CSSPModels_Contact_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.SetRemoveProvinceDB(CSSPModels.Contact%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L1387">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_SetRemoveProvinceDB_" data-uid="CSSPServices.ContactService.SetRemoveProvinceDB*"></a>
-  <h4 id="CSSPServices_ContactService_SetRemoveProvinceDB_CSSPModels_Contact_System_Int32_" data-uid="CSSPServices.ContactService.SetRemoveProvinceDB(CSSPModels.Contact,System.Int32)">SetRemoveProvinceDB(Contact, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SetRemoveProvinceDB(Contact contact, int ProvinceTVItemID)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.Contact.html">Contact</a></td>
-        <td><span class="parametername">contact</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">ProvinceTVItemID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_TryToSendEmailDB_CSSPModels_ResetPassword_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.TryToSendEmailDB(CSSPModels.ResetPassword%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceExtra.cs/#L1446">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactService_TryToSendEmailDB_" data-uid="CSSPServices.ContactService.TryToSendEmailDB*"></a>
-  <h4 id="CSSPServices_ContactService_TryToSendEmailDB_CSSPModels_ResetPassword_System_String_" data-uid="CSSPServices.ContactService.TryToSendEmailDB(CSSPModels.ResetPassword,System.String)">TryToSendEmailDB(ResetPassword, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryToSendEmailDB(ResetPassword resetPassword, string LoginEmail)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.ResetPassword.html">ResetPassword</a></td>
-        <td><span class="parametername">resetPassword</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LoginEmail</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1587,7 +535,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_Update_CSSPModels_Contact_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.Update(CSSPModels.Contact)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L306">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L291">View Source</a>
   </span>
   <a id="CSSPServices_ContactService_Update_" data-uid="CSSPServices.ContactService.Update*"></a>
   <h4 id="CSSPServices_ContactService_Update_CSSPModels_Contact_" data-uid="CSSPServices.ContactService.Update(CSSPModels.Contact)">Update(Contact)</h4>
@@ -1634,7 +582,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_CSSPEnums_AddContactTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum%2CCSSPEnums.AddContactTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L38">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L38">View Source</a>
   </span>
   <a id="CSSPServices_ContactService_Validate_" data-uid="CSSPServices.ContactService.Validate*"></a>
   <h4 id="CSSPServices_ContactService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_CSSPEnums_AddContactTypeEnum_" data-uid="CSSPServices.ContactService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum,CSSPEnums.AddContactTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum, AddContactTypeEnum)</h4>
@@ -1697,7 +645,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactService.md&amp;value=---%0Auid%3A%20CSSPServices.ContactService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/ContactServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

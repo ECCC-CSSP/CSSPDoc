@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BoxModel
    ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,13 @@
   
   <h1 id="CSSPModels_BoxModel" data-uid="CSSPModels.BoxModel" class="text-break">Class BoxModel
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>DB properties for table BoxModels</strong> : <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID">BoxModelID</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID">InfrastructureTVItemID</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_Flow_m3_day">Flow_m3_day</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m">Depth_m</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C">Temperature_C</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution">Dilution</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day">DecayRate_per_day</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml">FCUntreated_MPN_100ml</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml">FCPreDisinfection_MPN_100ml</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml">Concentration_MPN_100ml</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour">T90_hour</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_FlowDuration_hour">FlowDuration_hour</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateDate_UTC">LastUpdateDate_UTC</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactTVItemID">LastUpdateContactTVItemID</a>, </p>
+<p><strong>Other properties</strong> : <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_HasErrors">HasErrors</a>, <a href="CSSPModels.BoxModel.html#CSSPModels_BoxModel_ValidationResults">ValidationResults</a>, </p>
+
+<p><strong>Used by <a href="CSSPServices.html">CSSPServices</a></strong> : <a href="CSSPServices.BoxModelService.html">BoxModelService</a></p>
+<p><strong>Return to <a href="CSSPModels.html">CSSPModels</a></strong></p>
+</div>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -81,6 +87,7 @@
     <div class="level1"><a class="xref" href="CSSPModels.Error.html">Error</a></div>
     <div class="level2"><a class="xref" href="CSSPModels.LastUpdate.html">LastUpdate</a></div>
     <div class="level3"><span class="xref">BoxModel</span></div>
+      <div class="level4"><a class="xref" href="CSSPModels.BoxModel_A.html">BoxModel_A</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -131,7 +138,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L52">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L112">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel__ctor_" data-uid="CSSPModels.BoxModel.#ctor*"></a>
   <h4 id="CSSPModels_BoxModel__ctor" data-uid="CSSPModels.BoxModel.#ctor">BoxModel()</h4>
@@ -148,7 +155,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_BoxModelID.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.BoxModelID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L12">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L30">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_BoxModelID_" data-uid="CSSPModels.BoxModel.BoxModelID*"></a>
   <h4 id="CSSPModels_BoxModel_BoxModelID" data-uid="CSSPModels.BoxModel.BoxModelID">BoxModelID</h4>
@@ -176,72 +183,10 @@ public int BoxModelID { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_BoxModelReport.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.BoxModelReport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L46">View Source</a>
-  </span>
-  <a id="CSSPModels_BoxModel_BoxModelReport_" data-uid="CSSPModels.BoxModel.BoxModelReport*"></a>
-  <h4 id="CSSPModels_BoxModel_BoxModelReport" data-uid="CSSPModels.BoxModel.BoxModelReport">BoxModelReport</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public BoxModelReport BoxModelReport { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.BoxModelReport.html">BoxModelReport</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_BoxModelWeb.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.BoxModelWeb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L43">View Source</a>
-  </span>
-  <a id="CSSPModels_BoxModel_BoxModelWeb_" data-uid="CSSPModels.BoxModel.BoxModelWeb*"></a>
-  <h4 id="CSSPModels_BoxModel_BoxModelWeb" data-uid="CSSPModels.BoxModel.BoxModelWeb">BoxModelWeb</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public BoxModelWeb BoxModelWeb { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CSSPModels.BoxModelWeb.html">BoxModelWeb</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_Concentration_MPN_100ml.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.Concentration_MPN_100ml%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L34">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L91">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_Concentration_MPN_100ml_" data-uid="CSSPModels.BoxModel.Concentration_MPN_100ml*"></a>
   <h4 id="CSSPModels_BoxModel_Concentration_MPN_100ml" data-uid="CSSPModels.BoxModel.Concentration_MPN_100ml">Concentration_MPN_100ml</h4>
@@ -272,7 +217,7 @@ public int Concentration_MPN_100ml { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_DecayRate_per_day.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.DecayRate_per_day%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L28">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L73">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_DecayRate_per_day_" data-uid="CSSPModels.BoxModel.DecayRate_per_day*"></a>
   <h4 id="CSSPModels_BoxModel_DecayRate_per_day" data-uid="CSSPModels.BoxModel.DecayRate_per_day">DecayRate_per_day</h4>
@@ -303,7 +248,7 @@ public double DecayRate_per_day { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_Depth_m.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.Depth_m%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L22">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L55">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_Depth_m_" data-uid="CSSPModels.BoxModel.Depth_m*"></a>
   <h4 id="CSSPModels_BoxModel_Depth_m" data-uid="CSSPModels.BoxModel.Depth_m">Depth_m</h4>
@@ -334,7 +279,7 @@ public double Depth_m { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_Dilution.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.Dilution%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L26">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L67">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_Dilution_" data-uid="CSSPModels.BoxModel.Dilution*"></a>
   <h4 id="CSSPModels_BoxModel_Dilution" data-uid="CSSPModels.BoxModel.Dilution">Dilution</h4>
@@ -365,7 +310,7 @@ public int Dilution { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.FCPreDisinfection_MPN_100ml%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L32">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L85">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml_" data-uid="CSSPModels.BoxModel.FCPreDisinfection_MPN_100ml*"></a>
   <h4 id="CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml" data-uid="CSSPModels.BoxModel.FCPreDisinfection_MPN_100ml">FCPreDisinfection_MPN_100ml</h4>
@@ -396,7 +341,7 @@ public int FCPreDisinfection_MPN_100ml { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_FCUntreated_MPN_100ml.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.FCUntreated_MPN_100ml%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L30">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L79">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_FCUntreated_MPN_100ml_" data-uid="CSSPModels.BoxModel.FCUntreated_MPN_100ml*"></a>
   <h4 id="CSSPModels_BoxModel_FCUntreated_MPN_100ml" data-uid="CSSPModels.BoxModel.FCUntreated_MPN_100ml">FCUntreated_MPN_100ml</h4>
@@ -427,7 +372,7 @@ public int FCUntreated_MPN_100ml { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_Flow_m3_day.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.Flow_m3_day%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L20">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L49">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_Flow_m3_day_" data-uid="CSSPModels.BoxModel.Flow_m3_day*"></a>
   <h4 id="CSSPModels_BoxModel_Flow_m3_day" data-uid="CSSPModels.BoxModel.Flow_m3_day">Flow_m3_day</h4>
@@ -458,7 +403,7 @@ public double Flow_m3_day { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_FlowDuration_hour.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.FlowDuration_hour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L38">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L103">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_FlowDuration_hour_" data-uid="CSSPModels.BoxModel.FlowDuration_hour*"></a>
   <h4 id="CSSPModels_BoxModel_FlowDuration_hour" data-uid="CSSPModels.BoxModel.FlowDuration_hour">FlowDuration_hour</h4>
@@ -489,11 +434,16 @@ public double FlowDuration_hour { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_InfrastructureTVItemID.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.InfrastructureTVItemID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L18">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L43">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_InfrastructureTVItemID_" data-uid="CSSPModels.BoxModel.InfrastructureTVItemID*"></a>
   <h4 id="CSSPModels_BoxModel_InfrastructureTVItemID" data-uid="CSSPModels.BoxModel.InfrastructureTVItemID">InfrastructureTVItemID</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><div class="NOTE"><h5>Note</h5><p><strong>Other custom attributes</strong></p>
+<p><strong>AllowableTVTypeList is of type <a href="CSSPEnums.TVTypeEnum.html">CSSPEnums.TVTypeEnum</a></strong></p>
+<p>10 == Infrastructure</p>
+<p>[<a href="CSSPModels.CSSPExistAttribute.html">CSSPExist</a>(ExistTypeName = &quot;TVItem&quot;, ExistPlurial = &quot;s&quot;, ExistFieldID = &quot;TVItemID&quot;, AllowableTVTypeList = &quot;10&quot;)]</p>
+</div>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -519,7 +469,7 @@ public double FlowDuration_hour { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_T90_hour.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.T90_hour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L36">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L97">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_T90_hour_" data-uid="CSSPModels.BoxModel.T90_hour*"></a>
   <h4 id="CSSPModels_BoxModel_T90_hour" data-uid="CSSPModels.BoxModel.T90_hour">T90_hour</h4>
@@ -550,7 +500,7 @@ public double T90_hour { get; set; }</code></pre>
     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel_Temperature_C.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel.Temperature_C%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L24">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L61">View Source</a>
   </span>
   <a id="CSSPModels_BoxModel_Temperature_C_" data-uid="CSSPModels.BoxModel.Temperature_C*"></a>
   <h4 id="CSSPModels_BoxModel_Temperature_C" data-uid="CSSPModels.BoxModel.Temperature_C">Temperature_C</h4>
@@ -587,7 +537,7 @@ public double Temperature_C { get; set; }</code></pre>
                     <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_BoxModel.md&amp;value=---%0Auid%3A%20CSSPModels.BoxModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/src/BoxModel.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/srcWithDoc/BoxModelGenerated.cs/#L27" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

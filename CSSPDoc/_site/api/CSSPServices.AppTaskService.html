@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AppTaskService
    ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.39.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,6 +88,18 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageListAllowable">BaseService.LanguageListAllowable</a>
     </div>
     <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_BasePath">BaseService.BasePath</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_R">BaseService.R</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_d2r">BaseService.d2r</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_r2d">BaseService.r2d</a>
+    </div>
+    <div>
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_db">BaseService.db</a>
     </div>
     <div>
@@ -103,7 +115,16 @@
       <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_LanguageRequest">BaseService.LanguageRequest</a>
     </div>
     <div>
-      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_GetParam">BaseService.GetParam</a>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_Query">BaseService.Query</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_ValidateQuery_System_ComponentModel_DataAnnotations_ValidationContext_">BaseService.ValidateQuery(ValidationContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_EnhanceQueryStatements__1_System_Object_">BaseService.EnhanceQueryStatements&lt;T&gt;(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSSPServices.BaseService.html#CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_">BaseService.FillQuery(Type, String, Int32, Int32, String, String, String)</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -137,18 +158,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.%23ctor(CSSPModels.GetParam%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPWebToolsDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L31">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskService__ctor_" data-uid="CSSPServices.AppTaskService.#ctor*"></a>
-  <h4 id="CSSPServices_AppTaskService__ctor_CSSPModels_GetParam_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.AppTaskService.#ctor(CSSPModels.GetParam,CSSPModels.CSSPWebToolsDBContext,System.Int32)">AppTaskService(GetParam, CSSPWebToolsDBContext, Int32)</h4>
+  <h4 id="CSSPServices_AppTaskService__ctor_CSSPModels_Query_CSSPModels_CSSPWebToolsDBContext_System_Int32_" data-uid="CSSPServices.AppTaskService.#ctor(CSSPModels.Query,CSSPModels.CSSPWebToolsDBContext,System.Int32)">AppTaskService(Query, CSSPWebToolsDBContext, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppTaskService(GetParam getParam, CSSPWebToolsDBContext db, int ContactID)</code></pre>
+    <pre><code class="lang-csharp hljs">public AppTaskService(Query query, CSSPWebToolsDBContext db, int ContactID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,8 +182,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
+        <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
+        <td><span class="parametername">query</span></td>
         <td></td>
       </tr>
       <tr>
@@ -184,7 +205,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_Add_CSSPModels_AppTask_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.Add(CSSPModels.AppTask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L329">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L314">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskService_Add_" data-uid="CSSPServices.AppTaskService.Add*"></a>
   <h4 id="CSSPServices_AppTaskService_Add_CSSPModels_AppTask_" data-uid="CSSPServices.AppTaskService.Add(CSSPModels.AppTask)">Add(AppTask)</h4>
@@ -231,7 +252,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_Delete_CSSPModels_AppTask_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.Delete(CSSPModels.AppTask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L340">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L325">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskService_Delete_" data-uid="CSSPServices.AppTaskService.Delete*"></a>
   <h4 id="CSSPServices_AppTaskService_Delete_CSSPModels_AppTask_" data-uid="CSSPServices.AppTaskService.Delete(CSSPModels.AppTask)">Delete(AppTask)</h4>
@@ -275,18 +296,48 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTaskList_CSSPModels_GetParam_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTaskList(CSSPModels.GetParam%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTask_AList.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTask_AList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L288">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L290">View Source</a>
   </span>
-  <a id="CSSPServices_AppTaskService_GetAppTaskList_" data-uid="CSSPServices.AppTaskService.GetAppTaskList*"></a>
-  <h4 id="CSSPServices_AppTaskService_GetAppTaskList_CSSPModels_GetParam_System_String_" data-uid="CSSPServices.AppTaskService.GetAppTaskList(CSSPModels.GetParam,System.String)">GetAppTaskList(GetParam, String)</h4>
+  <a id="CSSPServices_AppTaskService_GetAppTask_AList_" data-uid="CSSPServices.AppTaskService.GetAppTask_AList*"></a>
+  <h4 id="CSSPServices_AppTaskService_GetAppTask_AList" data-uid="CSSPServices.AppTaskService.GetAppTask_AList">GetAppTask_AList()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;AppTask&gt; GetAppTaskList(GetParam getParam, string FilterAndOrderText = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;AppTask_A&gt; GetAppTask_AList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.AppTask_A.html">AppTask_A</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTask_AWithAppTaskID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTask_AWithAppTaskID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L285">View Source</a>
+  </span>
+  <a id="CSSPServices_AppTaskService_GetAppTask_AWithAppTaskID_" data-uid="CSSPServices.AppTaskService.GetAppTask_AWithAppTaskID*"></a>
+  <h4 id="CSSPServices_AppTaskService_GetAppTask_AWithAppTaskID_System_Int32_" data-uid="CSSPServices.AppTaskService.GetAppTask_AWithAppTaskID(System.Int32)">GetAppTask_AWithAppTaskID(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppTask_A GetAppTask_AWithAppTaskID(int AppTaskID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -299,17 +350,119 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">FilterAndOrderText</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">AppTaskID</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.AppTask_A.html">AppTask_A</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTask_BList.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTask_BList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L303">View Source</a>
+  </span>
+  <a id="CSSPServices_AppTaskService_GetAppTask_BList_" data-uid="CSSPServices.AppTaskService.GetAppTask_BList*"></a>
+  <h4 id="CSSPServices_AppTaskService_GetAppTask_BList" data-uid="CSSPServices.AppTaskService.GetAppTask_BList">GetAppTask_BList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;AppTask_B&gt; GetAppTask_BList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.AppTask_B.html">AppTask_B</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTask_BWithAppTaskID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTask_BWithAppTaskID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L298">View Source</a>
+  </span>
+  <a id="CSSPServices_AppTaskService_GetAppTask_BWithAppTaskID_" data-uid="CSSPServices.AppTaskService.GetAppTask_BWithAppTaskID*"></a>
+  <h4 id="CSSPServices_AppTaskService_GetAppTask_BWithAppTaskID_System_Int32_" data-uid="CSSPServices.AppTaskService.GetAppTask_BWithAppTaskID(System.Int32)">GetAppTask_BWithAppTaskID(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppTask_B GetAppTask_BWithAppTaskID(int AppTaskID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">AppTaskID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSSPModels.AppTask_B.html">AppTask_B</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTaskList.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTaskList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L277">View Source</a>
+  </span>
+  <a id="CSSPServices_AppTaskService_GetAppTaskList_" data-uid="CSSPServices.AppTaskService.GetAppTaskList*"></a>
+  <h4 id="CSSPServices_AppTaskService_GetAppTaskList" data-uid="CSSPServices.AppTaskService.GetAppTaskList">GetAppTaskList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;AppTask&gt; GetAppTaskList()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -327,18 +480,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTaskWithAppTaskID_System_Int32_CSSPModels_GetParam_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTaskWithAppTaskID(System.Int32%2CCSSPModels.GetParam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetAppTaskWithAppTaskID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetAppTaskWithAppTaskID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L270">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L270">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskService_GetAppTaskWithAppTaskID_" data-uid="CSSPServices.AppTaskService.GetAppTaskWithAppTaskID*"></a>
-  <h4 id="CSSPServices_AppTaskService_GetAppTaskWithAppTaskID_System_Int32_CSSPModels_GetParam_" data-uid="CSSPServices.AppTaskService.GetAppTaskWithAppTaskID(System.Int32,CSSPModels.GetParam)">GetAppTaskWithAppTaskID(Int32, GetParam)</h4>
+  <h4 id="CSSPServices_AppTaskService_GetAppTaskWithAppTaskID_System_Int32_" data-uid="CSSPServices.AppTaskService.GetAppTaskWithAppTaskID(System.Int32)">GetAppTaskWithAppTaskID(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppTask GetAppTaskWithAppTaskID(int AppTaskID, GetParam getParam)</code></pre>
+    <pre><code class="lang-csharp hljs">public AppTask GetAppTaskWithAppTaskID(int AppTaskID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,11 +506,6 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">AppTaskID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPModels.GetParam.html">GetParam</a></td>
-        <td><span class="parametername">getParam</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -379,70 +527,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetEdit.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetEdit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L373">View Source</a>
-  </span>
-  <a id="CSSPServices_AppTaskService_GetEdit_" data-uid="CSSPServices.AppTaskService.GetEdit*"></a>
-  <h4 id="CSSPServices_AppTaskService_GetEdit" data-uid="CSSPServices.AppTaskService.GetEdit">GetEdit()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;AppTask&gt; GetEdit()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.AppTask.html">AppTask</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_GetRead.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.GetRead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L362">View Source</a>
-  </span>
-  <a id="CSSPServices_AppTaskService_GetRead_" data-uid="CSSPServices.AppTaskService.GetRead*"></a>
-  <h4 id="CSSPServices_AppTaskService_GetRead" data-uid="CSSPServices.AppTaskService.GetRead">GetRead()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IQueryable&lt;AppTask&gt; GetRead()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.AppTask.html">AppTask</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_Update_CSSPModels_AppTask_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.Update(CSSPModels.AppTask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L351">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L336">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskService_Update_" data-uid="CSSPServices.AppTaskService.Update*"></a>
   <h4 id="CSSPServices_AppTaskService_Update_CSSPModels_AppTask_" data-uid="CSSPServices.AppTaskService.Update(CSSPModels.AppTask)">Update(AppTask)</h4>
@@ -489,7 +577,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L38">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskServiceGenerated.cs/#L38">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskService_Validate_" data-uid="CSSPServices.AppTaskService.Validate*"></a>
   <h4 id="CSSPServices_AppTaskService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.AppTaskService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
@@ -547,7 +635,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskService.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/AppTaskServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/B/AppTask_BService.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

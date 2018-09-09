@@ -6,7 +6,8 @@
           "files": [
             "**/CSSPEnums.csproj",
             "**/CSSPModels.csproj",
-            "**/CSSPServices.csproj"
+            "**/CSSPServices.csproj",
+            "**/CSSPWebToolsAPI.csproj"
           ],
           "src": "../../",
           "exclude": [
