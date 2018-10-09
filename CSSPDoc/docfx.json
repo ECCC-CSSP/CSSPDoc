@@ -7,7 +7,7 @@
             "**/CSSPEnums.csproj",
             "**/CSSPModels.csproj",
             "**/CSSPServices.csproj",
-            "**/CSSPWebToolsAPI.csproj"
+            "**/CSSPWebAPI.csproj" 
           ],
           "src": "../../",
           "exclude": [
