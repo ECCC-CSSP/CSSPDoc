@@ -1813,6 +1813,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.CSSPEnumTypeTextAttribute.yml",
       "output": {
@@ -1825,6 +1828,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.CSSPExistAttribute.yml",
       "output": {
@@ -1927,6 +1933,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.Classification_A.yml",
       "output": {
@@ -1939,6 +1948,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.Classification_B.yml",
       "output": {
@@ -2131,6 +2143,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.ContactShortcut.yml",
       "output": {
@@ -2143,6 +2158,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.ContactShortcut_A.yml",
       "output": {
@@ -2947,6 +2965,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.LabSheetTubeMPNDetail_B.yml",
       "output": {
@@ -2959,6 +2980,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.LabSheet_A.yml",
       "output": {
@@ -2971,6 +2995,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.LabSheet_B.yml",
       "output": {
@@ -2983,6 +3010,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.LastUpdate.yml",
       "output": {
@@ -2995,6 +3025,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.LastUpdateAndContact.yml",
       "output": {
@@ -3007,6 +3040,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.LastUpdateAndTVText.yml",
       "output": {
@@ -3544,6 +3580,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.MWQMSubsectorLanguage_A.yml",
       "output": {
@@ -3556,6 +3595,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.MWQMSubsectorLanguage_B.yml",
       "output": {
@@ -3568,6 +3610,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.MWQMSubsector_A.yml",
       "output": {
@@ -3580,6 +3625,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.MWQMSubsector_B.yml",
       "output": {
@@ -4312,6 +4360,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.ReportSection.yml",
       "output": {
@@ -4324,6 +4375,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.ReportSectionLanguage.yml",
       "output": {
@@ -4336,6 +4390,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.ReportSectionLanguage_A.yml",
       "output": {
@@ -4348,6 +4405,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.ReportSectionLanguage_B.yml",
       "output": {
@@ -4729,9 +4789,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.SamplingPlan_B.yml",
       "output": {
@@ -4867,6 +4924,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVFile.yml",
       "output": {
@@ -4984,6 +5044,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVItemInfrastructureTypeTVItemLink.yml",
       "output": {
@@ -4996,6 +5059,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVItemLanguage.yml",
       "output": {
@@ -5038,9 +5104,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVItemLink.yml",
       "output": {
@@ -5053,9 +5116,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVItemLink_A.yml",
       "output": {
@@ -5068,9 +5128,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVItemLink_B.yml",
       "output": {
@@ -5083,9 +5140,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVItemStat.yml",
       "output": {
@@ -5218,9 +5272,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVItem_B.yml",
       "output": {
@@ -5233,9 +5284,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVLocation.yml",
       "output": {
@@ -5248,9 +5296,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVTextLanguage.yml",
       "output": {
@@ -5263,9 +5308,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TVTypeNamesAndPath.yml",
       "output": {
@@ -5383,9 +5425,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TideDataValue_A.yml",
       "output": {
@@ -5398,9 +5437,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TideDataValue_B.yml",
       "output": {
@@ -5413,9 +5449,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TideLocation.yml",
       "output": {
@@ -5428,9 +5461,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.TideLocation_A.yml",
       "output": {
@@ -5683,9 +5713,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.VPScenario.yml",
       "output": {
@@ -5698,9 +5725,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.VPScenarioIDAndRawResults.yml",
       "output": {
@@ -5713,9 +5737,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.VPScenarioLanguage.yml",
       "output": {
@@ -5728,9 +5749,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/api/CSSPModels.VPScenarioLanguage_A.yml",
       "output": {
@@ -8850,17 +8868,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
