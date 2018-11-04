@@ -73,7 +73,11 @@
   
   <h1 id="CSSPServices_TVItemStatService" data-uid="CSSPServices.TVItemStatService" class="text-break">Class TVItemStatService
   </h1>
-  <div class="markdown level0 summary"><p>bonjour TVItemStat</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>Used by <a href="CSSPWebAPI.Controllers.html">CSSPWebAPI.Controllers</a></strong> : <a href="CSSPWebAPI.Controllers.TVItemStatController.html">TVItemStatController</a></p>
+<p><strong>Requires <a href="CSSPModels.html">CSSPModels</a></strong> : <a href="CSSPModels.TVItemStat.html">CSSPModels.TVItemStat</a></p>
+<p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a></p>
+<p><strong>Return to <a href="CSSPServices.html">CSSPServices</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -161,11 +165,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L49">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService__ctor_" data-uid="CSSPServices.TVItemStatService.#ctor*"></a>
   <h4 id="CSSPServices_TVItemStatService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_" data-uid="CSSPServices.TVItemStatService.#ctor(CSSPModels.Query,CSSPModels.CSSPDBContext,System.Int32)">TVItemStatService(Query, CSSPDBContext, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CSSPDB TVItemStats table service constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,17 +189,20 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Query.html">Query</a> object for filtering of service functions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a></td>
         <td><span class="parametername">db</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a> referencing the CSSP database context</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactID</span></td>
-        <td></td>
+        <td><p>Representing the contact identifier of the person connecting to the service</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +213,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_Add_CSSPModels_TVItemStat_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.Add(CSSPModels.TVItemStat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L215">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L271">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_Add_" data-uid="CSSPServices.TVItemStatService.Add*"></a>
   <h4 id="CSSPServices_TVItemStatService_Add_CSSPModels_TVItemStat_" data-uid="CSSPServices.TVItemStatService.Add(CSSPModels.TVItemStat)">Add(TVItemStat)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an <a href="CSSPModels.TVItemStat.html">TVItemStat</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +237,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.TVItemStat.html">TVItemStat</a></td>
         <td><span class="parametername">tvItemStat</span></td>
-        <td></td>
+        <td><p>Is the TVItemStat item the client want to add to CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +253,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if TVItemStat item was added to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,11 +263,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_Delete_CSSPModels_TVItemStat_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.Delete(CSSPModels.TVItemStat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L226">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L287">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_Delete_" data-uid="CSSPServices.TVItemStatService.Delete*"></a>
   <h4 id="CSSPServices_TVItemStatService_Delete_CSSPModels_TVItemStat_" data-uid="CSSPServices.TVItemStatService.Delete(CSSPModels.TVItemStat)">Delete(TVItemStat)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an <a href="CSSPModels.TVItemStat.html">TVItemStat</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +287,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.TVItemStat.html">TVItemStat</a></td>
         <td><span class="parametername">tvItemStat</span></td>
-        <td></td>
+        <td><p>Is the TVItemStat item the client want to add to CSSPDB. What&apos;s important here is the TVItemStatID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +303,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if TVItemStat item was deleted to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,11 +313,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_GetTVItemStatExtraAList.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.GetTVItemStatExtraAList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L191">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L233">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_GetTVItemStatExtraAList_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraAList*"></a>
   <h4 id="CSSPServices_TVItemStatService_GetTVItemStatExtraAList" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraAList">GetTVItemStatExtraAList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.TVItemStatExtraA.html">TVItemStatExtraA</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +335,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItemStatExtraA.html">TVItemStatExtraA</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.TVItemStatExtraA.html">TVItemStatExtraA</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,11 +345,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_GetTVItemStatExtraAWithTVItemStatID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.GetTVItemStatExtraAWithTVItemStatID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L186">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L224">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_GetTVItemStatExtraAWithTVItemStatID_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraAWithTVItemStatID*"></a>
   <h4 id="CSSPServices_TVItemStatService_GetTVItemStatExtraAWithTVItemStatID_System_Int32_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraAWithTVItemStatID(System.Int32)">GetTVItemStatExtraAWithTVItemStatID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the TVItemStatExtraA model with the TVItemStatID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +369,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">TVItemStatID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.TVItemStat.html">TVItemStats</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +385,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.TVItemStatExtraA.html">TVItemStatExtraA</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.TVItemStatExtraA.html">TVItemStatExtraA</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,11 +395,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_GetTVItemStatExtraBList.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.GetTVItemStatExtraBList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L204">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L255">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_GetTVItemStatExtraBList_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraBList*"></a>
   <h4 id="CSSPServices_TVItemStatService_GetTVItemStatExtraBList" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraBList">GetTVItemStatExtraBList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.TVItemStatExtraB.html">TVItemStatExtraB</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +417,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItemStatExtraB.html">TVItemStatExtraB</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.TVItemStatExtraB.html">TVItemStatExtraB</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,11 +427,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_GetTVItemStatExtraBWithTVItemStatID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.GetTVItemStatExtraBWithTVItemStatID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L199">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L246">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_GetTVItemStatExtraBWithTVItemStatID_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraBWithTVItemStatID*"></a>
   <h4 id="CSSPServices_TVItemStatService_GetTVItemStatExtraBWithTVItemStatID_System_Int32_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatExtraBWithTVItemStatID(System.Int32)">GetTVItemStatExtraBWithTVItemStatID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the TVItemStatExtraB model with the TVItemStatID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +451,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">TVItemStatID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.TVItemStat.html">TVItemStats</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +467,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.TVItemStatExtraB.html">TVItemStatExtraB</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.TVItemStatExtraB.html">TVItemStatExtraB</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,11 +477,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_GetTVItemStatList.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.GetTVItemStatList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L178">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L211">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_GetTVItemStatList_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatList*"></a>
   <h4 id="CSSPServices_TVItemStatService_GetTVItemStatList" data-uid="CSSPServices.TVItemStatService.GetTVItemStatList">GetTVItemStatList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.TVItemStat.html">TVItemStat</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +499,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.TVItemStat.html">TVItemStat</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.TVItemStat.html">TVItemStat</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +509,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_GetTVItemStatWithTVItemStatID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.GetTVItemStatWithTVItemStatID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L171">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L200">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_GetTVItemStatWithTVItemStatID_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatWithTVItemStatID*"></a>
   <h4 id="CSSPServices_TVItemStatService_GetTVItemStatWithTVItemStatID_System_Int32_" data-uid="CSSPServices.TVItemStatService.GetTVItemStatWithTVItemStatID(System.Int32)">GetTVItemStatWithTVItemStatID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the TVItemStat model with the TVItemStatID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,7 +533,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">TVItemStatID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.TVItemStat.html">TVItemStats</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +549,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.TVItemStat.html">TVItemStat</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.TVItemStat.html">TVItemStat</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -530,11 +559,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_Update_CSSPModels_TVItemStat_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.Update(CSSPModels.TVItemStat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L237">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L303">View Source</a>
   </span>
   <a id="CSSPServices_TVItemStatService_Update_" data-uid="CSSPServices.TVItemStatService.Update*"></a>
   <h4 id="CSSPServices_TVItemStatService_Update_CSSPModels_TVItemStat_" data-uid="CSSPServices.TVItemStatService.Update(CSSPModels.TVItemStat)">Update(TVItemStat)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an <a href="CSSPModels.TVItemStat.html">TVItemStat</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +583,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.TVItemStat.html">TVItemStat</a></td>
         <td><span class="parametername">tvItemStat</span></td>
-        <td></td>
+        <td><p>Is the TVItemStat item the client want to add to CSSPDB. What&apos;s important here is the TVItemStatID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,59 +599,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L38">View Source</a>
-  </span>
-  <a id="CSSPServices_TVItemStatService_Validate_" data-uid="CSSPServices.TVItemStatService.Validate*"></a>
-  <h4 id="CSSPServices_TVItemStatService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.TVItemStatService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext, ActionDBTypeEnum actionDBType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
-        <td><span class="parametername">validationContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.ActionDBTypeEnum.html">ActionDBTypeEnum</a></td>
-        <td><span class="parametername">actionDBType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td></td>
+        <td><p>true if TVItemStat item was updated to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +615,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_TVItemStatService.md&amp;value=---%0Auid%3A%20CSSPServices.TVItemStatService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/TVItemStatServiceGenerated.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

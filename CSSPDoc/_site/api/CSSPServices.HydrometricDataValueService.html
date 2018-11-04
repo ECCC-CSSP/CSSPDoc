@@ -73,7 +73,11 @@
   
   <h1 id="CSSPServices_HydrometricDataValueService" data-uid="CSSPServices.HydrometricDataValueService" class="text-break">Class HydrometricDataValueService
   </h1>
-  <div class="markdown level0 summary"><p>bonjour HydrometricDataValue</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>Used by <a href="CSSPWebAPI.Controllers.html">CSSPWebAPI.Controllers</a></strong> : <a href="CSSPWebAPI.Controllers.HydrometricDataValueController.html">HydrometricDataValueController</a></p>
+<p><strong>Requires <a href="CSSPModels.html">CSSPModels</a></strong> : <a href="CSSPModels.HydrometricDataValue.html">CSSPModels.HydrometricDataValue</a></p>
+<p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.StorageDataTypeEnum.html">StorageDataTypeEnum</a></p>
+<p><strong>Return to <a href="CSSPServices.html">CSSPServices</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -161,11 +165,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L49">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService__ctor_" data-uid="CSSPServices.HydrometricDataValueService.#ctor*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_" data-uid="CSSPServices.HydrometricDataValueService.#ctor(CSSPModels.Query,CSSPModels.CSSPDBContext,System.Int32)">HydrometricDataValueService(Query, CSSPDBContext, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CSSPDB HydrometricDataValues table service constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,17 +189,20 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Query.html">Query</a> object for filtering of service functions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a></td>
         <td><span class="parametername">db</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a> referencing the CSSP database context</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactID</span></td>
-        <td></td>
+        <td><p>Representing the contact identifier of the person connecting to the service</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +213,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_Add_CSSPModels_HydrometricDataValue_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.Add(CSSPModels.HydrometricDataValue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L207">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L263">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_Add_" data-uid="CSSPServices.HydrometricDataValueService.Add*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_Add_CSSPModels_HydrometricDataValue_" data-uid="CSSPServices.HydrometricDataValueService.Add(CSSPModels.HydrometricDataValue)">Add(HydrometricDataValue)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +237,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a></td>
         <td><span class="parametername">hydrometricDataValue</span></td>
-        <td></td>
+        <td><p>Is the HydrometricDataValue item the client want to add to CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +253,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if HydrometricDataValue item was added to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,11 +263,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_Delete_CSSPModels_HydrometricDataValue_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.Delete(CSSPModels.HydrometricDataValue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L218">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L279">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_Delete_" data-uid="CSSPServices.HydrometricDataValueService.Delete*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_Delete_CSSPModels_HydrometricDataValue_" data-uid="CSSPServices.HydrometricDataValueService.Delete(CSSPModels.HydrometricDataValue)">Delete(HydrometricDataValue)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +287,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a></td>
         <td><span class="parametername">hydrometricDataValue</span></td>
-        <td></td>
+        <td><p>Is the HydrometricDataValue item the client want to add to CSSPDB. What&apos;s important here is the HydrometricDataValueID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +303,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if HydrometricDataValue item was deleted to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,11 +313,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraAList.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraAList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L183">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L225">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraAList_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraAList*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraAList" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraAList">GetHydrometricDataValueExtraAList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.HydrometricDataValueExtraA.html">HydrometricDataValueExtraA</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +335,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.HydrometricDataValueExtraA.html">HydrometricDataValueExtraA</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.HydrometricDataValueExtraA.html">HydrometricDataValueExtraA</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,11 +345,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraAWithHydrometricDataValueID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraAWithHydrometricDataValueID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L178">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L216">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraAWithHydrometricDataValueID_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraAWithHydrometricDataValueID*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraAWithHydrometricDataValueID_System_Int32_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraAWithHydrometricDataValueID(System.Int32)">GetHydrometricDataValueExtraAWithHydrometricDataValueID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the HydrometricDataValueExtraA model with the HydrometricDataValueID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +369,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">HydrometricDataValueID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValues</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +385,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.HydrometricDataValueExtraA.html">HydrometricDataValueExtraA</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.HydrometricDataValueExtraA.html">HydrometricDataValueExtraA</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,11 +395,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraBList.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraBList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L196">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L247">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraBList_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraBList*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraBList" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraBList">GetHydrometricDataValueExtraBList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.HydrometricDataValueExtraB.html">HydrometricDataValueExtraB</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +417,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.HydrometricDataValueExtraB.html">HydrometricDataValueExtraB</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.HydrometricDataValueExtraB.html">HydrometricDataValueExtraB</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,11 +427,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraBWithHydrometricDataValueID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraBWithHydrometricDataValueID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L191">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L238">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraBWithHydrometricDataValueID_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraBWithHydrometricDataValueID*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueExtraBWithHydrometricDataValueID_System_Int32_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueExtraBWithHydrometricDataValueID(System.Int32)">GetHydrometricDataValueExtraBWithHydrometricDataValueID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the HydrometricDataValueExtraB model with the HydrometricDataValueID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +451,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">HydrometricDataValueID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValues</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +467,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.HydrometricDataValueExtraB.html">HydrometricDataValueExtraB</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.HydrometricDataValueExtraB.html">HydrometricDataValueExtraB</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,11 +477,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_GetHydrometricDataValueList.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.GetHydrometricDataValueList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L170">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L203">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueList_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueList*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueList" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueList">GetHydrometricDataValueList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +499,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +509,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_GetHydrometricDataValueWithHydrometricDataValueID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.GetHydrometricDataValueWithHydrometricDataValueID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L163">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L192">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueWithHydrometricDataValueID_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueWithHydrometricDataValueID*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_GetHydrometricDataValueWithHydrometricDataValueID_System_Int32_" data-uid="CSSPServices.HydrometricDataValueService.GetHydrometricDataValueWithHydrometricDataValueID(System.Int32)">GetHydrometricDataValueWithHydrometricDataValueID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the HydrometricDataValue model with the HydrometricDataValueID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,7 +533,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">HydrometricDataValueID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValues</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +549,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -530,11 +559,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_Update_CSSPModels_HydrometricDataValue_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.Update(CSSPModels.HydrometricDataValue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L229">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L295">View Source</a>
   </span>
   <a id="CSSPServices_HydrometricDataValueService_Update_" data-uid="CSSPServices.HydrometricDataValueService.Update*"></a>
   <h4 id="CSSPServices_HydrometricDataValueService_Update_CSSPModels_HydrometricDataValue_" data-uid="CSSPServices.HydrometricDataValueService.Update(CSSPModels.HydrometricDataValue)">Update(HydrometricDataValue)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an <a href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +583,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a></td>
         <td><span class="parametername">hydrometricDataValue</span></td>
-        <td></td>
+        <td><p>Is the HydrometricDataValue item the client want to add to CSSPDB. What&apos;s important here is the HydrometricDataValueID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,59 +599,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L38">View Source</a>
-  </span>
-  <a id="CSSPServices_HydrometricDataValueService_Validate_" data-uid="CSSPServices.HydrometricDataValueService.Validate*"></a>
-  <h4 id="CSSPServices_HydrometricDataValueService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.HydrometricDataValueService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext, ActionDBTypeEnum actionDBType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
-        <td><span class="parametername">validationContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.ActionDBTypeEnum.html">ActionDBTypeEnum</a></td>
-        <td><span class="parametername">actionDBType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td></td>
+        <td><p>true if HydrometricDataValue item was updated to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +615,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_HydrometricDataValueService.md&amp;value=---%0Auid%3A%20CSSPServices.HydrometricDataValueService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/HydrometricDataValueServiceGenerated.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

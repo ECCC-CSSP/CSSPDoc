@@ -73,7 +73,10 @@
   
   <h1 id="CSSPServices_MapInfoPointService" data-uid="CSSPServices.MapInfoPointService" class="text-break">Class MapInfoPointService
   </h1>
-  <div class="markdown level0 summary"><p>bonjour MapInfoPoint</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>Used by <a href="CSSPWebAPI.Controllers.html">CSSPWebAPI.Controllers</a></strong> : <a href="CSSPWebAPI.Controllers.MapInfoPointController.html">MapInfoPointController</a></p>
+<p><strong>Requires <a href="CSSPModels.html">CSSPModels</a></strong> : <a href="CSSPModels.MapInfoPoint.html">CSSPModels.MapInfoPoint</a></p>
+<p><strong>Return to <a href="CSSPServices.html">CSSPServices</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -161,11 +164,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L48">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService__ctor_" data-uid="CSSPServices.MapInfoPointService.#ctor*"></a>
   <h4 id="CSSPServices_MapInfoPointService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_" data-uid="CSSPServices.MapInfoPointService.#ctor(CSSPModels.Query,CSSPModels.CSSPDBContext,System.Int32)">MapInfoPointService(Query, CSSPDBContext, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CSSPDB MapInfoPoints table service constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,17 +188,20 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Query.html">Query</a> object for filtering of service functions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a></td>
         <td><span class="parametername">db</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a> referencing the CSSP database context</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactID</span></td>
-        <td></td>
+        <td><p>Representing the contact identifier of the person connecting to the service</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +212,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_Add_CSSPModels_MapInfoPoint_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.Add(CSSPModels.MapInfoPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L175">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L230">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_Add_" data-uid="CSSPServices.MapInfoPointService.Add*"></a>
   <h4 id="CSSPServices_MapInfoPointService_Add_CSSPModels_MapInfoPoint_" data-uid="CSSPServices.MapInfoPointService.Add(CSSPModels.MapInfoPoint)">Add(MapInfoPoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an <a href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +236,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a></td>
         <td><span class="parametername">mapInfoPoint</span></td>
-        <td></td>
+        <td><p>Is the MapInfoPoint item the client want to add to CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +252,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if MapInfoPoint item was added to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,11 +262,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_Delete_CSSPModels_MapInfoPoint_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.Delete(CSSPModels.MapInfoPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L186">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L246">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_Delete_" data-uid="CSSPServices.MapInfoPointService.Delete*"></a>
   <h4 id="CSSPServices_MapInfoPointService_Delete_CSSPModels_MapInfoPoint_" data-uid="CSSPServices.MapInfoPointService.Delete(CSSPModels.MapInfoPoint)">Delete(MapInfoPoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an <a href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +286,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a></td>
         <td><span class="parametername">mapInfoPoint</span></td>
-        <td></td>
+        <td><p>Is the MapInfoPoint item the client want to add to CSSPDB. What&apos;s important here is the MapInfoPointID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +302,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if MapInfoPoint item was deleted to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,11 +312,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_GetMapInfoPointExtraAList.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.GetMapInfoPointExtraAList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L151">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L192">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraAList_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraAList*"></a>
   <h4 id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraAList" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraAList">GetMapInfoPointExtraAList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.MapInfoPointExtraA.html">MapInfoPointExtraA</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +334,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfoPointExtraA.html">MapInfoPointExtraA</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.MapInfoPointExtraA.html">MapInfoPointExtraA</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,11 +344,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_GetMapInfoPointExtraAWithMapInfoPointID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.GetMapInfoPointExtraAWithMapInfoPointID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L146">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L183">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraAWithMapInfoPointID_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraAWithMapInfoPointID*"></a>
   <h4 id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraAWithMapInfoPointID_System_Int32_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraAWithMapInfoPointID(System.Int32)">GetMapInfoPointExtraAWithMapInfoPointID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the MapInfoPointExtraA model with the MapInfoPointID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +368,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MapInfoPointID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.MapInfoPoint.html">MapInfoPoints</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +384,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.MapInfoPointExtraA.html">MapInfoPointExtraA</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.MapInfoPointExtraA.html">MapInfoPointExtraA</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,11 +394,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_GetMapInfoPointExtraBList.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.GetMapInfoPointExtraBList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L164">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L214">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraBList_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraBList*"></a>
   <h4 id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraBList" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraBList">GetMapInfoPointExtraBList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.MapInfoPointExtraB.html">MapInfoPointExtraB</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +416,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfoPointExtraB.html">MapInfoPointExtraB</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.MapInfoPointExtraB.html">MapInfoPointExtraB</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,11 +426,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_GetMapInfoPointExtraBWithMapInfoPointID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.GetMapInfoPointExtraBWithMapInfoPointID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L159">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L205">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraBWithMapInfoPointID_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraBWithMapInfoPointID*"></a>
   <h4 id="CSSPServices_MapInfoPointService_GetMapInfoPointExtraBWithMapInfoPointID_System_Int32_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointExtraBWithMapInfoPointID(System.Int32)">GetMapInfoPointExtraBWithMapInfoPointID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the MapInfoPointExtraB model with the MapInfoPointID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +450,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MapInfoPointID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.MapInfoPoint.html">MapInfoPoints</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +466,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.MapInfoPointExtraB.html">MapInfoPointExtraB</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.MapInfoPointExtraB.html">MapInfoPointExtraB</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,11 +476,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_GetMapInfoPointList.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.GetMapInfoPointList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L138">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L170">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_GetMapInfoPointList_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointList*"></a>
   <h4 id="CSSPServices_MapInfoPointService_GetMapInfoPointList" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointList">GetMapInfoPointList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +498,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +508,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_GetMapInfoPointWithMapInfoPointID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.GetMapInfoPointWithMapInfoPointID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L131">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L159">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_GetMapInfoPointWithMapInfoPointID_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointWithMapInfoPointID*"></a>
   <h4 id="CSSPServices_MapInfoPointService_GetMapInfoPointWithMapInfoPointID_System_Int32_" data-uid="CSSPServices.MapInfoPointService.GetMapInfoPointWithMapInfoPointID(System.Int32)">GetMapInfoPointWithMapInfoPointID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the MapInfoPoint model with the MapInfoPointID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,7 +532,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MapInfoPointID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.MapInfoPoint.html">MapInfoPoints</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +548,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -530,11 +558,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_Update_CSSPModels_MapInfoPoint_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.Update(CSSPModels.MapInfoPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L197">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L262">View Source</a>
   </span>
   <a id="CSSPServices_MapInfoPointService_Update_" data-uid="CSSPServices.MapInfoPointService.Update*"></a>
   <h4 id="CSSPServices_MapInfoPointService_Update_CSSPModels_MapInfoPoint_" data-uid="CSSPServices.MapInfoPointService.Update(CSSPModels.MapInfoPoint)">Update(MapInfoPoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an <a href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +582,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a></td>
         <td><span class="parametername">mapInfoPoint</span></td>
-        <td></td>
+        <td><p>Is the MapInfoPoint item the client want to add to CSSPDB. What&apos;s important here is the MapInfoPointID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,59 +598,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L38">View Source</a>
-  </span>
-  <a id="CSSPServices_MapInfoPointService_Validate_" data-uid="CSSPServices.MapInfoPointService.Validate*"></a>
-  <h4 id="CSSPServices_MapInfoPointService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.MapInfoPointService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext, ActionDBTypeEnum actionDBType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
-        <td><span class="parametername">validationContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.ActionDBTypeEnum.html">ActionDBTypeEnum</a></td>
-        <td><span class="parametername">actionDBType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td></td>
+        <td><p>true if MapInfoPoint item was updated to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +614,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_MapInfoPointService.md&amp;value=---%0Auid%3A%20CSSPServices.MapInfoPointService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/MapInfoPointServiceGenerated.cs/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

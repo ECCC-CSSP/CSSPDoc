@@ -73,7 +73,10 @@
   
   <h1 id="CSSPServices_SpillService" data-uid="CSSPServices.SpillService" class="text-break">Class SpillService
   </h1>
-  <div class="markdown level0 summary"><p>bonjour Spill</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>Used by <a href="CSSPWebAPI.Controllers.html">CSSPWebAPI.Controllers</a></strong> : <a href="CSSPWebAPI.Controllers.SpillController.html">SpillController</a></p>
+<p><strong>Requires <a href="CSSPModels.html">CSSPModels</a></strong> : <a href="CSSPModels.Spill.html">CSSPModels.Spill</a></p>
+<p><strong>Return to <a href="CSSPServices.html">CSSPServices</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -161,11 +164,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L48">View Source</a>
   </span>
   <a id="CSSPServices_SpillService__ctor_" data-uid="CSSPServices.SpillService.#ctor*"></a>
   <h4 id="CSSPServices_SpillService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_" data-uid="CSSPServices.SpillService.#ctor(CSSPModels.Query,CSSPModels.CSSPDBContext,System.Int32)">SpillService(Query, CSSPDBContext, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CSSPDB Spills table service constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,17 +188,20 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Query.html">Query</a> object for filtering of service functions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a></td>
         <td><span class="parametername">db</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a> referencing the CSSP database context</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactID</span></td>
-        <td></td>
+        <td><p>Representing the contact identifier of the person connecting to the service</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +212,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_Add_CSSPModels_Spill_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.Add(CSSPModels.Spill)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L224">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L279">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_Add_" data-uid="CSSPServices.SpillService.Add*"></a>
   <h4 id="CSSPServices_SpillService_Add_CSSPModels_Spill_" data-uid="CSSPServices.SpillService.Add(CSSPModels.Spill)">Add(Spill)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an <a href="CSSPModels.Spill.html">Spill</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +236,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Spill.html">Spill</a></td>
         <td><span class="parametername">spill</span></td>
-        <td></td>
+        <td><p>Is the Spill item the client want to add to CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +252,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if Spill item was added to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,11 +262,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_Delete_CSSPModels_Spill_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.Delete(CSSPModels.Spill)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L235">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L295">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_Delete_" data-uid="CSSPServices.SpillService.Delete*"></a>
   <h4 id="CSSPServices_SpillService_Delete_CSSPModels_Spill_" data-uid="CSSPServices.SpillService.Delete(CSSPModels.Spill)">Delete(Spill)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an <a href="CSSPModels.Spill.html">Spill</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +286,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Spill.html">Spill</a></td>
         <td><span class="parametername">spill</span></td>
-        <td></td>
+        <td><p>Is the Spill item the client want to add to CSSPDB. What&apos;s important here is the SpillID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +302,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if Spill item was deleted to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,11 +312,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_GetSpillExtraAList.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.GetSpillExtraAList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L200">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L241">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_GetSpillExtraAList_" data-uid="CSSPServices.SpillService.GetSpillExtraAList*"></a>
   <h4 id="CSSPServices_SpillService_GetSpillExtraAList" data-uid="CSSPServices.SpillService.GetSpillExtraAList">GetSpillExtraAList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.SpillExtraA.html">SpillExtraA</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +334,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.SpillExtraA.html">SpillExtraA</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.SpillExtraA.html">SpillExtraA</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,11 +344,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_GetSpillExtraAWithSpillID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.GetSpillExtraAWithSpillID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L195">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L232">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_GetSpillExtraAWithSpillID_" data-uid="CSSPServices.SpillService.GetSpillExtraAWithSpillID*"></a>
   <h4 id="CSSPServices_SpillService_GetSpillExtraAWithSpillID_System_Int32_" data-uid="CSSPServices.SpillService.GetSpillExtraAWithSpillID(System.Int32)">GetSpillExtraAWithSpillID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the SpillExtraA model with the SpillID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +368,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">SpillID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.Spill.html">Spills</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +384,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.SpillExtraA.html">SpillExtraA</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.SpillExtraA.html">SpillExtraA</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,11 +394,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_GetSpillExtraBList.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.GetSpillExtraBList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L213">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L263">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_GetSpillExtraBList_" data-uid="CSSPServices.SpillService.GetSpillExtraBList*"></a>
   <h4 id="CSSPServices_SpillService_GetSpillExtraBList" data-uid="CSSPServices.SpillService.GetSpillExtraBList">GetSpillExtraBList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.SpillExtraB.html">SpillExtraB</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +416,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.SpillExtraB.html">SpillExtraB</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.SpillExtraB.html">SpillExtraB</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,11 +426,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_GetSpillExtraBWithSpillID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.GetSpillExtraBWithSpillID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L208">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L254">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_GetSpillExtraBWithSpillID_" data-uid="CSSPServices.SpillService.GetSpillExtraBWithSpillID*"></a>
   <h4 id="CSSPServices_SpillService_GetSpillExtraBWithSpillID_System_Int32_" data-uid="CSSPServices.SpillService.GetSpillExtraBWithSpillID(System.Int32)">GetSpillExtraBWithSpillID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the SpillExtraB model with the SpillID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +450,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">SpillID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.Spill.html">Spills</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +466,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.SpillExtraB.html">SpillExtraB</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.SpillExtraB.html">SpillExtraB</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,11 +476,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_GetSpillList.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.GetSpillList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L187">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L219">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_GetSpillList_" data-uid="CSSPServices.SpillService.GetSpillList*"></a>
   <h4 id="CSSPServices_SpillService_GetSpillList" data-uid="CSSPServices.SpillService.GetSpillList">GetSpillList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.Spill.html">Spill</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +498,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.Spill.html">Spill</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.Spill.html">Spill</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +508,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_GetSpillWithSpillID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.GetSpillWithSpillID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L180">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L208">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_GetSpillWithSpillID_" data-uid="CSSPServices.SpillService.GetSpillWithSpillID*"></a>
   <h4 id="CSSPServices_SpillService_GetSpillWithSpillID_System_Int32_" data-uid="CSSPServices.SpillService.GetSpillWithSpillID(System.Int32)">GetSpillWithSpillID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Spill model with the SpillID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,7 +532,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">SpillID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.Spill.html">Spills</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +548,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.Spill.html">Spill</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Spill.html">Spill</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -530,11 +558,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_Update_CSSPModels_Spill_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.Update(CSSPModels.Spill)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L246">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L311">View Source</a>
   </span>
   <a id="CSSPServices_SpillService_Update_" data-uid="CSSPServices.SpillService.Update*"></a>
   <h4 id="CSSPServices_SpillService_Update_CSSPModels_Spill_" data-uid="CSSPServices.SpillService.Update(CSSPModels.Spill)">Update(Spill)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an <a href="CSSPModels.Spill.html">Spill</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +582,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Spill.html">Spill</a></td>
         <td><span class="parametername">spill</span></td>
-        <td></td>
+        <td><p>Is the Spill item the client want to add to CSSPDB. What&apos;s important here is the SpillID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,59 +598,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L38">View Source</a>
-  </span>
-  <a id="CSSPServices_SpillService_Validate_" data-uid="CSSPServices.SpillService.Validate*"></a>
-  <h4 id="CSSPServices_SpillService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.SpillService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext, ActionDBTypeEnum actionDBType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
-        <td><span class="parametername">validationContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.ActionDBTypeEnum.html">ActionDBTypeEnum</a></td>
-        <td><span class="parametername">actionDBType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td></td>
+        <td><p>true if Spill item was updated to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +614,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_SpillService.md&amp;value=---%0Auid%3A%20CSSPServices.SpillService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/SpillServiceGenerated.cs/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

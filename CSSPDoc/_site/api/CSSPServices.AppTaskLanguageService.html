@@ -73,7 +73,11 @@
   
   <h1 id="CSSPServices_AppTaskLanguageService" data-uid="CSSPServices.AppTaskLanguageService" class="text-break">Class AppTaskLanguageService
   </h1>
-  <div class="markdown level0 summary"><p>bonjour AppTaskLanguage</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>Used by <a href="CSSPWebAPI.Controllers.html">CSSPWebAPI.Controllers</a></strong> : <a href="CSSPWebAPI.Controllers.AppTaskLanguageController.html">AppTaskLanguageController</a></p>
+<p><strong>Requires <a href="CSSPModels.html">CSSPModels</a></strong> : <a href="CSSPModels.AppTaskLanguage.html">CSSPModels.AppTaskLanguage</a></p>
+<p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.LanguageEnum.html">LanguageEnum</a>, <a href="CSSPEnums.TranslationStatusEnum.html">TranslationStatusEnum</a></p>
+<p><strong>Return to <a href="CSSPServices.html">CSSPServices</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -161,11 +165,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L49">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService__ctor_" data-uid="CSSPServices.AppTaskLanguageService.#ctor*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_" data-uid="CSSPServices.AppTaskLanguageService.#ctor(CSSPModels.Query,CSSPModels.CSSPDBContext,System.Int32)">AppTaskLanguageService(Query, CSSPDBContext, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CSSPDB AppTaskLanguages table service constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,17 +189,20 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Query.html">Query</a> object for filtering of service functions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a></td>
         <td><span class="parametername">db</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a> referencing the CSSP database context</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactID</span></td>
-        <td></td>
+        <td><p>Representing the contact identifier of the person connecting to the service</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +213,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_Add_CSSPModels_AppTaskLanguage_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.Add(CSSPModels.AppTaskLanguage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L183">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L239">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_Add_" data-uid="CSSPServices.AppTaskLanguageService.Add*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_Add_CSSPModels_AppTaskLanguage_" data-uid="CSSPServices.AppTaskLanguageService.Add(CSSPModels.AppTaskLanguage)">Add(AppTaskLanguage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +237,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a></td>
         <td><span class="parametername">appTaskLanguage</span></td>
-        <td></td>
+        <td><p>Is the AppTaskLanguage item the client want to add to CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +253,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if AppTaskLanguage item was added to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,11 +263,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_Delete_CSSPModels_AppTaskLanguage_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.Delete(CSSPModels.AppTaskLanguage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L194">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L255">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_Delete_" data-uid="CSSPServices.AppTaskLanguageService.Delete*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_Delete_CSSPModels_AppTaskLanguage_" data-uid="CSSPServices.AppTaskLanguageService.Delete(CSSPModels.AppTaskLanguage)">Delete(AppTaskLanguage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +287,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a></td>
         <td><span class="parametername">appTaskLanguage</span></td>
-        <td></td>
+        <td><p>Is the AppTaskLanguage item the client want to add to CSSPDB. What&apos;s important here is the AppTaskLanguageID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +303,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if AppTaskLanguage item was deleted to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,11 +313,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraAList.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraAList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L159">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L201">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraAList_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraAList*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraAList" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraAList">GetAppTaskLanguageExtraAList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.AppTaskLanguageExtraA.html">AppTaskLanguageExtraA</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +335,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.AppTaskLanguageExtraA.html">AppTaskLanguageExtraA</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.AppTaskLanguageExtraA.html">AppTaskLanguageExtraA</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,11 +345,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraAWithAppTaskLanguageID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraAWithAppTaskLanguageID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L154">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L192">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraAWithAppTaskLanguageID_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraAWithAppTaskLanguageID*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraAWithAppTaskLanguageID_System_Int32_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraAWithAppTaskLanguageID(System.Int32)">GetAppTaskLanguageExtraAWithAppTaskLanguageID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the AppTaskLanguageExtraA model with the AppTaskLanguageID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +369,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">AppTaskLanguageID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguages</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +385,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.AppTaskLanguageExtraA.html">AppTaskLanguageExtraA</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.AppTaskLanguageExtraA.html">AppTaskLanguageExtraA</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,11 +395,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraBList.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraBList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L172">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L223">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraBList_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraBList*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraBList" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraBList">GetAppTaskLanguageExtraBList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.AppTaskLanguageExtraB.html">AppTaskLanguageExtraB</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +417,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.AppTaskLanguageExtraB.html">AppTaskLanguageExtraB</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.AppTaskLanguageExtraB.html">AppTaskLanguageExtraB</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,11 +427,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraBWithAppTaskLanguageID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraBWithAppTaskLanguageID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L167">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L214">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraBWithAppTaskLanguageID_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraBWithAppTaskLanguageID*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageExtraBWithAppTaskLanguageID_System_Int32_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageExtraBWithAppTaskLanguageID(System.Int32)">GetAppTaskLanguageExtraBWithAppTaskLanguageID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the AppTaskLanguageExtraB model with the AppTaskLanguageID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +451,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">AppTaskLanguageID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguages</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +467,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.AppTaskLanguageExtraB.html">AppTaskLanguageExtraB</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.AppTaskLanguageExtraB.html">AppTaskLanguageExtraB</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,11 +477,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_GetAppTaskLanguageList.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.GetAppTaskLanguageList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L146">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L179">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageList_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageList*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageList" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageList">GetAppTaskLanguageList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +499,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +509,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_GetAppTaskLanguageWithAppTaskLanguageID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.GetAppTaskLanguageWithAppTaskLanguageID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L139">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L168">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageWithAppTaskLanguageID_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageWithAppTaskLanguageID*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_GetAppTaskLanguageWithAppTaskLanguageID_System_Int32_" data-uid="CSSPServices.AppTaskLanguageService.GetAppTaskLanguageWithAppTaskLanguageID(System.Int32)">GetAppTaskLanguageWithAppTaskLanguageID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the AppTaskLanguage model with the AppTaskLanguageID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,7 +533,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">AppTaskLanguageID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguages</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +549,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -530,11 +559,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_Update_CSSPModels_AppTaskLanguage_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.Update(CSSPModels.AppTaskLanguage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L205">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L271">View Source</a>
   </span>
   <a id="CSSPServices_AppTaskLanguageService_Update_" data-uid="CSSPServices.AppTaskLanguageService.Update*"></a>
   <h4 id="CSSPServices_AppTaskLanguageService_Update_CSSPModels_AppTaskLanguage_" data-uid="CSSPServices.AppTaskLanguageService.Update(CSSPModels.AppTaskLanguage)">Update(AppTaskLanguage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an <a href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +583,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a></td>
         <td><span class="parametername">appTaskLanguage</span></td>
-        <td></td>
+        <td><p>Is the AppTaskLanguage item the client want to add to CSSPDB. What&apos;s important here is the AppTaskLanguageID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,59 +599,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/AppTaskLanguageServiceGenerated.cs/#L38">View Source</a>
-  </span>
-  <a id="CSSPServices_AppTaskLanguageService_Validate_" data-uid="CSSPServices.AppTaskLanguageService.Validate*"></a>
-  <h4 id="CSSPServices_AppTaskLanguageService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.AppTaskLanguageService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext, ActionDBTypeEnum actionDBType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
-        <td><span class="parametername">validationContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.ActionDBTypeEnum.html">ActionDBTypeEnum</a></td>
-        <td><span class="parametername">actionDBType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td></td>
+        <td><p>true if AppTaskLanguage item was updated to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +615,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_AppTaskLanguageService.md&amp;value=---%0Auid%3A%20CSSPServices.AppTaskLanguageService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ExtraB/AppTaskLanguageExtraBService.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ExtraB/AppTaskLanguageExtraBService.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

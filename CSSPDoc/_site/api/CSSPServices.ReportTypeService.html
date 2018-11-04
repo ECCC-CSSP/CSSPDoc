@@ -73,7 +73,11 @@
   
   <h1 id="CSSPServices_ReportTypeService" data-uid="CSSPServices.ReportTypeService" class="text-break">Class ReportTypeService
   </h1>
-  <div class="markdown level0 summary"><p>bonjour ReportType</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>Used by <a href="CSSPWebAPI.Controllers.html">CSSPWebAPI.Controllers</a></strong> : <a href="CSSPWebAPI.Controllers.ReportTypeController.html">ReportTypeController</a></p>
+<p><strong>Requires <a href="CSSPModels.html">CSSPModels</a></strong> : <a href="CSSPModels.ReportType.html">CSSPModels.ReportType</a></p>
+<p><strong>Requires <a href="CSSPEnums.html">CSSPEnums</a></strong> : <a href="CSSPEnums.TVTypeEnum.html">TVTypeEnum</a>, <a href="CSSPEnums.FileTypeEnum.html">FileTypeEnum</a></p>
+<p><strong>Return to <a href="CSSPServices.html">CSSPServices</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -161,11 +165,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L49">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService__ctor_" data-uid="CSSPServices.ReportTypeService.#ctor*"></a>
   <h4 id="CSSPServices_ReportTypeService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_" data-uid="CSSPServices.ReportTypeService.#ctor(CSSPModels.Query,CSSPModels.CSSPDBContext,System.Int32)">ReportTypeService(Query, CSSPDBContext, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CSSPDB ReportTypes table service constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,17 +189,20 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Query.html">Query</a> object for filtering of service functions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a></td>
         <td><span class="parametername">db</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a> referencing the CSSP database context</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactID</span></td>
-        <td></td>
+        <td><p>Representing the contact identifier of the person connecting to the service</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +213,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_Add_CSSPModels_ReportType_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.Add(CSSPModels.ReportType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L175">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L231">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_Add_" data-uid="CSSPServices.ReportTypeService.Add*"></a>
   <h4 id="CSSPServices_ReportTypeService_Add_CSSPModels_ReportType_" data-uid="CSSPServices.ReportTypeService.Add(CSSPModels.ReportType)">Add(ReportType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an <a href="CSSPModels.ReportType.html">ReportType</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +237,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.ReportType.html">ReportType</a></td>
         <td><span class="parametername">reportType</span></td>
-        <td></td>
+        <td><p>Is the ReportType item the client want to add to CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +253,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if ReportType item was added to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,11 +263,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_Delete_CSSPModels_ReportType_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.Delete(CSSPModels.ReportType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L186">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L247">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_Delete_" data-uid="CSSPServices.ReportTypeService.Delete*"></a>
   <h4 id="CSSPServices_ReportTypeService_Delete_CSSPModels_ReportType_" data-uid="CSSPServices.ReportTypeService.Delete(CSSPModels.ReportType)">Delete(ReportType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an <a href="CSSPModels.ReportType.html">ReportType</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +287,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.ReportType.html">ReportType</a></td>
         <td><span class="parametername">reportType</span></td>
-        <td></td>
+        <td><p>Is the ReportType item the client want to add to CSSPDB. What&apos;s important here is the ReportTypeID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +303,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if ReportType item was deleted to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,11 +313,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_GetReportTypeExtraAList.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.GetReportTypeExtraAList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L151">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L193">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_GetReportTypeExtraAList_" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraAList*"></a>
   <h4 id="CSSPServices_ReportTypeService_GetReportTypeExtraAList" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraAList">GetReportTypeExtraAList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.ReportTypeExtraA.html">ReportTypeExtraA</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +335,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.ReportTypeExtraA.html">ReportTypeExtraA</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.ReportTypeExtraA.html">ReportTypeExtraA</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,11 +345,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_GetReportTypeExtraAWithReportTypeID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.GetReportTypeExtraAWithReportTypeID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L146">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L184">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_GetReportTypeExtraAWithReportTypeID_" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraAWithReportTypeID*"></a>
   <h4 id="CSSPServices_ReportTypeService_GetReportTypeExtraAWithReportTypeID_System_Int32_" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraAWithReportTypeID(System.Int32)">GetReportTypeExtraAWithReportTypeID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ReportTypeExtraA model with the ReportTypeID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +369,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ReportTypeID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.ReportType.html">ReportTypes</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +385,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.ReportTypeExtraA.html">ReportTypeExtraA</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.ReportTypeExtraA.html">ReportTypeExtraA</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,11 +395,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_GetReportTypeExtraBList.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.GetReportTypeExtraBList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L164">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L215">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_GetReportTypeExtraBList_" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraBList*"></a>
   <h4 id="CSSPServices_ReportTypeService_GetReportTypeExtraBList" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraBList">GetReportTypeExtraBList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.ReportTypeExtraB.html">ReportTypeExtraB</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +417,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.ReportTypeExtraB.html">ReportTypeExtraB</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.ReportTypeExtraB.html">ReportTypeExtraB</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,11 +427,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_GetReportTypeExtraBWithReportTypeID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.GetReportTypeExtraBWithReportTypeID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L159">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L206">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_GetReportTypeExtraBWithReportTypeID_" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraBWithReportTypeID*"></a>
   <h4 id="CSSPServices_ReportTypeService_GetReportTypeExtraBWithReportTypeID_System_Int32_" data-uid="CSSPServices.ReportTypeService.GetReportTypeExtraBWithReportTypeID(System.Int32)">GetReportTypeExtraBWithReportTypeID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ReportTypeExtraB model with the ReportTypeID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +451,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ReportTypeID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.ReportType.html">ReportTypes</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +467,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.ReportTypeExtraB.html">ReportTypeExtraB</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.ReportTypeExtraB.html">ReportTypeExtraB</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,11 +477,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_GetReportTypeList.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.GetReportTypeList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L138">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L171">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_GetReportTypeList_" data-uid="CSSPServices.ReportTypeService.GetReportTypeList*"></a>
   <h4 id="CSSPServices_ReportTypeService_GetReportTypeList" data-uid="CSSPServices.ReportTypeService.GetReportTypeList">GetReportTypeList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.ReportType.html">ReportType</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +499,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.ReportType.html">ReportType</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.ReportType.html">ReportType</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +509,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_GetReportTypeWithReportTypeID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.GetReportTypeWithReportTypeID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L131">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L160">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_GetReportTypeWithReportTypeID_" data-uid="CSSPServices.ReportTypeService.GetReportTypeWithReportTypeID*"></a>
   <h4 id="CSSPServices_ReportTypeService_GetReportTypeWithReportTypeID_System_Int32_" data-uid="CSSPServices.ReportTypeService.GetReportTypeWithReportTypeID(System.Int32)">GetReportTypeWithReportTypeID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ReportType model with the ReportTypeID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,7 +533,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ReportTypeID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.ReportType.html">ReportTypes</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +549,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.ReportType.html">ReportType</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.ReportType.html">ReportType</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -530,11 +559,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_Update_CSSPModels_ReportType_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.Update(CSSPModels.ReportType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L197">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L263">View Source</a>
   </span>
   <a id="CSSPServices_ReportTypeService_Update_" data-uid="CSSPServices.ReportTypeService.Update*"></a>
   <h4 id="CSSPServices_ReportTypeService_Update_CSSPModels_ReportType_" data-uid="CSSPServices.ReportTypeService.Update(CSSPModels.ReportType)">Update(ReportType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an <a href="CSSPModels.ReportType.html">ReportType</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +583,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.ReportType.html">ReportType</a></td>
         <td><span class="parametername">reportType</span></td>
-        <td></td>
+        <td><p>Is the ReportType item the client want to add to CSSPDB. What&apos;s important here is the ReportTypeID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,59 +599,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L38">View Source</a>
-  </span>
-  <a id="CSSPServices_ReportTypeService_Validate_" data-uid="CSSPServices.ReportTypeService.Validate*"></a>
-  <h4 id="CSSPServices_ReportTypeService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.ReportTypeService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext, ActionDBTypeEnum actionDBType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
-        <td><span class="parametername">validationContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.ActionDBTypeEnum.html">ActionDBTypeEnum</a></td>
-        <td><span class="parametername">actionDBType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td></td>
+        <td><p>true if ReportType item was updated to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +615,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ReportTypeService.md&amp;value=---%0Auid%3A%20CSSPServices.ReportTypeService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ReportTypeServiceGenerated.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

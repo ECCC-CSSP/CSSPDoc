@@ -73,7 +73,10 @@
   
   <h1 id="CSSPServices_ContactShortcutService" data-uid="CSSPServices.ContactShortcutService" class="text-break">Class ContactShortcutService
   </h1>
-  <div class="markdown level0 summary"><p>bonjour ContactShortcut</p>
+  <div class="markdown level0 summary"><div class="NOTE"><h5>Note</h5><p><strong>Used by <a href="CSSPWebAPI.Controllers.html">CSSPWebAPI.Controllers</a></strong> : <a href="CSSPWebAPI.Controllers.ContactShortcutController.html">ContactShortcutController</a></p>
+<p><strong>Requires <a href="CSSPModels.html">CSSPModels</a></strong> : <a href="CSSPModels.ContactShortcut.html">CSSPModels.ContactShortcut</a></p>
+<p><strong>Return to <a href="CSSPServices.html">CSSPServices</a></strong></p>
+</div>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -161,11 +164,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.%23ctor(CSSPModels.Query%2CCSSPModels.CSSPDBContext%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L31">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L48">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService__ctor_" data-uid="CSSPServices.ContactShortcutService.#ctor*"></a>
   <h4 id="CSSPServices_ContactShortcutService__ctor_CSSPModels_Query_CSSPModels_CSSPDBContext_System_Int32_" data-uid="CSSPServices.ContactShortcutService.#ctor(CSSPModels.Query,CSSPModels.CSSPDBContext,System.Int32)">ContactShortcutService(Query, CSSPDBContext, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CSSPDB ContactShortcuts table service constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,17 +188,20 @@
       <tr>
         <td><a class="xref" href="CSSPModels.Query.html">Query</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.Query.html">Query</a> object for filtering of service functions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a></td>
         <td><span class="parametername">db</span></td>
-        <td></td>
+        <td><p><a href="CSSPModels.CSSPDBContext.html">CSSPDBContext</a> referencing the CSSP database context</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactID</span></td>
-        <td></td>
+        <td><p>Representing the contact identifier of the person connecting to the service</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +212,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_Add_CSSPModels_ContactShortcut_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.Add(CSSPModels.ContactShortcut)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L181">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L236">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_Add_" data-uid="CSSPServices.ContactShortcutService.Add*"></a>
   <h4 id="CSSPServices_ContactShortcutService_Add_CSSPModels_ContactShortcut_" data-uid="CSSPServices.ContactShortcutService.Add(CSSPModels.ContactShortcut)">Add(ContactShortcut)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an <a href="CSSPModels.ContactShortcut.html">ContactShortcut</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +236,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.ContactShortcut.html">ContactShortcut</a></td>
         <td><span class="parametername">contactShortcut</span></td>
-        <td></td>
+        <td><p>Is the ContactShortcut item the client want to add to CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +252,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if ContactShortcut item was added to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,11 +262,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_Delete_CSSPModels_ContactShortcut_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.Delete(CSSPModels.ContactShortcut)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L192">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L252">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_Delete_" data-uid="CSSPServices.ContactShortcutService.Delete*"></a>
   <h4 id="CSSPServices_ContactShortcutService_Delete_CSSPModels_ContactShortcut_" data-uid="CSSPServices.ContactShortcutService.Delete(CSSPModels.ContactShortcut)">Delete(ContactShortcut)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an <a href="CSSPModels.ContactShortcut.html">ContactShortcut</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +286,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.ContactShortcut.html">ContactShortcut</a></td>
         <td><span class="parametername">contactShortcut</span></td>
-        <td></td>
+        <td><p>Is the ContactShortcut item the client want to add to CSSPDB. What&apos;s important here is the ContactShortcutID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +302,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>true if ContactShortcut item was deleted to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,11 +312,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_GetContactShortcutExtraAList.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.GetContactShortcutExtraAList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L157">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L198">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_GetContactShortcutExtraAList_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraAList*"></a>
   <h4 id="CSSPServices_ContactShortcutService_GetContactShortcutExtraAList" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraAList">GetContactShortcutExtraAList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.ContactShortcutExtraA.html">ContactShortcutExtraA</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +334,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.ContactShortcutExtraA.html">ContactShortcutExtraA</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.ContactShortcutExtraA.html">ContactShortcutExtraA</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,11 +344,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_GetContactShortcutExtraAWithContactShortcutID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.GetContactShortcutExtraAWithContactShortcutID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L152">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L189">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_GetContactShortcutExtraAWithContactShortcutID_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraAWithContactShortcutID*"></a>
   <h4 id="CSSPServices_ContactShortcutService_GetContactShortcutExtraAWithContactShortcutID_System_Int32_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraAWithContactShortcutID(System.Int32)">GetContactShortcutExtraAWithContactShortcutID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ContactShortcutExtraA model with the ContactShortcutID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +368,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactShortcutID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.ContactShortcut.html">ContactShortcuts</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +384,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.ContactShortcutExtraA.html">ContactShortcutExtraA</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.ContactShortcutExtraA.html">ContactShortcutExtraA</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,11 +394,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_GetContactShortcutExtraBList.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.GetContactShortcutExtraBList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L170">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L220">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_GetContactShortcutExtraBList_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraBList*"></a>
   <h4 id="CSSPServices_ContactShortcutService_GetContactShortcutExtraBList" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraBList">GetContactShortcutExtraBList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.ContactShortcutExtraB.html">ContactShortcutExtraB</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +416,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.ContactShortcutExtraB.html">ContactShortcutExtraB</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.ContactShortcutExtraB.html">ContactShortcutExtraB</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,11 +426,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_GetContactShortcutExtraBWithContactShortcutID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.GetContactShortcutExtraBWithContactShortcutID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L165">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L211">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_GetContactShortcutExtraBWithContactShortcutID_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraBWithContactShortcutID*"></a>
   <h4 id="CSSPServices_ContactShortcutService_GetContactShortcutExtraBWithContactShortcutID_System_Int32_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutExtraBWithContactShortcutID(System.Int32)">GetContactShortcutExtraBWithContactShortcutID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ContactShortcutExtraB model with the ContactShortcutID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +450,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactShortcutID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.ContactShortcut.html">ContactShortcuts</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +466,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.ContactShortcutExtraB.html">ContactShortcutExtraB</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.ContactShortcutExtraB.html">ContactShortcutExtraB</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -453,11 +476,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_GetContactShortcutList.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.GetContactShortcutList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L144">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L176">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_GetContactShortcutList_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutList*"></a>
   <h4 id="CSSPServices_ContactShortcutService_GetContactShortcutList" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutList">GetContactShortcutList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of <a href="CSSPModels.ContactShortcut.html">ContactShortcut</a> satisfying the filters in <a href="CSSPModels.Query.html">Query</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +498,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="CSSPModels.ContactShortcut.html">ContactShortcut</a>&gt;</td>
-        <td></td>
+        <td><p>IQueryable of <a href="CSSPModels.ContactShortcut.html">ContactShortcut</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +508,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_GetContactShortcutWithContactShortcutID_System_Int32_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.GetContactShortcutWithContactShortcutID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L137">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L165">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_GetContactShortcutWithContactShortcutID_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutWithContactShortcutID*"></a>
   <h4 id="CSSPServices_ContactShortcutService_GetContactShortcutWithContactShortcutID_System_Int32_" data-uid="CSSPServices.ContactShortcutService.GetContactShortcutWithContactShortcutID(System.Int32)">GetContactShortcutWithContactShortcutID(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ContactShortcut model with the ContactShortcutID identifier</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,7 +532,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ContactShortcutID</span></td>
-        <td></td>
+        <td><p>Is the identifier of <a href="CSSPModels.ContactShortcut.html">ContactShortcuts</a> table of CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +548,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CSSPModels.ContactShortcut.html">ContactShortcut</a></td>
-        <td></td>
+        <td><p><a href="CSSPModels.ContactShortcut.html">ContactShortcut</a> object connected to the CSSPDB</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -530,11 +558,12 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_Update_CSSPModels_ContactShortcut_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.Update(CSSPModels.ContactShortcut)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L203">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L268">View Source</a>
   </span>
   <a id="CSSPServices_ContactShortcutService_Update_" data-uid="CSSPServices.ContactShortcutService.Update*"></a>
   <h4 id="CSSPServices_ContactShortcutService_Update_CSSPModels_ContactShortcut_" data-uid="CSSPServices.ContactShortcutService.Update(CSSPModels.ContactShortcut)">Update(ContactShortcut)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an <a href="CSSPModels.ContactShortcut.html">ContactShortcut</a> item in CSSPDB</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +582,8 @@
       <tr>
         <td><a class="xref" href="CSSPModels.ContactShortcut.html">ContactShortcut</a></td>
         <td><span class="parametername">contactShortcut</span></td>
-        <td></td>
+        <td><p>Is the ContactShortcut item the client want to add to CSSPDB. What&apos;s important here is the ContactShortcutID</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,59 +598,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService.Validate(System.ComponentModel.DataAnnotations.ValidationContext%2CCSSPEnums.ActionDBTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ContactShortcutServiceGenerated.cs/#L38">View Source</a>
-  </span>
-  <a id="CSSPServices_ContactShortcutService_Validate_" data-uid="CSSPServices.ContactShortcutService.Validate*"></a>
-  <h4 id="CSSPServices_ContactShortcutService_Validate_System_ComponentModel_DataAnnotations_ValidationContext_CSSPEnums_ActionDBTypeEnum_" data-uid="CSSPServices.ContactShortcutService.Validate(System.ComponentModel.DataAnnotations.ValidationContext,CSSPEnums.ActionDBTypeEnum)">Validate(ValidationContext, ActionDBTypeEnum)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext, ActionDBTypeEnum actionDBType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
-        <td><span class="parametername">validationContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CSSPEnums.ActionDBTypeEnum.html">ActionDBTypeEnum</a></td>
-        <td><span class="parametername">actionDBType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td></td>
+        <td><p>true if ContactShortcut item was updated to CSSPDB, false if an error happened during the DB requested transtaction</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -635,7 +614,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_ContactShortcutService.md&amp;value=---%0Auid%3A%20CSSPServices.ContactShortcutService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ExtraB/ContactShortcutExtraBService.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/srcWithDoc/ExtraB/ContactShortcutExtraBService.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
