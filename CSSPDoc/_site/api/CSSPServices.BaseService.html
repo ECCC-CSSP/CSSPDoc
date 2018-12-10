@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BaseService
    ">
-    <meta name="generator" content="docfx 2.40.1.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -135,6 +135,7 @@
       <div class="level2"><a class="xref" href="CSSPServices.MapInfoService.html">MapInfoService</a></div>
       <div class="level2"><a class="xref" href="CSSPServices.MapObjService.html">MapObjService</a></div>
       <div class="level2"><a class="xref" href="CSSPServices.MikeBoundaryConditionService.html">MikeBoundaryConditionService</a></div>
+      <div class="level2"><a class="xref" href="CSSPServices.MikeScenarioResultService.html">MikeScenarioResultService</a></div>
       <div class="level2"><a class="xref" href="CSSPServices.MikeScenarioService.html">MikeScenarioService</a></div>
       <div class="level2"><a class="xref" href="CSSPServices.MikeSourceService.html">MikeSourceService</a></div>
       <div class="level2"><a class="xref" href="CSSPServices.MikeSourceStartEndService.html">MikeSourceStartEndService</a></div>
@@ -624,7 +625,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_BaseService_EnhanceQueryStatements__1_System_Object_.md&amp;value=---%0Auid%3A%20CSSPServices.BaseService.EnhanceQueryStatements%60%601(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/_BaseService.cs/#L384">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/_BaseService.cs/#L486">View Source</a>
   </span>
   <a id="CSSPServices_BaseService_EnhanceQueryStatements_" data-uid="CSSPServices.BaseService.EnhanceQueryStatements*"></a>
   <h4 id="CSSPServices_BaseService_EnhanceQueryStatements__1_System_Object_" data-uid="CSSPServices.BaseService.EnhanceQueryStatements``1(System.Object)">EnhanceQueryStatements&lt;T&gt;(Object)</h4>
@@ -683,18 +684,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.BaseService.FillQuery(System.Type%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSSPServices.BaseService.FillQuery(System.Type%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/_BaseService.cs/#L536">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/_BaseService.cs/#L655">View Source</a>
   </span>
   <a id="CSSPServices_BaseService_FillQuery_" data-uid="CSSPServices.BaseService.FillQuery*"></a>
-  <h4 id="CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_" data-uid="CSSPServices.BaseService.FillQuery(System.Type,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">FillQuery(Type, String, Int32, Int32, String, String, String)</h4>
+  <h4 id="CSSPServices_BaseService_FillQuery_System_Type_System_String_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="CSSPServices.BaseService.FillQuery(System.Type,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">FillQuery(Type, String, Int32, Int32, String, String, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Query FillQuery(Type modelType, string lang = &quot;en&quot;, int skip = 0, int take = 200, string order = &quot;&quot;, string where = &quot;&quot;, string extra = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public Query FillQuery(Type modelType, string lang = &quot;en&quot;, int skip = 0, int take = 200, string asc = &quot;&quot;, string desc = &quot;&quot;, string where = &quot;&quot;, string extra = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -728,7 +729,12 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">order</span></td>
+        <td><span class="parametername">asc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">desc</span></td>
         <td></td>
       </tr>
       <tr>
@@ -763,7 +769,7 @@
     <a href="https://github.com/ECCC-CSSP/CSSPServices/new/master/apiSpec/new?filename=CSSPServices_BaseService_ValidateQuery_System_ComponentModel_DataAnnotations_ValidationContext_.md&amp;value=---%0Auid%3A%20CSSPServices.BaseService.ValidateQuery(System.ComponentModel.DataAnnotations.ValidationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/_BaseService.cs/#L76">View Source</a>
+    <a href="https://github.com/ECCC-CSSP/CSSPServices/blob/master/CSSPServices/_BaseService.cs/#L81">View Source</a>
   </span>
   <a id="CSSPServices_BaseService_ValidateQuery_" data-uid="CSSPServices.BaseService.ValidateQuery*"></a>
   <h4 id="CSSPServices_BaseService_ValidateQuery_System_ComponentModel_DataAnnotations_ValidationContext_" data-uid="CSSPServices.BaseService.ValidateQuery(System.ComponentModel.DataAnnotations.ValidationContext)">ValidateQuery(ValidationContext)</h4>

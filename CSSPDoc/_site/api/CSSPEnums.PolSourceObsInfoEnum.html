@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum PolSourceObsInfoEnum
    ">
-    <meta name="generator" content="docfx 2.40.1.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -301,6 +301,7 @@
         ShorelineSourceWharf = 11401,
         ShorelineSourceSeaWall = 11402,
         ShorelineSourceBoatRamp = 11403,
+        ShorelineSourceBoatHouse = 11404,
         SlipwayStart = 18000,
         SlipwayPaved = 18001,
         SlipwayRocks = 18002,
@@ -328,14 +329,17 @@
         WharfTransportationSingleStart = 20700,
         WharfTransportationCommericalSingle = 20701,
         WharfTransportationFerrySingle = 20702,
-        WharfTransportationBoatSingle = 20703,
+        WharfTransportationFishingBoatSingle = 20703,
         WharfTransportationBargeSingle = 20704,
+        WharfTransportationRecreationActivitySingle = 20705,
+        WharfTransportationPleasureBoatSingle = 20706,
         WharfTransportationStart = 11600,
         WharfTransportationCommerical = 11601,
         WharfTransportationFerry = 11602,
-        WharfTransportationPleasureCraft = 11603,
+        WharfTransportationFishingBoats = 11603,
         WharfTransportationBarges = 11604,
-        WharfTransportationRecreation = 11605,
+        WharfTransportationRecreationActivities = 11605,
+        WharfTransportationPleasureBoats = 11606,
         MarWhfCountNumberStart = 17500,
         MarWhfCountNumberEqualTo1 = 17501,
         MarWhfCountNumberEqualTo2 = 17502,
@@ -439,6 +443,8 @@
         AnimalLocationCottageLot = 12825,
         AnimalLocationWetland = 12826,
         AnimalLocationWaterCourse = 12827,
+        AnimalLocationPondLakeDom = 12828,
+        AnimalLocationPondLake = 12829,
         AnimalBldgStart = 16000,
         AnimalBldgEquals1 = 16001,
         AnimalBldgEquals2 = 16002,
@@ -621,6 +627,10 @@
         ObservationHazReasonNumbersMMarine = 14414,
         ObservationHazReasonDiscussMMarine = 14415,
         ObservationHazReasonRainfallMMarine = 14416,
+        ObservationHazReasonHistoricDataH = 14417,
+        ObservationHazReasonHIstoricDataM = 14418,
+        ObservationHazReasonHistoricDataHMarine = 14419,
+        ObservationHazReasonHistoricDataMMarine = 14420,
         PathWayStart = 25000,
         PathwayLandHigh = 25001,
         PathwayLandMed = 25002,
@@ -749,10 +759,10 @@
         AreaSlopeHighLow = 10411,
         AreaSlopeNALow = 10412,
         WaterCourseAreaSlopeStart = 10300,
-        WaterCourseAreaSlopeLow = 10301,
-        WaterCourseAreaSlopeMedium = 10302,
-        WaterCourseAreaSlopeHigh = 10303,
-        WaterCourseAreaSlopeNA = 10304,
+        WaterCourseAreaSlopeLowHigh = 10301,
+        WaterCourseAreaSlopeMediumHigh = 10302,
+        WaterCourseAreaSlopeHighHigh = 10303,
+        WaterCourseAreaSlopeNAHigh = 10304,
         WaterCourseAreaSlopeLowMed = 10305,
         WaterCourseAreaSlopeMediumMed = 10306,
         WaterCourseAreaSlopeHighMed = 10307,
@@ -762,25 +772,25 @@
         WaterCourseAreaSlopeHighLow = 10311,
         WaterCourseAreaSlopeNALow = 10312,
         ShorelineRiparionZoneStart = 23000,
-        ShorelineRiparianZonePresent = 23001,
-        ShorelineRiparianZoneAbsent = 23002,
-        ShorelineRiparianZoneNoInfo = 23003,
+        ShorelineRiparianZonePresentHigh = 23001,
+        ShorelineRiparianZoneAbsentHigh = 23002,
+        ShorelineRiparianZoneNoInfoHigh = 23003,
         ShorelineRiparianZonePresentMed = 23004,
         ShorelineRiparianZoneAbsentMed = 23005,
         ShorelineRiparianZoneNoInfoMed = 23006,
         ShorelineRiparianZonePresentLow = 23007,
         ShorelineRiparianZoneAbsentLow = 23008,
         ShorelineRiparianZoneNoInfoLow = 23009,
-        ShorelineRiparianGrassedZonePresent = 23010,
+        ShorelineRiparianGrassedZonePresentHigh = 23010,
         ShorelineRiparianGrassedZonePresentMed = 23011,
         ShorelineRiparianGrassedZonePresentLow = 23012,
         FlowThroughStructureStart = 16400,
-        FlowThroughStructureCulvert = 16401,
-        FlowThroughStructurePipe = 16402,
-        FlowThroughStructureBridge = 16403,
-        FlowThroughStructureBerm = 16404,
-        FlowThroughStructureWetland = 16405,
-        FlowThroughNoStructure = 16406,
+        FlowThroughStructureCulvertHigh = 16401,
+        FlowThroughStructurePipeHigh = 16402,
+        FlowThroughStructureBridgeHigh = 16403,
+        FlowThroughStructureBermHigh = 16404,
+        FlowThroughStructureWetlandHigh = 16405,
+        FlowThroughNoStructureHigh = 16406,
         FlowThroughStructureCulvertMed = 16407,
         FlowThroughStructurePipeMed = 16408,
         FlowThroughStructureBridgeMed = 16409,
@@ -793,18 +803,18 @@
         FlowThroughStructureBermLow = 16416,
         FlowThroughStructureWetlandLow = 16417,
         FlowThroughNoStructureLow = 16418,
-        FlowThroughSaltwaterMarsh = 16419,
+        FlowThroughSaltwaterMarshHigh = 16419,
         FlowThroughSaltwaterMarshMed = 16420,
         FlowThroughSaltwaterMarshLow = 16421,
-        FlowThroughBeaverDam = 16422,
+        FlowThroughBeaverDamHigh = 16422,
         FlowThroughBeaverDamMed = 16423,
         FlowThroughBeaverDamLow = 16424,
         FlowThroughWaterCourseStart = 11100,
-        FlowThroughStructureCulvertWaterCourse = 11101,
-        FlowThroughStructureBridgeWaterCourse = 11102,
-        FlowThroughStructureBermWaterCourse = 11103,
-        FlowThroughStructureWetlandWaterCourse = 11104,
-        StructureInRoadNoStructureWaterCourse = 11105,
+        FlowThroughStructureCulvertWaterCourseHigh = 11101,
+        FlowThroughStructureBridgeWaterCourseHigh = 11102,
+        FlowThroughStructureBermWaterCourseHigh = 11103,
+        FlowThroughStructureWetlandWaterCourseHigh = 11104,
+        StructureInRoadNoStructureWaterCourseHigh = 11105,
         FlowThroughStructureCulvertWaterCourseMed = 11106,
         FlowThroughStructureBridgeWaterCourseMed = 11107,
         FlowThroughStructureBermWaterCourseMed = 11108,
@@ -815,31 +825,31 @@
         FlowThroughStructureBermWaterCourseLow = 11113,
         FlowThroughStructureWetlandWaterCourseLow = 11114,
         StructureInRoadNoStructureWaterCourseLow = 11115,
-        FlowThroughStructureSaltMarshWatercourse = 11116,
+        FlowThroughStructureSaltMarshWatercourseHigh = 11116,
         FlowThroughStructureSaltMarshWaterCourseMed = 11117,
         FlowThroughStructureSaltMarshWaterCourseLow = 11118,
-        FlowThroughStructureBeaverDamWatercourse = 11119,
+        FlowThroughStructureBeaverDamWatercourseHigh = 11119,
         FlowThroughStructureBeaverDamWaterCourseMed = 11120,
         FlowThroughStructureBeaverDamWaterCourseLow = 11121,
         WaterCourseDistStart = 24000,
-        DistanceToWaterInMeters0W = 24001,
-        DistanceToWaterInMeters5W = 24002,
-        DistanceToWaterInMeters10W = 24003,
-        DistanceToWaterInMeters20W = 24004,
-        DistanceToWaterInMeters30W = 24005,
-        DistanceToWaterInMeters40W = 24006,
-        DistanceToWaterInMeters50W = 24007,
-        DistanceToWaterInMeters75W = 24008,
-        DistanceToWaterInMeters100W = 24009,
-        DistanceToWaterInMeters150W = 24010,
-        DistanceToWaterInMeters200W = 24011,
-        DistanceToWaterInMeters300W = 24012,
-        DistanceToWaterInMeters400W = 24013,
-        DistanceToWaterInMeters600W = 24014,
-        DistanceToWaterInMeters800W = 24015,
-        DistanceToWaterInMeters1000W = 24016,
-        DistanceToWaterInMetersGreaterThan1000W = 24017,
-        DistanceToWaterInMetersInfoRequiredW = 24018,
+        DistanceToWaterInMeters0HighW = 24001,
+        DistanceToWaterInMeters5HighW = 24002,
+        DistanceToWaterInMeters10HighW = 24003,
+        DistanceToWaterInMeters20HighW = 24004,
+        DistanceToWaterInMeters30HighW = 24005,
+        DistanceToWaterInMeters40HighW = 24006,
+        DistanceToWaterInMeters50HighW = 24007,
+        DistanceToWaterInMeters75HighW = 24008,
+        DistanceToWaterInMeters100HighW = 24009,
+        DistanceToWaterInMeters150HighW = 24010,
+        DistanceToWaterInMeters200HighW = 24011,
+        DistanceToWaterInMeters300HighW = 24012,
+        DistanceToWaterInMeters400HighW = 24013,
+        DistanceToWaterInMeters600HighW = 24014,
+        DistanceToWaterInMeters800HighW = 24015,
+        DistanceToWaterInMeters1000HighW = 24016,
+        DistanceToWaterInMetersGreaterThan1000HighW = 24017,
+        DistanceToWaterInMetersInfoRequiredHighW = 24018,
         DistanceToWaterInMeters0MedW = 24019,
         DistanceToWaterInMeters5MedW = 24020,
         DistanceToWaterInMeters10MedW = 24021,
@@ -877,16 +887,16 @@
         DistanceToWaterInMetGrThan1000LowW = 24053,
         DistanceToWaterInMetInfoReqLowW = 24054,
         PipeCountNumberStart = 21600,
-        PipeCountNumberEqualTo1 = 21601,
-        PipeCountNumberEqualTo2 = 21602,
-        PipeCountNumberEqualTo3 = 21603,
-        PipeCountNumberEqualTo4 = 21604,
-        PipeCountNumberEqualTo5 = 21605,
-        PipeCountNumberEqualTo6 = 21606,
-        PipeCountNumberEqualTo7 = 21607,
-        PipeCountNumberEqualTo8 = 21608,
-        PipeCountNumberEqualTo9 = 21609,
-        PipeCountNumberEqualTo10 = 21610,
+        PipeCountNumberEqualTo1High = 21601,
+        PipeCountNumberEqualTo2High = 21602,
+        PipeCountNumberEqualTo3High = 21603,
+        PipeCountNumberEqualTo4High = 21604,
+        PipeCountNumberEqualTo5High = 21605,
+        PipeCountNumberEqualTo6High = 21606,
+        PipeCountNumberEqualTo7High = 21607,
+        PipeCountNumberEqualTo8High = 21608,
+        PipeCountNumberEqualTo9High = 21609,
+        PipeCountNumberEqualTo10High = 21610,
         PipeCountNumberEqualTo1Med = 21611,
         PipeCountNumberEqualTo2Med = 21612,
         PipeCountNumberEqualTo3Med = 21613,
@@ -909,16 +919,16 @@
         PipeCountNumberEqualTo10Low = 21630,
         PipeCountNumbeNoInformation = 21631,
         DiameterInCentimetersStart = 14500,
-        DiameterInCentimetersEqual15 = 14501,
-        DiameterInCentimetersEqual30 = 14502,
-        DiameterInCentimetersBetween31and50cm = 14503,
-        DiameterInCentimetersBetween51and100cm = 14504,
-        DiameterInCentimetersBetween101and200cm = 14505,
-        DiameterInCentimetersBetween201and300cm = 14506,
-        DiameterInCentimetersBetween301and400cm = 14507,
-        DiameterInCentimetersBetween401and500cm = 14508,
-        DiameterInCentimetersGreaterThan500cm = 14509,
-        DiameterNoInformation = 14510,
+        DiameterInCentimetersEqual15High = 14501,
+        DiameterInCentimetersEqual30High = 14502,
+        DiameterInCentimetersBetween31and50cmHigh = 14503,
+        DiameterInCentimetersBetween51and100cmHigh = 14504,
+        DiameterInCentimetersBetween101and200cmHigh = 14505,
+        DiameterInCentimetersBetween201and300cmHigh = 14506,
+        DiameterInCentimetersBetween301and400cmHigh = 14507,
+        DiameterInCentimetersBetween401and500cmHigh = 14508,
+        DiameterInCentimetersGreaterThan500cmHigh = 14509,
+        DiameterNoInformationHigh = 14510,
         DiameterInCentimetersEqual15Med = 14511,
         DiameterInCentimetersEqual30Med = 14512,
         DiameterInCentimetersBetween31and50cmMed = 14513,
@@ -940,16 +950,16 @@
         DiameterInCentimetersGreaterThan500cmLow = 14529,
         DiameterNoInformationLow = 14530,
         DitchStart = 14900,
-        DitchAlongRoad = 14901,
-        DitchAcrossProperties = 14902,
+        DitchAlongRoadHigh = 14901,
+        DitchAcrossPropertiesHigh = 14902,
         DitchAlongRoadMed = 14903,
         DitchAcrossPropertiesMed = 14904,
         DitchAlongRoadLow = 14905,
         DitchAcrossPropertiesLow = 14906,
         DrainageStart = 15000,
-        DrainagePavedSurfaces = 15001,
-        DrainageVegetatedSurfaces = 15002,
-        DrainageBareSoilSurfaces = 15003,
+        DrainagePavedSurfacesHigh = 15001,
+        DrainageVegetatedSurfacesHigh = 15002,
+        DrainageBareSoilSurfacesHigh = 15003,
         DrainagePavedSurfacesMed = 15004,
         DrainageVegetatedSurfacesMed = 15005,
         DrainageBareSoilSurfacesMed = 15006,
@@ -957,10 +967,10 @@
         DrainageVegetatedSurfacesLow = 15008,
         DrainageBareSoilSurfacesLow = 15009,
         FlowLevelStart = 14600,
-        FlowLevelHi = 14601,
-        FlowLevelMed = 14602,
-        FlowLevelLo = 14603,
-        FlowLevelRain = 14604,
+        FlowLevelHiHigh = 14601,
+        FlowLevelMedHigh = 14602,
+        FlowLevelLoHigh = 14603,
+        FlowLevelRainHigh = 14604,
         FlowLevelHighMed = 14605,
         FlowLevelMediumMed = 14606,
         FlowLevelLowMed = 14607,
@@ -969,10 +979,10 @@
         FlowLevelMediumLow = 14610,
         FlowLevelLowLow = 14611,
         FlowLevelRainfallLow = 14612,
-        FlowLevelHighWaterCourse = 14613,
-        FlowLevelMediumWaterCourse = 14614,
-        FlowLevelLowWaterCourse = 14615,
-        FlowLevelRainfallWaterCourse = 14616,
+        FlowLevelHighWaterCourseHigh = 14613,
+        FlowLevelMediumWaterCourseHigh = 14614,
+        FlowLevelLowWaterCourseHigh = 14615,
+        FlowLevelRainfallWaterCourseHigh = 14616,
         FlowLevelHighWaterCourseMed = 14617,
         FlowLevelMediumWaterCourseMed = 14618,
         FlowLevelLowWaterCourseMed = 14619,
@@ -982,11 +992,11 @@
         FlowLevelLowWaterCourseLow = 14623,
         FlowLevelRainfallWaterCourseLow = 14624,
         PipeFlowStart = 13300,
-        PipeFlowlHigh = 13301,
-        PipeFlowMedium = 13302,
-        PipeFlowLow = 13303,
-        PipeFlowRainfall = 13304,
-        PipeFlowNA = 13305,
+        PipeFlowlHighHigh = 13301,
+        PipeFlowMediumHigh = 13302,
+        PipeFlowLowHigh = 13303,
+        PipeFlowRainfallHigh = 13304,
+        PipeFlowNAHigh = 13305,
         PipeFlowlHighMed = 13306,
         PipeFlowMediumMed = 13307,
         PipeFlowLowMed = 13308,
@@ -998,24 +1008,24 @@
         PipeFlowRainfallLow = 13314,
         PipeFlowNALow = 13315,
         DistanceToWaterInMetersStart = 10200,
-        DistanceToWaterInMeters0 = 10201,
-        DistanceToWaterInMeters5 = 10202,
-        DistanceToWaterInMeters10 = 10203,
-        DistanceToWaterInMeters20 = 10204,
-        DistanceToWaterInMeters30 = 10205,
-        DistanceToWaterInMeters40 = 10206,
-        DistanceToWaterInMeters50 = 10207,
-        DistanceToWaterInMeters75 = 10208,
-        DistanceToWaterInMeters100 = 10209,
-        DistanceToWaterInMeters150 = 10210,
-        DistanceToWaterInMeters200 = 10211,
-        DistanceToWaterInMeters300 = 10212,
-        DistanceToWaterInMeters400 = 10213,
-        DistanceToWaterInMeters600 = 10214,
-        DistanceToWaterInMeters800 = 10215,
-        DistanceToWaterInMeters1000 = 10216,
-        DistanceToWaterInMetersGreaterThan1000 = 10217,
-        DistanceToWaterInMetersInfoRequired = 10218,
+        DistanceToWaterInMeters0High = 10201,
+        DistanceToWaterInMeters5High = 10202,
+        DistanceToWaterInMeters10High = 10203,
+        DistanceToWaterInMeters20High = 10204,
+        DistanceToWaterInMeters30High = 10205,
+        DistanceToWaterInMeters40High = 10206,
+        DistanceToWaterInMeters50High = 10207,
+        DistanceToWaterInMeters75High = 10208,
+        DistanceToWaterInMeters100High = 10209,
+        DistanceToWaterInMeters150High = 10210,
+        DistanceToWaterInMeters200High = 10211,
+        DistanceToWaterInMeters300High = 10212,
+        DistanceToWaterInMeters400High = 10213,
+        DistanceToWaterInMeters600High = 10214,
+        DistanceToWaterInMeters800High = 10215,
+        DistanceToWaterInMeters1000High = 10216,
+        DistanceToWaterInMetersGreaterThan1000High = 10217,
+        DistanceToWaterInMetersInfoRequiredHigh = 10218,
         DistanceToWaterInMeters0Med = 10219,
         DistanceToWaterInMeters5Med = 10220,
         DistanceToWaterInMeters10Med = 10221,
@@ -2215,97 +2225,107 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationAgricultural">AnimalLocationAgricultural</td>
-        <td><p>12818 -- en [                    Agricultural] ---- fr [                    Agricole]</p>
+        <td><p>12818 -- en [                    Agricultural | W] ---- fr [                    Agricole]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationAgriculturalDom">AnimalLocationAgriculturalDom</td>
-        <td><p>12804 -- en [                    Agricultural] ---- fr [                    Agricole]</p>
+        <td><p>12804 -- en [                    Agricultural | D] ---- fr [                    Agricole]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationBarge">AnimalLocationBarge</td>
-        <td><p>12822 -- en [      Barge] ---- fr [      Barge]</p>
+        <td><p>12822 -- en [      Barge | W] ---- fr [      Barge]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationBargeDom">AnimalLocationBargeDom</td>
-        <td><p>12808 -- en [      Barge] ---- fr [      Barge]</p>
+        <td><p>12808 -- en [      Barge | D] ---- fr [      Barge]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationCottageLot">AnimalLocationCottageLot</td>
-        <td><p>12825 -- en [                        Cottage-Trailer] ---- fr [                        Cottage-Trailer]</p>
+        <td><p>12825 -- en [                        Cottage-Trailer | W] ---- fr [                        Cottage-Trailer]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationCottageLotDom">AnimalLocationCottageLotDom</td>
-        <td><p>12811 -- en [                        Cottage-Trailer] ---- fr [                        Cottage-Trailer]</p>
+        <td><p>12811 -- en [                        Cottage-Trailer | D] ---- fr [                        Cottage-Trailer]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationFarm">AnimalLocationFarm</td>
-        <td><p>12819 -- en [                 Farm] ---- fr [                 Ferme]</p>
+        <td><p>12819 -- en [                 Farm | W] ---- fr [                 Ferme]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationFarmDom">AnimalLocationFarmDom</td>
-        <td><p>12805 -- en [                 Farm] ---- fr [                 Ferme]</p>
+        <td><p>12805 -- en [                 Farm | D] ---- fr [                 Ferme]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationFishPlant">AnimalLocationFishPlant</td>
-        <td><p>12814 -- en [Fish Plant] ---- fr [Plante de poisson]</p>
+        <td><p>12814 -- en [Fish Plant | D] ---- fr [Plante de poisson]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationForested">AnimalLocationForested</td>
-        <td><p>12817 -- en [                       Forested] ---- fr [                       Boisé]</p>
+        <td><p>12817 -- en [                       Forested | W] ---- fr [                       Boisé]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationForestedDom">AnimalLocationForestedDom</td>
-        <td><p>12803 -- en [                       Forested] ---- fr [                       Boisé]</p>
+        <td><p>12803 -- en [                       Forested | D] ---- fr [                       Boisé]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationIsland">AnimalLocationIsland</td>
-        <td><p>12823 -- en [   Island] ---- fr [   Île]</p>
+        <td><p>12823 -- en [   Island | W] ---- fr [   Île]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationIslandDom">AnimalLocationIslandDom</td>
-        <td><p>12809 -- en [   Island] ---- fr [   Île]</p>
+        <td><p>12809 -- en [   Island | D] ---- fr [   Île]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationPondLake">AnimalLocationPondLake</td>
+        <td><p>12829 -- en [                                    Pond or Lake |  W] ---- fr [                                   Étang ou lac | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationPondLakeDom">AnimalLocationPondLakeDom</td>
+        <td><p>12828 -- en [                                    Pond or Lake  | D] ---- fr [                                   Étang ou lac | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationRecreationalArea">AnimalLocationRecreationalArea</td>
-        <td><p>12824 -- en [                             Recreational ] ---- fr [                             Récréatif]</p>
+        <td><p>12824 -- en [                             Recreational  | W] ---- fr [                             Récréatif]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationRecreationalAreaDom">AnimalLocationRecreationalAreaDom</td>
-        <td><p>12810 -- en [                             Recreational ] ---- fr [                             Récréatif]</p>
+        <td><p>12810 -- en [                             Recreational  | D] ---- fr [                             Récréatif]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationRural">AnimalLocationRural</td>
-        <td><p>12815 -- en [                                       Rural] ---- fr [                                       Rural]</p>
+        <td><p>12815 -- en [                                       Rural | W] ---- fr [                                       Rural]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationRuralDom">AnimalLocationRuralDom</td>
-        <td><p>12801 -- en [                                       Rural] ---- fr [Rural]</p>
+        <td><p>12801 -- en [                                       Rural | D] ---- fr [Rural]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationShoreline">AnimalLocationShoreline</td>
-        <td><p>12820 -- en [             Shoreline] ---- fr [             Littoral]</p>
+        <td><p>12820 -- en [             Shoreline | W] ---- fr [             Littoral]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationShorelineDom">AnimalLocationShorelineDom</td>
-        <td><p>12806 -- en [             Shoreline] ---- fr [             Littoral]</p>
+        <td><p>12806 -- en [             Shoreline | D] ---- fr [             Littoral]</p>
 </td>
       </tr>
       <tr>
@@ -2315,42 +2335,42 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationUrban">AnimalLocationUrban</td>
-        <td><p>12816 -- en [                                    Urban] ---- fr [                                    Urbain]</p>
+        <td><p>12816 -- en [                                    Urban | W] ---- fr [                                    Urbain]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationUrbanDom">AnimalLocationUrbanDom</td>
-        <td><p>12802 -- en [                                    Urban] ---- fr [                                    Urbain]</p>
+        <td><p>12802 -- en [                                    Urban | D] ---- fr [                                    Urbain]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationWaterCourse">AnimalLocationWaterCourse</td>
-        <td><p>12827 -- en [       Stream ] ---- fr [       Courant]</p>
+        <td><p>12827 -- en [       Stream  | W] ---- fr [       Courant]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationWaterCourseDom">AnimalLocationWaterCourseDom</td>
-        <td><p>12813 -- en [       Stream ] ---- fr [       Courant]</p>
+        <td><p>12813 -- en [       Stream  | D] ---- fr [       Courant]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationWetland">AnimalLocationWetland</td>
-        <td><p>12826 -- en [ Wetland] ---- fr [ Terre humide]</p>
+        <td><p>12826 -- en [ Wetland | W] ---- fr [ Terre humide]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationWetlandDom">AnimalLocationWetlandDom</td>
-        <td><p>12812 -- en [ Wetland] ---- fr [ Terre humide]</p>
+        <td><p>12812 -- en [ Wetland | D] ---- fr [ Terre humide]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationWharf">AnimalLocationWharf</td>
-        <td><p>12821 -- en [          Wharf] ---- fr [          Quai]</p>
+        <td><p>12821 -- en [          Wharf | W] ---- fr [          Quai]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_AnimalLocationWharfDom">AnimalLocationWharfDom</td>
-        <td><p>12807 -- en [          Wharf] ---- fr [          Quai]</p>
+        <td><p>12807 -- en [          Wharf | D] ---- fr [          Quai]</p>
 </td>
       </tr>
       <tr>
@@ -2913,7 +2933,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween101and200cm">DiameterInCentimetersBetween101and200cm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween101and200cmHigh">DiameterInCentimetersBetween101and200cmHigh</td>
         <td><p>14505 -- en [                                      101 - 200 | (H)] ---- fr [                                      101 - 200 | (H)]</p>
 </td>
       </tr>
@@ -2928,7 +2948,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween201and300cm">DiameterInCentimetersBetween201and300cm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween201and300cmHigh">DiameterInCentimetersBetween201and300cmHigh</td>
         <td><p>14506 -- en [                                201 - 300 | (H)] ---- fr [                                201 - 300 | (H)]</p>
 </td>
       </tr>
@@ -2943,7 +2963,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween301and400cm">DiameterInCentimetersBetween301and400cm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween301and400cmHigh">DiameterInCentimetersBetween301and400cmHigh</td>
         <td><p>14507 -- en [                           301 - 400 | (H)] ---- fr [                           301 - 400 | (H)]</p>
 </td>
       </tr>
@@ -2958,7 +2978,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween31and50cm">DiameterInCentimetersBetween31and50cm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween31and50cmHigh">DiameterInCentimetersBetween31and50cmHigh</td>
         <td><p>14503 -- en [                                              31-50 | (H)] ---- fr [                                              31-50 | (H)]</p>
 </td>
       </tr>
@@ -2973,7 +2993,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween401and500cm">DiameterInCentimetersBetween401and500cm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween401and500cmHigh">DiameterInCentimetersBetween401and500cmHigh</td>
         <td><p>14508 -- en [                           401-500 | (H)] ---- fr [                           401-500 | (H)]</p>
 </td>
       </tr>
@@ -2988,7 +3008,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween51and100cm">DiameterInCentimetersBetween51and100cm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersBetween51and100cmHigh">DiameterInCentimetersBetween51and100cmHigh</td>
         <td><p>14504 -- en [                                         51-100 | (H)] ---- fr [                                         51-100 | (H)]</p>
 </td>
       </tr>
@@ -3003,7 +3023,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersEqual15">DiameterInCentimetersEqual15</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersEqual15High">DiameterInCentimetersEqual15High</td>
         <td><p>14501 -- en [                                                        15 | (H)] ---- fr [                                                        15 | (H)]</p>
 </td>
       </tr>
@@ -3018,7 +3038,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersEqual30">DiameterInCentimetersEqual30</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersEqual30High">DiameterInCentimetersEqual30High</td>
         <td><p>14502 -- en [                                                    30 | (H)] ---- fr [                                                    30 | (H)]</p>
 </td>
       </tr>
@@ -3033,7 +3053,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersGreaterThan500cm">DiameterInCentimetersGreaterThan500cm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterInCentimetersGreaterThan500cmHigh">DiameterInCentimetersGreaterThan500cmHigh</td>
         <td><p>14509 -- en [             &gt; 500 | (H)] ---- fr [             &gt; 500 | (H)]</p>
 </td>
       </tr>
@@ -3053,7 +3073,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterNoInformation">DiameterNoInformation</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DiameterNoInformationHigh">DiameterNoInformationHigh</td>
         <td><p>14510 -- en [No Data | (H)] ---- fr [Pas de données | (H)]</p>
 </td>
       </tr>
@@ -3318,8 +3338,13 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters0">DistanceToWaterInMeters0</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters0High">DistanceToWaterInMeters0High</td>
         <td><p>10201 -- en [                                                                     0 | (H)] ---- fr [                             Sur la côte]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters0HighW">DistanceToWaterInMeters0HighW</td>
+        <td><p>24001 -- en [                                                              0 | (H)] ---- fr [                                                              Sur la côte]</p>
 </td>
       </tr>
       <tr>
@@ -3329,7 +3354,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters0LowW">DistanceToWaterInMeters0LowW</td>
-        <td><p>24037 -- en [                                                              0 | (H)] ---- fr [                                                          Sur la côte]</p>
+        <td><p>24037 -- en [                                                              0 | (L)] ---- fr [                                                          Sur la côte]</p>
 </td>
       </tr>
       <tr>
@@ -3339,27 +3364,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters0MedW">DistanceToWaterInMeters0MedW</td>
-        <td><p>24019 -- en [                                                              0 | (H)] ---- fr [                                                          Sur la côte]</p>
+        <td><p>24019 -- en [                                                              0 | (M)] ---- fr [                                                          Sur la côte]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters0W">DistanceToWaterInMeters0W</td>
-        <td><p>24001 -- en [                                                              0 | (H)] ---- fr [                                                              Sur la côte]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters10">DistanceToWaterInMeters10</td>
-        <td><p>10203 -- en [                                                           10 | (H)] ---- fr [                                                           10 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters100">DistanceToWaterInMeters100</td>
-        <td><p>10209 -- en [                                       100 | (H)] ---- fr [                                       100 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters1000">DistanceToWaterInMeters1000</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters1000High">DistanceToWaterInMeters1000High</td>
         <td><p>10216 -- en [              1000 | (H)] ---- fr [              1000 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters1000HighW">DistanceToWaterInMeters1000HighW</td>
+        <td><p>24016 -- en [      1000 | (H)] ---- fr [      1000 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3369,7 +3384,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters1000LowW">DistanceToWaterInMeters1000LowW</td>
-        <td><p>24052 -- en [      1000 | (H)] ---- fr [      1000 | (H)]</p>
+        <td><p>24052 -- en [      1000 | (L)] ---- fr [      1000 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3379,12 +3394,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters1000MedW">DistanceToWaterInMeters1000MedW</td>
-        <td><p>24034 -- en [      1000 | (H)] ---- fr [      1000 | (H)]</p>
+        <td><p>24034 -- en [      1000 | (M)] ---- fr [      1000 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters1000W">DistanceToWaterInMeters1000W</td>
-        <td><p>24016 -- en [      1000 | (H)] ---- fr [      1000 | (H)]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters100High">DistanceToWaterInMeters100High</td>
+        <td><p>10209 -- en [                                       100 | (H)] ---- fr [                                       100 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters100HighW">DistanceToWaterInMeters100HighW</td>
+        <td><p>24009 -- en [                         100 | (H)] ---- fr [                         100 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3394,7 +3414,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters100LowW">DistanceToWaterInMeters100LowW</td>
-        <td><p>24045 -- en [                         100 | (H)] ---- fr [                         100 | (H)]</p>
+        <td><p>24045 -- en [                         100 | (L)] ---- fr [                         100 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3404,12 +3424,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters100MedW">DistanceToWaterInMeters100MedW</td>
-        <td><p>24027 -- en [                         100 | (H)] ---- fr [                         100 | (H)]</p>
+        <td><p>24027 -- en [                         100| (M)] ---- fr [                         100 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters100W">DistanceToWaterInMeters100W</td>
-        <td><p>24009 -- en [                         100 | (H)] ---- fr [                         100 | (H)]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters10High">DistanceToWaterInMeters10High</td>
+        <td><p>10203 -- en [                                                           10 | (H)] ---- fr [                                                           10 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters10HighW">DistanceToWaterInMeters10HighW</td>
+        <td><p>24003 -- en [                                                    10 | (H)] ---- fr [                                                    10 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3419,7 +3444,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters10LowW">DistanceToWaterInMeters10LowW</td>
-        <td><p>24039 -- en [                                                    10 | (H)] ---- fr [                                                    10 | (H)]</p>
+        <td><p>24039 -- en [                                                    10 | (L)] ---- fr [                                                    10 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3429,17 +3454,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters10MedW">DistanceToWaterInMeters10MedW</td>
-        <td><p>24021 -- en [                                                    10 | (H)] ---- fr [                                                    10 | (H)]</p>
+        <td><p>24021 -- en [                                                    10 | (M)] ---- fr [                                                    10 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters10W">DistanceToWaterInMeters10W</td>
-        <td><p>24003 -- en [                                                    10 | (H)] ---- fr [                                                    10 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters150">DistanceToWaterInMeters150</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters150High">DistanceToWaterInMeters150High</td>
         <td><p>10210 -- en [                                    150 | (H)] ---- fr [                                    150 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters150HighW">DistanceToWaterInMeters150HighW</td>
+        <td><p>24010 -- en [                      150 | (H)] ---- fr [                      150 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3449,7 +3474,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters150LowW">DistanceToWaterInMeters150LowW</td>
-        <td><p>24046 -- en [                      150 | (H)] ---- fr [                      150 | (H)]</p>
+        <td><p>24046 -- en [                      150 | (L)] ---- fr [                      150 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3459,22 +3484,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters150MedW">DistanceToWaterInMeters150MedW</td>
-        <td><p>24028 -- en [                      150 | (H)] ---- fr [                      150 | (H)]</p>
+        <td><p>24028 -- en [                      150| (M)] ---- fr [                      150 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters150W">DistanceToWaterInMeters150W</td>
-        <td><p>24010 -- en [                      150 | (H)] ---- fr [                      150 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters20">DistanceToWaterInMeters20</td>
-        <td><p>10204 -- en [                                                        20 | (H)] ---- fr [                                                        20 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters200">DistanceToWaterInMeters200</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters200High">DistanceToWaterInMeters200High</td>
         <td><p>10211 -- en [                                 200 | (H)] ---- fr [                                 200 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters200HighW">DistanceToWaterInMeters200HighW</td>
+        <td><p>24011 -- en [                    200 | (H)] ---- fr [                    200 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3484,7 +3504,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters200LowW">DistanceToWaterInMeters200LowW</td>
-        <td><p>24047 -- en [                    200 | (H)] ---- fr [                    200 | (H)]</p>
+        <td><p>24047 -- en [                    200 | (L)] ---- fr [                    200 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3494,12 +3514,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters200MedW">DistanceToWaterInMeters200MedW</td>
-        <td><p>24029 -- en [                    200 | (H)] ---- fr [                    200 | (H)]</p>
+        <td><p>24029 -- en [                    200| (M)] ---- fr [                    200 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters200W">DistanceToWaterInMeters200W</td>
-        <td><p>24011 -- en [                    200 | (H)] ---- fr [                    200 | (H)]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters20High">DistanceToWaterInMeters20High</td>
+        <td><p>10204 -- en [                                                        20 | (H)] ---- fr [                                                        20 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters20HighW">DistanceToWaterInMeters20HighW</td>
+        <td><p>24004 -- en [                                                 20 | (H)] ---- fr [                                                 20 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3509,7 +3534,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters20LowW">DistanceToWaterInMeters20LowW</td>
-        <td><p>24040 -- en [                                                 20 | (H)] ---- fr [                                                 20 | (H)]</p>
+        <td><p>24040 -- en [                                                 20 | (L)] ---- fr [                                                 20 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3519,22 +3544,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters20MedW">DistanceToWaterInMeters20MedW</td>
-        <td><p>24022 -- en [                                                 20 | (H)] ---- fr [                                                 20 | (H)]</p>
+        <td><p>24022 -- en [                                                 20 | (M)] ---- fr [                                                 20 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters20W">DistanceToWaterInMeters20W</td>
-        <td><p>24004 -- en [                                                 20 | (H)] ---- fr [                                                 20 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters30">DistanceToWaterInMeters30</td>
-        <td><p>10205 -- en [                                                     30 | (H)] ---- fr [                                                     30 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters300">DistanceToWaterInMeters300</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters300High">DistanceToWaterInMeters300High</td>
         <td><p>10212 -- en [                             300 | (H)] ---- fr [                             300 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters300HighW">DistanceToWaterInMeters300HighW</td>
+        <td><p>24012 -- en [                 300 | (H)] ---- fr [                 300 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3544,7 +3564,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters300LowW">DistanceToWaterInMeters300LowW</td>
-        <td><p>24048 -- en [                 300 | (H)] ---- fr [                 300 | (H)]</p>
+        <td><p>24048 -- en [                 300 | (L)] ---- fr [                 300 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3554,12 +3574,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters300MedW">DistanceToWaterInMeters300MedW</td>
-        <td><p>24030 -- en [                 300 | (H)] ---- fr [                 300 | (H)]</p>
+        <td><p>24030 -- en [                 300 | (M)] ---- fr [                 300 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters300W">DistanceToWaterInMeters300W</td>
-        <td><p>24012 -- en [                 300 | (H)] ---- fr [                 300 | (H)]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters30High">DistanceToWaterInMeters30High</td>
+        <td><p>10205 -- en [                                                     30 | (H)] ---- fr [                                                     30 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters30HighW">DistanceToWaterInMeters30HighW</td>
+        <td><p>24005 -- en [                                            30 | (H)] ---- fr [                                            30 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3569,7 +3594,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters30LowW">DistanceToWaterInMeters30LowW</td>
-        <td><p>24041 -- en [                                            30 | (H)] ---- fr [                                            30 | (H)]</p>
+        <td><p>24041 -- en [                                            30 | (L)] ---- fr [                                            30 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3579,22 +3604,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters30MedW">DistanceToWaterInMeters30MedW</td>
-        <td><p>24023 -- en [                                            30 | (H)] ---- fr [                                            30 | (H)]</p>
+        <td><p>24023 -- en [                                            30| (M)] ---- fr [                                            30 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters30W">DistanceToWaterInMeters30W</td>
-        <td><p>24005 -- en [                                            30 | (H)] ---- fr [                                            30 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters40">DistanceToWaterInMeters40</td>
-        <td><p>10206 -- en [                                                  40 | (H)] ---- fr [                                                  40 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters400">DistanceToWaterInMeters400</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters400High">DistanceToWaterInMeters400High</td>
         <td><p>10213 -- en [                          400 | (H)] ---- fr [                          400 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters400HighW">DistanceToWaterInMeters400HighW</td>
+        <td><p>24013 -- en [              400 | (H)] ---- fr [              400 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3604,7 +3624,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters400LowW">DistanceToWaterInMeters400LowW</td>
-        <td><p>24049 -- en [              400 | (H)] ---- fr [              400 | (H)]</p>
+        <td><p>24049 -- en [              400 | (L)] ---- fr [              400 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3614,12 +3634,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters400MedW">DistanceToWaterInMeters400MedW</td>
-        <td><p>24031 -- en [              400 | (H)] ---- fr [              400 | (H)]</p>
+        <td><p>24031 -- en [              400 | (M)] ---- fr [              400 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters400W">DistanceToWaterInMeters400W</td>
-        <td><p>24013 -- en [              400 | (H)] ---- fr [              400 | (H)]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters40High">DistanceToWaterInMeters40High</td>
+        <td><p>10206 -- en [                                                  40 | (H)] ---- fr [                                                  40 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters40HighW">DistanceToWaterInMeters40HighW</td>
+        <td><p>24006 -- en [                                      40 | (H)] ---- fr [                                      40 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3629,7 +3654,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters40LowW">DistanceToWaterInMeters40LowW</td>
-        <td><p>24042 -- en [                                      40 | (H)] ---- fr [                                      40 | (H)]</p>
+        <td><p>24042 -- en [                                      40 | (L)] ---- fr [                                      40 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3639,22 +3664,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters40MedW">DistanceToWaterInMeters40MedW</td>
-        <td><p>24024 -- en [                                      40 | (H)] ---- fr [                                      40 | (H)]</p>
+        <td><p>24024 -- en [                                      40| (M)] ---- fr [                                      40 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters40W">DistanceToWaterInMeters40W</td>
-        <td><p>24006 -- en [                                      40 | (H)] ---- fr [                                      40 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters5">DistanceToWaterInMeters5</td>
-        <td><p>10202 -- en [                                                                 5 | (H)] ---- fr [                                                                 5 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters50">DistanceToWaterInMeters50</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters50High">DistanceToWaterInMeters50High</td>
         <td><p>10207 -- en [                                              50 | (H)] ---- fr [                                              50 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters50HighW">DistanceToWaterInMeters50HighW</td>
+        <td><p>24007 -- en [                                 50 | (H)] ---- fr [                                 50 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3664,7 +3684,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters50LowW">DistanceToWaterInMeters50LowW</td>
-        <td><p>24043 -- en [                                 50 | (H)] ---- fr [                                 50 | (H)]</p>
+        <td><p>24043 -- en [                                 50 |  (L)] ---- fr [                                 50 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3674,12 +3694,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters50MedW">DistanceToWaterInMeters50MedW</td>
-        <td><p>24025 -- en [                                 50 | (H)] ---- fr [                                 50 | (H)]</p>
+        <td><p>24025 -- en [                                 50 | (M)] ---- fr [                                 50 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters50W">DistanceToWaterInMeters50W</td>
-        <td><p>24007 -- en [                                 50 | (H)] ---- fr [                                 50 | (H)]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters5High">DistanceToWaterInMeters5High</td>
+        <td><p>10202 -- en [                                                                 5 | (H)] ---- fr [                                                                 5 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters5HighW">DistanceToWaterInMeters5HighW</td>
+        <td><p>24002 -- en [                                                         5  | (H)] ---- fr [                                                         5  | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3689,7 +3714,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters5LowW">DistanceToWaterInMeters5LowW</td>
-        <td><p>24038 -- en [                                                         5  | (H)] ---- fr [                                                         5  | (H)]</p>
+        <td><p>24038 -- en [                                                         5  | (L)] ---- fr [                                                         5  | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3699,17 +3724,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters5MedW">DistanceToWaterInMeters5MedW</td>
-        <td><p>24020 -- en [                                                         5  | (H)] ---- fr [                                                         5  | (H)]</p>
+        <td><p>24020 -- en [                                                         5  | (M)] ---- fr [                                                         5  | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters5W">DistanceToWaterInMeters5W</td>
-        <td><p>24002 -- en [                                                         5  | (H)] ---- fr [                                                         5  | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters600">DistanceToWaterInMeters600</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters600High">DistanceToWaterInMeters600High</td>
         <td><p>10214 -- en [                       600 | (H)] ---- fr [                       600 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters600HighW">DistanceToWaterInMeters600HighW</td>
+        <td><p>24014 -- en [            600 | (H)] ---- fr [            600 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3719,7 +3744,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters600LowW">DistanceToWaterInMeters600LowW</td>
-        <td><p>24050 -- en [            600 | (H)] ---- fr [            600 | (H)]</p>
+        <td><p>24050 -- en [            600 | (L)] ---- fr [            600 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3729,17 +3754,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters600MedW">DistanceToWaterInMeters600MedW</td>
-        <td><p>24032 -- en [            600 | (H)] ---- fr [            600 | (H)]</p>
+        <td><p>24032 -- en [            600 | (M)] ---- fr [            600 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters600W">DistanceToWaterInMeters600W</td>
-        <td><p>24014 -- en [            600 | (H)] ---- fr [            600 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters75">DistanceToWaterInMeters75</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters75High">DistanceToWaterInMeters75High</td>
         <td><p>10208 -- en [                                           75 | (H)] ---- fr [                                           75 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters75HighW">DistanceToWaterInMeters75HighW</td>
+        <td><p>24008 -- en [                             75 | (H)] ---- fr [                             75 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3749,7 +3774,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters75LowW">DistanceToWaterInMeters75LowW</td>
-        <td><p>24044 -- en [                             75 | (H)] ---- fr [                             75 | (H)]</p>
+        <td><p>24044 -- en [                             75 |  (L)] ---- fr [                             75 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3759,17 +3784,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters75MedW">DistanceToWaterInMeters75MedW</td>
-        <td><p>24026 -- en [                             75 | (H)] ---- fr [                             75 | (H)]</p>
+        <td><p>24026 -- en [                             75 | (M)] ---- fr [                             75 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters75W">DistanceToWaterInMeters75W</td>
-        <td><p>24008 -- en [                             75 | (H)] ---- fr [                             75 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters800">DistanceToWaterInMeters800</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters800High">DistanceToWaterInMeters800High</td>
         <td><p>10215 -- en [                   800 | (H)] ---- fr [                   800 | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters800HighW">DistanceToWaterInMeters800HighW</td>
+        <td><p>24015 -- en [          800 | (H)] ---- fr [          800 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3779,7 +3804,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters800LowW">DistanceToWaterInMeters800LowW</td>
-        <td><p>24051 -- en [          800 | (H)] ---- fr [          800 | (H)]</p>
+        <td><p>24051 -- en [          800 | (L)] ---- fr [          800 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3789,31 +3814,26 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters800MedW">DistanceToWaterInMeters800MedW</td>
-        <td><p>24033 -- en [          800 | (H)] ---- fr [          800 | (H)]</p>
+        <td><p>24033 -- en [          800 | (M)] ---- fr [          800 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMeters800W">DistanceToWaterInMeters800W</td>
-        <td><p>24015 -- en [          800 | (H)] ---- fr [          800 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersGreaterThan1000">DistanceToWaterInMetersGreaterThan1000</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersGreaterThan1000High">DistanceToWaterInMetersGreaterThan1000High</td>
         <td><p>10217 -- en [         &gt; 1000 | (H)] ---- fr [         &gt; 1000 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersGreaterThan1000W">DistanceToWaterInMetersGreaterThan1000W</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersGreaterThan1000HighW">DistanceToWaterInMetersGreaterThan1000HighW</td>
         <td><p>24017 -- en [  &gt; 1000 | (H)] ---- fr [  &gt; 1000 | (H)]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersInfoRequired">DistanceToWaterInMetersInfoRequired</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersInfoRequiredHigh">DistanceToWaterInMetersInfoRequiredHigh</td>
         <td><p>10218 -- en [INFO REQUIRED | (H)] ---- fr [INFO REQUIS]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersInfoRequiredW">DistanceToWaterInMetersInfoRequiredW</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetersInfoRequiredHighW">DistanceToWaterInMetersInfoRequiredHighW</td>
         <td><p>24018 -- en [INFO REQUIRED | (H)] ---- fr [INFO REQUIS ]</p>
 </td>
       </tr>
@@ -3829,7 +3849,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetGrThan1000LowW">DistanceToWaterInMetGrThan1000LowW</td>
-        <td><p>24053 -- en [  &gt; 1000 | (H)] ---- fr [  &gt; 1000 | (H)]</p>
+        <td><p>24053 -- en [  &gt; 1000 | (L)] ---- fr [  &gt; 1000 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3839,7 +3859,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_DistanceToWaterInMetGrThan1000MedW">DistanceToWaterInMetGrThan1000MedW</td>
-        <td><p>24035 -- en [  &gt; 1000 | (H)] ---- fr [  &gt; 1000 | (H)]</p>
+        <td><p>24035 -- en [  &gt; 1000 | (M)] ---- fr [  &gt; 1000 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -3863,7 +3883,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DitchAcrossProperties">DitchAcrossProperties</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DitchAcrossPropertiesHigh">DitchAcrossPropertiesHigh</td>
         <td><p>14902 -- en [Across Properties | (H)] ---- fr [Par le biais de terrains]</p>
 </td>
       </tr>
@@ -3878,7 +3898,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DitchAlongRoad">DitchAlongRoad</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DitchAlongRoadHigh">DitchAlongRoadHigh</td>
         <td><p>14901 -- en [Along  Road | (H)] ---- fr [Le long d&apos;un chemin]</p>
 </td>
       </tr>
@@ -3898,7 +3918,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageBareSoilSurfaces">DrainageBareSoilSurfaces</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageBareSoilSurfacesHigh">DrainageBareSoilSurfacesHigh</td>
         <td><p>15003 -- en [            Bare | (H)] ---- fr [Sol]</p>
 </td>
       </tr>
@@ -3913,7 +3933,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DrainagePavedSurfaces">DrainagePavedSurfaces</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DrainagePavedSurfacesHigh">DrainagePavedSurfacesHigh</td>
         <td><p>15001 -- en [Paved | (H)] ---- fr [Surface d&apos;asphalte]</p>
 </td>
       </tr>
@@ -3933,7 +3953,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageVegetatedSurfaces">DrainageVegetatedSurfaces</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_DrainageVegetatedSurfacesHigh">DrainageVegetatedSurfacesHigh</td>
         <td><p>15002 -- en [                      Vegetated | (H)] ---- fr [Surface recouverte de végétation]</p>
 </td>
       </tr>
@@ -4378,11 +4398,6 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelHi">FlowLevelHi</td>
-        <td><p>14601 -- en [                             Hi | (H)] ---- fr [Salut | (H)]</p>
-</td>
-      </tr>
-      <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelHighLow">FlowLevelHighLow</td>
         <td><p>14609 -- en [                              High | (L)] ---- fr [                              Haut | (L)]</p>
 </td>
@@ -4393,7 +4408,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelHighWaterCourse">FlowLevelHighWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelHighWaterCourseHigh">FlowLevelHighWaterCourseHigh</td>
         <td><p>14613 -- en [                                      High | (H)] ---- fr [                                      Haut | (H)]</p>
 </td>
       </tr>
@@ -4408,7 +4423,12 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelLo">FlowLevelLo</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelHiHigh">FlowLevelHiHigh</td>
+        <td><p>14601 -- en [                             Hi | (H)] ---- fr [Salut | (H)]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelLoHigh">FlowLevelLoHigh</td>
         <td><p>14603 -- en [                                             Lo | (H)] ---- fr [                                             Lo | (H)]</p>
 </td>
       </tr>
@@ -4423,7 +4443,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelLowWaterCourse">FlowLevelLowWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelLowWaterCourseHigh">FlowLevelLowWaterCourseHigh</td>
         <td><p>14615 -- en [                                              Low | (H)] ---- fr [                                              Faible | (H)]</p>
 </td>
       </tr>
@@ -4438,7 +4458,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelMed">FlowLevelMed</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelMedHigh">FlowLevelMedHigh</td>
         <td><p>14602 -- en [                                 Med | (H)] ---- fr [                                 Med | (H)]</p>
 </td>
       </tr>
@@ -4453,7 +4473,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelMediumWaterCourse">FlowLevelMediumWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelMediumWaterCourseHigh">FlowLevelMediumWaterCourseHigh</td>
         <td><p>14614 -- en [                                        Medium | (H)] ---- fr [                                        Moyen | (H)]</p>
 </td>
       </tr>
@@ -4468,11 +4488,6 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelRain">FlowLevelRain</td>
-        <td><p>14604 -- en [ Rain | (H)] ---- fr [ Pluie | (H)]</p>
-</td>
-      </tr>
-      <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelRainfallLow">FlowLevelRainfallLow</td>
         <td><p>14612 -- en [ Rainfall | (L)] ---- fr [ Pluie (L)]</p>
 </td>
@@ -4483,7 +4498,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelRainfallWaterCourse">FlowLevelRainfallWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelRainfallWaterCourseHigh">FlowLevelRainfallWaterCourseHigh</td>
         <td><p>14616 -- en [ Rainfall | (H)] ---- fr [ Pluie (H)]</p>
 </td>
       </tr>
@@ -4498,12 +4513,17 @@
 </td>
       </tr>
       <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelRainHigh">FlowLevelRainHigh</td>
+        <td><p>14604 -- en [ Rain | (H)] ---- fr [ Pluie | (H)]</p>
+</td>
+      </tr>
+      <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_FlowLevelStart">FlowLevelStart</td>
         <td><p>14600 -- en [Discharge Rate] ---- fr [Débit]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughBeaverDam">FlowThroughBeaverDam</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughBeaverDamHigh">FlowThroughBeaverDamHigh</td>
         <td><p>16422 -- en [                                            Beaver Dam | (H)] ---- fr [Barrage de castor | (H)]</p>
 </td>
       </tr>
@@ -4518,7 +4538,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughNoStructure">FlowThroughNoStructure</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughNoStructureHigh">FlowThroughNoStructureHigh</td>
         <td><p>16406 -- en [                                                              Free Flowing | (H)] ---- fr [                                                              Flux libre | (H)]</p>
 </td>
       </tr>
@@ -4533,7 +4553,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughSaltwaterMarsh">FlowThroughSaltwaterMarsh</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughSaltwaterMarshHigh">FlowThroughSaltwaterMarshHigh</td>
         <td><p>16419 -- en [                                            Saltwater Marshs | (H)] ---- fr [Marais d&apos;eau salée | (H)]</p>
 </td>
       </tr>
@@ -4548,7 +4568,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBeaverDamWatercourse">FlowThroughStructureBeaverDamWatercourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBeaverDamWatercourseHigh">FlowThroughStructureBeaverDamWatercourseHigh</td>
         <td><p>11119 -- en [                                            Beaver Dam | (H)] ---- fr [Barrage de castor | (H)]</p>
 </td>
       </tr>
@@ -4563,7 +4583,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBerm">FlowThroughStructureBerm</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBermHigh">FlowThroughStructureBermHigh</td>
         <td><p>16404 -- en [                    Berm | (H)] ---- fr [                    Berm | (H)]</p>
 </td>
       </tr>
@@ -4578,7 +4598,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBermWaterCourse">FlowThroughStructureBermWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBermWaterCourseHigh">FlowThroughStructureBermWaterCourseHigh</td>
         <td><p>11103 -- en [                    Berm | (H)] ---- fr [                    Berm | (H)]</p>
 </td>
       </tr>
@@ -4593,7 +4613,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBridge">FlowThroughStructureBridge</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBridgeHigh">FlowThroughStructureBridgeHigh</td>
         <td><p>16403 -- en [                                                   Bridge | (H)] ---- fr [                                                   Pont | (H)]</p>
 </td>
       </tr>
@@ -4608,7 +4628,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBridgeWaterCourse">FlowThroughStructureBridgeWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureBridgeWaterCourseHigh">FlowThroughStructureBridgeWaterCourseHigh</td>
         <td><p>11102 -- en [                                                   Bridge | (H)] ---- fr [                                                   Pont | (H)]</p>
 </td>
       </tr>
@@ -4623,7 +4643,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureCulvert">FlowThroughStructureCulvert</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureCulvertHigh">FlowThroughStructureCulvertHigh</td>
         <td><p>16401 -- en [                                                       Culvert | (H)] ---- fr [Ponceau | (H)]</p>
 </td>
       </tr>
@@ -4638,7 +4658,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureCulvertWaterCourse">FlowThroughStructureCulvertWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureCulvertWaterCourseHigh">FlowThroughStructureCulvertWaterCourseHigh</td>
         <td><p>11101 -- en [                                                       Culvert | (H)] ---- fr [                                                       Ponceau | (H)]</p>
 </td>
       </tr>
@@ -4653,7 +4673,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructurePipe">FlowThroughStructurePipe</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructurePipeHigh">FlowThroughStructurePipeHigh</td>
         <td><p>16402 -- en [                                                Pipe | (H)] ---- fr [                                                Pipe | (H)]</p>
 </td>
       </tr>
@@ -4668,7 +4688,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureSaltMarshWatercourse">FlowThroughStructureSaltMarshWatercourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureSaltMarshWatercourseHigh">FlowThroughStructureSaltMarshWatercourseHigh</td>
         <td><p>11116 -- en [                                            Saltwater Marshs | (H)] ---- fr [Marais d&apos;eau salée | (H)]</p>
 </td>
       </tr>
@@ -4688,7 +4708,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureWetland">FlowThroughStructureWetland</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureWetlandHigh">FlowThroughStructureWetlandHigh</td>
         <td><p>16405 -- en [                                            Wetland | (H)] ---- fr [                                            Zone humide | (H)]</p>
 </td>
       </tr>
@@ -4703,7 +4723,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureWetlandWaterCourse">FlowThroughStructureWetlandWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_FlowThroughStructureWetlandWaterCourseHigh">FlowThroughStructureWetlandWaterCourseHigh</td>
         <td><p>11104 -- en [                                            Wetland | (H)] ---- fr [                                            Zone humide | (H)]</p>
 </td>
       </tr>
@@ -4839,12 +4859,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationAnchorageMooringSiteMarine">HumanLocationAnchorageMooringSiteMarine</td>
-        <td><p>12716 -- en [            Anchorage ] ---- fr [Site de mouillage ou d&apos;amarrage]</p>
+        <td><p>12716 -- en [            Anchorage  | (M)] ---- fr [Site de mouillage ou d&apos;amarrage]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationAquacultureSiteMarine">HumanLocationAquacultureSiteMarine</td>
-        <td><p>12715 -- en [               Aquaculture] ---- fr [Site de l&apos;aquaculture]</p>
+        <td><p>12715 -- en [               Aquaculture | (M)] ---- fr [Site de l&apos;aquaculture]</p>
 </td>
       </tr>
       <tr>
@@ -4854,7 +4874,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationDisposalAtSeaMarine">HumanLocationDisposalAtSeaMarine</td>
-        <td><p>12717 -- en [         Disposal at Sea] ---- fr [Décharge en haute mer]</p>
+        <td><p>12717 -- en [         Disposal at Sea | (M)] ---- fr [Décharge en haute mer]</p>
 </td>
       </tr>
       <tr>
@@ -4869,7 +4889,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationFloatHomeCommunityMarine">HumanLocationFloatHomeCommunityMarine</td>
-        <td><p>12720 -- en [   Float Home Community] ---- fr [une communauté flottante.]</p>
+        <td><p>12720 -- en [   Float Home Community | (M)] ---- fr [une communauté flottante.]</p>
 </td>
       </tr>
       <tr>
@@ -4889,12 +4909,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationMarinaMarine">HumanLocationMarinaMarine</td>
-        <td><p>12719 -- en [     Marina] ---- fr [Marina.]</p>
+        <td><p>12719 -- en [     Marina | (M)] ---- fr [Marina.]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationMarineParkMarine">HumanLocationMarineParkMarine</td>
-        <td><p>12718 -- en [       Marine Park] ---- fr [Parc marin]</p>
+        <td><p>12718 -- en [       Marine Park | (M)] ---- fr [Parc marin]</p>
 </td>
       </tr>
       <tr>
@@ -4919,7 +4939,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationShorelineMarine">HumanLocationShorelineMarine</td>
-        <td><p>12706 -- en [                                        Shoreline] ---- fr [Littoral]</p>
+        <td><p>12706 -- en [                                        Shoreline | (M)] ---- fr [Littoral]</p>
 </td>
       </tr>
       <tr>
@@ -4949,7 +4969,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanLocationWharfMarine">HumanLocationWharfMarine</td>
-        <td><p>12707 -- en [                                     Wharf] ---- fr [Quai]</p>
+        <td><p>12707 -- en [                                     Wharf | (M)] ---- fr [Quai]</p>
 </td>
       </tr>
       <tr>
@@ -4959,7 +4979,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberBetween101and200M">HumanPollutionCountNumberBetween101and200M</td>
-        <td><p>16932 -- en [         101 - 200] ---- fr [         101 - 200]</p>
+        <td><p>16932 -- en [         101 - 200 | (M)] ---- fr [         101 - 200]</p>
 </td>
       </tr>
       <tr>
@@ -4969,7 +4989,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberBetween11and20M">HumanPollutionCountNumberBetween11and20M</td>
-        <td><p>16928 -- en [                     11 - 20] ---- fr [                     11 - 20]</p>
+        <td><p>16928 -- en [                     11 - 20 | (M)] ---- fr [                     11 - 20]</p>
 </td>
       </tr>
       <tr>
@@ -4979,7 +4999,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberBetween201and400M">HumanPollutionCountNumberBetween201and400M</td>
-        <td><p>16933 -- en [        201 - 400] ---- fr [        201 - 400]</p>
+        <td><p>16933 -- en [        201 - 400 | (M)] ---- fr [        201 - 400]</p>
 </td>
       </tr>
       <tr>
@@ -4989,7 +5009,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberBetween21and40M">HumanPollutionCountNumberBetween21and40M</td>
-        <td><p>16929 -- en [                  21 - 40] ---- fr [                  21 - 40]</p>
+        <td><p>16929 -- en [                  21 - 40 | (M)] ---- fr [                  21 - 40]</p>
 </td>
       </tr>
       <tr>
@@ -4999,7 +5019,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberBetween41and60M">HumanPollutionCountNumberBetween41and60M</td>
-        <td><p>16930 -- en [               41 - 60] ---- fr [               41 - 60]</p>
+        <td><p>16930 -- en [               41 - 60 | (M)] ---- fr [               41 - 60]</p>
 </td>
       </tr>
       <tr>
@@ -5009,7 +5029,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberBetween61and100M">HumanPollutionCountNumberBetween61and100M</td>
-        <td><p>16931 -- en [            61 - 100] ---- fr [            61 - 100]</p>
+        <td><p>16931 -- en [            61 - 100 | (M)] ---- fr [            61 - 100]</p>
 </td>
       </tr>
       <tr>
@@ -5024,12 +5044,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo10M">HumanPollutionCountNumberEqualTo10M</td>
-        <td><p>16927 -- en [                           10] ---- fr [                           10]</p>
+        <td><p>16927 -- en [                           10 | (M)] ---- fr [                           10]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo1M">HumanPollutionCountNumberEqualTo1M</td>
-        <td><p>16918 -- en [                                                            1] ---- fr [                                                            1]</p>
+        <td><p>16918 -- en [                                                            1 | (M)] ---- fr [                                                            1]</p>
 </td>
       </tr>
       <tr>
@@ -5039,7 +5059,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo2M">HumanPollutionCountNumberEqualTo2M</td>
-        <td><p>16919 -- en [                                                        2] ---- fr [                                                        2]</p>
+        <td><p>16919 -- en [                                                        2 | (M)] ---- fr [                                                        2]</p>
 </td>
       </tr>
       <tr>
@@ -5049,7 +5069,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo3M">HumanPollutionCountNumberEqualTo3M</td>
-        <td><p>16920 -- en [                                                     3] ---- fr [                                                     3]</p>
+        <td><p>16920 -- en [                                                     3 | (M)] ---- fr [                                                     3]</p>
 </td>
       </tr>
       <tr>
@@ -5059,7 +5079,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo4M">HumanPollutionCountNumberEqualTo4M</td>
-        <td><p>16921 -- en [                                                 4] ---- fr [                                                 4]</p>
+        <td><p>16921 -- en [                                                 4 | (M)] ---- fr [                                                 4]</p>
 </td>
       </tr>
       <tr>
@@ -5069,7 +5089,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo5M">HumanPollutionCountNumberEqualTo5M</td>
-        <td><p>16922 -- en [                                            5] ---- fr [                                            5]</p>
+        <td><p>16922 -- en [                                            5 | (M)] ---- fr [                                            5]</p>
 </td>
       </tr>
       <tr>
@@ -5079,7 +5099,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo6M">HumanPollutionCountNumberEqualTo6M</td>
-        <td><p>16923 -- en [                                         6] ---- fr [                                         6]</p>
+        <td><p>16923 -- en [                                         6 | (M)] ---- fr [                                         6]</p>
 </td>
       </tr>
       <tr>
@@ -5089,7 +5109,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo7M">HumanPollutionCountNumberEqualTo7M</td>
-        <td><p>16924 -- en [                                     7] ---- fr [                                     7]</p>
+        <td><p>16924 -- en [                                     7 | (M)] ---- fr [                                     7]</p>
 </td>
       </tr>
       <tr>
@@ -5099,7 +5119,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo8M">HumanPollutionCountNumberEqualTo8M</td>
-        <td><p>16925 -- en [                                  8] ---- fr [                                  8]</p>
+        <td><p>16925 -- en [                                  8 | (M)] ---- fr [                                  8]</p>
 </td>
       </tr>
       <tr>
@@ -5109,7 +5129,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberEqualTo9M">HumanPollutionCountNumberEqualTo9M</td>
-        <td><p>16926 -- en [                               9] ---- fr [                               9]</p>
+        <td><p>16926 -- en [                               9 | (M)] ---- fr [                               9]</p>
 </td>
       </tr>
       <tr>
@@ -5119,7 +5139,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionCountNumberGreaterThan400M">HumanPollutionCountNumberGreaterThan400M</td>
-        <td><p>16934 -- en [ &gt; 400] ---- fr [ &gt; 400]</p>
+        <td><p>16934 -- en [ &gt; 400 | (M)] ---- fr [ &gt; 400]</p>
 </td>
       </tr>
       <tr>
@@ -5129,7 +5149,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionMultipleBargesM">HumanPollutionMultipleBargesM</td>
-        <td><p>21014 -- en [                                                          Barges] ---- fr [Barges]</p>
+        <td><p>21014 -- en [                                                          Barges | (M)] ---- fr [Barges]</p>
 </td>
       </tr>
       <tr>
@@ -5144,7 +5164,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionMultipleBoatsM">HumanPollutionMultipleBoatsM</td>
-        <td><p>21013 -- en [                                                               Boats] ---- fr [Boats]</p>
+        <td><p>21013 -- en [                                                               Boats | (M)] ---- fr [Boats]</p>
 </td>
       </tr>
       <tr>
@@ -5159,7 +5179,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionMultipleCommericalsM">HumanPollutionMultipleCommericalsM</td>
-        <td><p>21019 -- en [         Commercial] ---- fr [Commercial-affaires]</p>
+        <td><p>21019 -- en [         Commercial | (M)] ---- fr [Commercial-affaires]</p>
 </td>
       </tr>
       <tr>
@@ -5169,7 +5189,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionMultipleCottagesM">HumanPollutionMultipleCottagesM</td>
-        <td><p>21017 -- en [                             Cottages] ---- fr [Cottages, ]</p>
+        <td><p>21017 -- en [                             Cottages | (M)] ---- fr [Cottages, ]</p>
 </td>
       </tr>
       <tr>
@@ -5184,7 +5204,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionMultipleHotelsMotelsM">HumanPollutionMultipleHotelsMotelsM</td>
-        <td><p>21015 -- en [                                          Hotel-Motels] ---- fr [Hotels or Motels,]</p>
+        <td><p>21015 -- en [                                          Hotel-Motels | (M)] ---- fr [Hotels or Motels,]</p>
 </td>
       </tr>
       <tr>
@@ -5209,7 +5229,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionMultipleResidencesM">HumanPollutionMultipleResidencesM</td>
-        <td><p>21016 -- en [                                                   Residences] ---- fr [Résidentiel]</p>
+        <td><p>21016 -- en [                                                   Residences | (M)] ---- fr [Résidentiel]</p>
 </td>
       </tr>
       <tr>
@@ -5234,12 +5254,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionMultipleWarehousesM">HumanPollutionMultipleWarehousesM</td>
-        <td><p>21018 -- en [                   Warehouses] ---- fr [Entrepôts]</p>
+        <td><p>21018 -- en [                   Warehouses | (M)] ---- fr [Entrepôts]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionSingleBargeM">HumanPollutionSingleBargeM</td>
-        <td><p>12614 -- en [                                                          Barge] ---- fr [Barge,]</p>
+        <td><p>12614 -- en [                                                          Barge | (M)] ---- fr [Barge,]</p>
 </td>
       </tr>
       <tr>
@@ -5254,7 +5274,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionSingleBoatM">HumanPollutionSingleBoatM</td>
-        <td><p>12613 -- en [                                                               Boat] ---- fr [Boat,]</p>
+        <td><p>12613 -- en [                                                               Boat | (M)] ---- fr [Boat,]</p>
 </td>
       </tr>
       <tr>
@@ -5269,7 +5289,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionSingleCommericalM">HumanPollutionSingleCommericalM</td>
-        <td><p>12619 -- en [         Commercial] ---- fr [Commercial-affaires, ]</p>
+        <td><p>12619 -- en [         Commercial | (M)] ---- fr [Commercial-affaires, ]</p>
 </td>
       </tr>
       <tr>
@@ -5279,7 +5299,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionSingleCottageM">HumanPollutionSingleCottageM</td>
-        <td><p>12617 -- en [                             Cottage] ---- fr [Cottage,]</p>
+        <td><p>12617 -- en [                             Cottage | (M)] ---- fr [Cottage,]</p>
 </td>
       </tr>
       <tr>
@@ -5294,7 +5314,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionSinglehotelMotelM">HumanPollutionSinglehotelMotelM</td>
-        <td><p>12615 -- en [                                          Hotel-Motel] ---- fr [Hotel or Motel,]</p>
+        <td><p>12615 -- en [                                          Hotel-Motel | (M)] ---- fr [Hotel or Motel,]</p>
 </td>
       </tr>
       <tr>
@@ -5319,7 +5339,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionSingleResidentialM">HumanPollutionSingleResidentialM</td>
-        <td><p>12616 -- en [                                                   Residential ] ---- fr [Résidentiel]</p>
+        <td><p>12616 -- en [                                                   Residential  | (M)] ---- fr [Résidentiel]</p>
 </td>
       </tr>
       <tr>
@@ -5344,7 +5364,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_HumanPollutionSingleWarehouseM">HumanPollutionSingleWarehouseM</td>
-        <td><p>12618 -- en [                   Warehouse] ---- fr [Entrepôt]</p>
+        <td><p>12618 -- en [                   Warehouse | (M)] ---- fr [Entrepôt]</p>
 </td>
       </tr>
       <tr>
@@ -5484,17 +5504,17 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustrialEffluentAnchorageMooringSite">IndustrialEffluentAnchorageMooringSite</td>
-        <td><p>11212 -- en [     Anchorage Site] ---- fr [Site de mouillage ou d&apos;amarrage]</p>
+        <td><p>11212 -- en [     Anchorage Site | (M)] ---- fr [Site de mouillage ou d&apos;amarrage]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustrialEffluentAquacultureSite">IndustrialEffluentAquacultureSite</td>
-        <td><p>11211 -- en [               Aquaculture] ---- fr [Site de l&apos;aquaculture]</p>
+        <td><p>11211 -- en [               Aquaculture | (M)] ---- fr [Site de l&apos;aquaculture]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_IndustrialEffluentDisposalAtSea">IndustrialEffluentDisposalAtSea</td>
-        <td><p>11213 -- en [        Dredge Disposal Site] ---- fr [Décharge en haute mer]</p>
+        <td><p>11213 -- en [        Dredge Disposal Site | (M)] ---- fr [Décharge en haute mer]</p>
 </td>
       </tr>
       <tr>
@@ -5654,7 +5674,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_MarineSourcesOfContaminanMixedMarine">MarineSourcesOfContaminanMixedMarine</td>
-        <td><p>12405 -- en [                                                     Mixes into Water | Marine] ---- fr [                                                     Mélange dans l&apos;eau | Marin]</p>
+        <td><p>12405 -- en [                                                 Mixes into Water | Marine] ---- fr [                                                     Mélange dans l&apos;eau | Marin]</p>
 </td>
       </tr>
       <tr>
@@ -7168,6 +7188,26 @@
 </td>
       </tr>
       <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ObservationHazReasonHistoricDataH">ObservationHazReasonHistoricDataH</td>
+        <td><p>14417 -- en [Historic Data | H] ---- fr [Données historiques |H]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ObservationHazReasonHistoricDataHMarine">ObservationHazReasonHistoricDataHMarine</td>
+        <td><p>14419 -- en [Historic Data | HM] ---- fr [Données historiques |HM]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ObservationHazReasonHIstoricDataM">ObservationHazReasonHIstoricDataM</td>
+        <td><p>14418 -- en [Historic Data | M] ---- fr [Données historiques |MM]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ObservationHazReasonHistoricDataMMarine">ObservationHazReasonHistoricDataMMarine</td>
+        <td><p>14420 -- en [Historic Data | MM] ---- fr [Données historiques |MM]</p>
+</td>
+      </tr>
+      <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ObservationHazReasonNumbersH">ObservationHazReasonNumbersH</td>
         <td><p>14402 -- en [Number of Sources | H] ---- fr [Nombre de sources | H]</p>
 </td>
@@ -7339,12 +7379,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PathwayRouteSecondCulvertStart">PathwayRouteSecondCulvertStart</td>
-        <td><p>13200 -- en [Where Does Discharge of Culvert Flow] ---- fr [Où se décharge le débit du ponceau]</p>
+        <td><p>13200 -- en [Where Does Discharge Flow] ---- fr [Où se décharge le débit du ponceau]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PathwayRouteSecondPipeStart">PathwayRouteSecondPipeStart</td>
-        <td><p>13000 -- en [Where Does Discharge Of Pipe Flow] ---- fr [D&apos;où vient le débit du tuyau]</p>
+        <td><p>13000 -- en [Where Does Discharge Flow] ---- fr [D&apos;où vient le débit du tuyau]</p>
 </td>
       </tr>
       <tr>
@@ -7793,12 +7833,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo1">PipeCountNumberEqualTo1</td>
-        <td><p>21601 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo10">PipeCountNumberEqualTo10</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo10High">PipeCountNumberEqualTo10High</td>
         <td><p>21610 -- en [                    10 | (H)] ---- fr [                    10 | (H)]</p>
 </td>
       </tr>
@@ -7813,6 +7848,11 @@
 </td>
       </tr>
       <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo1High">PipeCountNumberEqualTo1High</td>
+        <td><p>21601 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]</p>
+</td>
+      </tr>
+      <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo1Low">PipeCountNumberEqualTo1Low</td>
         <td><p>21621 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]</p>
 </td>
@@ -7823,7 +7863,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo2">PipeCountNumberEqualTo2</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo2High">PipeCountNumberEqualTo2High</td>
         <td><p>21602 -- en [                                                      2 | (H)] ---- fr [                                                      2 | (H)]</p>
 </td>
       </tr>
@@ -7838,7 +7878,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo3">PipeCountNumberEqualTo3</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo3High">PipeCountNumberEqualTo3High</td>
         <td><p>21603 -- en [                                                   3 | (H)] ---- fr [                                                   3 | (H)]</p>
 </td>
       </tr>
@@ -7853,7 +7893,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo4">PipeCountNumberEqualTo4</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo4High">PipeCountNumberEqualTo4High</td>
         <td><p>21604 -- en [                                              4 | (H)] ---- fr [                                              4 | (H)]</p>
 </td>
       </tr>
@@ -7868,7 +7908,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo5">PipeCountNumberEqualTo5</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo5High">PipeCountNumberEqualTo5High</td>
         <td><p>21605 -- en [                                        5 | (H)] ---- fr [                                        5 | (H)]</p>
 </td>
       </tr>
@@ -7883,7 +7923,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo6">PipeCountNumberEqualTo6</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo6High">PipeCountNumberEqualTo6High</td>
         <td><p>21606 -- en [                                    6 | (H)] ---- fr [                                    6 | (H)]</p>
 </td>
       </tr>
@@ -7898,7 +7938,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo7">PipeCountNumberEqualTo7</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo7High">PipeCountNumberEqualTo7High</td>
         <td><p>21607 -- en [                                  7 | (H)] ---- fr [                                  7 | (H)]</p>
 </td>
       </tr>
@@ -7913,7 +7953,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo8">PipeCountNumberEqualTo8</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo8High">PipeCountNumberEqualTo8High</td>
         <td><p>21608 -- en [                             8 | (H)] ---- fr [                             8 | (H)]</p>
 </td>
       </tr>
@@ -7928,7 +7968,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo9">PipeCountNumberEqualTo9</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeCountNumberEqualTo9High">PipeCountNumberEqualTo9High</td>
         <td><p>21609 -- en [                         9 | (H)] ---- fr [                         9 | (H)]</p>
 </td>
       </tr>
@@ -7948,7 +7988,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowlHigh">PipeFlowlHigh</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowlHighHigh">PipeFlowlHighHigh</td>
         <td><p>13301 -- en [                       High | (H)] ---- fr [Haut | (H)]</p>
 </td>
       </tr>
@@ -7963,7 +8003,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowLow">PipeFlowLow</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowLowHigh">PipeFlowLowHigh</td>
         <td><p>13303 -- en [                                       Low | (H)] ---- fr [                                       Faible | (H)]</p>
 </td>
       </tr>
@@ -7978,7 +8018,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowMedium">PipeFlowMedium</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowMediumHigh">PipeFlowMediumHigh</td>
         <td><p>13302 -- en [                            Medium | (H)] ---- fr [                            Moyen | (H)]</p>
 </td>
       </tr>
@@ -7993,7 +8033,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowNA">PipeFlowNA</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowNAHigh">PipeFlowNAHigh</td>
         <td><p>13305 -- en [No Data | (H)] ---- fr [Aucune donnée | (H)]</p>
 </td>
       </tr>
@@ -8008,7 +8048,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowRainfall">PipeFlowRainfall</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_PipeFlowRainfallHigh">PipeFlowRainfallHigh</td>
         <td><p>13304 -- en [               Rainfall | (H)] ---- fr [               Pluie (H)]</p>
 </td>
       </tr>
@@ -10414,7 +10454,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageMixedMarine">SewageMixedMarine</td>
-        <td><p>11915 -- en [                                                     Mixes into Water | Marine] ---- fr [                                                     Mélange dans l&apos;eau | Marin]</p>
+        <td><p>11915 -- en [                                               Mixes into Water | Marine] ---- fr [                                                     Mélange dans l&apos;eau | Marin]</p>
 </td>
       </tr>
       <tr>
@@ -10439,7 +10479,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SewageRetentionTankMarine">SewageRetentionTankMarine</td>
-        <td><p>11914 -- en [                                            Retention Septic Tank | Marine] ---- fr [                                            Fosse septique de rétention | Marin]</p>
+        <td><p>11914 -- en [                                   Retention Septic Tank | Marine] ---- fr [                                            Fosse septique de rétention | Marin]</p>
 </td>
       </tr>
       <tr>
@@ -10478,7 +10518,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianGrassedZonePresent">ShorelineRiparianGrassedZonePresent</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianGrassedZonePresentHigh">ShorelineRiparianGrassedZonePresentHigh</td>
         <td><p>23010 -- en [                           Short grass Present | (H)] ---- fr [                           Présence d&apos;herbe courte | (H)]</p>
 </td>
       </tr>
@@ -10493,7 +10533,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianZoneAbsent">ShorelineRiparianZoneAbsent</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianZoneAbsentHigh">ShorelineRiparianZoneAbsentHigh</td>
         <td><p>23002 -- en [                     Vegetated Zone Absent | (H)] ---- fr [                     Zone végétale absente | (H)]</p>
 </td>
       </tr>
@@ -10508,7 +10548,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianZoneNoInfo">ShorelineRiparianZoneNoInfo</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianZoneNoInfoHigh">ShorelineRiparianZoneNoInfoHigh</td>
         <td><p>23003 -- en [No Data | (H)] ---- fr [Aucune donnée | (H)]</p>
 </td>
       </tr>
@@ -10523,7 +10563,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianZonePresent">ShorelineRiparianZonePresent</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineRiparianZonePresentHigh">ShorelineRiparianZonePresentHigh</td>
         <td><p>23001 -- en [                                   Riparian Present | (H)] ---- fr [Présent riverain | (H)]</p>
 </td>
       </tr>
@@ -10543,8 +10583,13 @@
 </td>
       </tr>
       <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineSourceBoatHouse">ShorelineSourceBoatHouse</td>
+        <td><p>11404 -- en [              Boat House] ---- fr [Bateau maison]</p>
+</td>
+      </tr>
+      <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_ShorelineSourceBoatRamp">ShorelineSourceBoatRamp</td>
-        <td><p>11403 -- en [              Boat Ramp] ---- fr [                 Mise à l&apos;eau]</p>
+        <td><p>11403 -- en [          Boat Ramp] ---- fr [                 Mise à l&apos;eau]</p>
 </td>
       </tr>
       <tr>
@@ -10798,7 +10843,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_StructureInRoadNoStructureWaterCourse">StructureInRoadNoStructureWaterCourse</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_StructureInRoadNoStructureWaterCourseHigh">StructureInRoadNoStructureWaterCourseHigh</td>
         <td><p>11105 -- en [                                                            Free Flowing | (H)] ---- fr [                                                            Flux libre | (H)]</p>
 </td>
       </tr>
@@ -10834,7 +10879,7 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_SuggestedRiskStart">SuggestedRiskStart</td>
-        <td><p>15800 -- en [Calculated Risk Of Comtamination In Area of Concern] ---- fr [Risque calculé de contamination dans le secteur préoccupant]</p>
+        <td><p>15800 -- en [Calculated Risk Of Contamination In Area of Concern] ---- fr [Risque calculé de contamination dans le secteur préoccupant]</p>
 </td>
       </tr>
       <tr>
@@ -11561,7 +11606,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeHigh">WaterCourseAreaSlopeHigh</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeHighHigh">WaterCourseAreaSlopeHighHigh</td>
         <td><p>10303 -- en [    High | (H)] ---- fr [       Haut | (H)]</p>
 </td>
       </tr>
@@ -11576,7 +11621,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeLow">WaterCourseAreaSlopeLow</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeLowHigh">WaterCourseAreaSlopeLowHigh</td>
         <td><p>10301 -- en [            Low | (H)] ---- fr [Faible | (H)]</p>
 </td>
       </tr>
@@ -11591,7 +11636,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeMedium">WaterCourseAreaSlopeMedium</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeMediumHigh">WaterCourseAreaSlopeMediumHigh</td>
         <td><p>10302 -- en [         Medium | (H)] ---- fr [          Moyen | (H)]</p>
 </td>
       </tr>
@@ -11606,7 +11651,7 @@
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeNA">WaterCourseAreaSlopeNA</td>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WaterCourseAreaSlopeNAHigh">WaterCourseAreaSlopeNAHigh</td>
         <td><p>10304 -- en [No Data | (H)] ---- fr [ Aucune donnée | (H)]</p>
 </td>
       </tr>
@@ -11737,47 +11782,62 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationBarges">WharfTransportationBarges</td>
-        <td><p>11604 -- en [                                               Barges] ---- fr [                                               Barges]</p>
+        <td><p>11604 -- en [              Barges] ---- fr [              Barges]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationBargeSingle">WharfTransportationBargeSingle</td>
-        <td><p>20704 -- en [                        Barge] ---- fr [Embarcation de plaisance]</p>
-</td>
-      </tr>
-      <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationBoatSingle">WharfTransportationBoatSingle</td>
-        <td><p>20703 -- en [                                    Boat] ---- fr [Embarcation de plaisance]</p>
+        <td><p>20704 -- en [              Barge] ---- fr [              Barge]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationCommerical">WharfTransportationCommerical</td>
-        <td><p>11601 -- en [Ships] ---- fr [Navires]</p>
+        <td><p>11601 -- en [                                      Ships] ---- fr [Navires]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationCommericalSingle">WharfTransportationCommericalSingle</td>
-        <td><p>20701 -- en [Ship] ---- fr [Navire]</p>
+        <td><p>20701 -- en [                               Ship] ---- fr [Navire]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationFerry">WharfTransportationFerry</td>
-        <td><p>11602 -- en [             Ferries] ---- fr [             Ferries]</p>
+        <td><p>11602 -- en [                                    Ferries] ---- fr [                                    Ferries]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationFerrySingle">WharfTransportationFerrySingle</td>
-        <td><p>20702 -- en [          Ferry] ---- fr [Traversier]</p>
+        <td><p>20702 -- en [                            Ferry] ---- fr [                            Traversier]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationPleasureCraft">WharfTransportationPleasureCraft</td>
-        <td><p>11603 -- en [                                                         Boats] ---- fr [                                                         Bateaux]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationFishingBoats">WharfTransportationFishingBoats</td>
+        <td><p>11603 -- en [    Fishing Boats] ---- fr [    Bateaux de pêche]</p>
 </td>
       </tr>
       <tr>
-        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationRecreation">WharfTransportationRecreation</td>
-        <td><p>11605 -- en [                                          Recreation] ---- fr [                                          des loisirs]</p>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationFishingBoatSingle">WharfTransportationFishingBoatSingle</td>
+        <td><p>20703 -- en [ Fishing  Boat] ---- fr [ Bateau de pêche]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationPleasureBoats">WharfTransportationPleasureBoats</td>
+        <td><p>11606 -- en [           Pleasure Boats] ---- fr [           Bateaux de plaisance]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationPleasureBoatSingle">WharfTransportationPleasureBoatSingle</td>
+        <td><p>20706 -- en [        Pleasure Boat] ---- fr [        Bateau de plaisance]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationRecreationActivities">WharfTransportationRecreationActivities</td>
+        <td><p>11605 -- en [                    Recreation] ---- fr [                    des loisirs]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="CSSPEnums_PolSourceObsInfoEnum_WharfTransportationRecreationActivitySingle">WharfTransportationRecreationActivitySingle</td>
+        <td><p>20705 -- en [                      Recreation] ---- fr [                      des loisirs]</p>
 </td>
       </tr>
       <tr>
@@ -11802,22 +11862,22 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox10Low">WidthInMetersApprox10Low</td>
-        <td><p>14836 -- en [                     10 | (H)] ---- fr [                     10 | (H)]</p>
+        <td><p>14836 -- en [                     10 | (L)] ---- fr [                     10 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox10Med">WidthInMetersApprox10Med</td>
-        <td><p>14823 -- en [                     10 | (H)] ---- fr [                     10 | (H)]</p>
+        <td><p>14823 -- en [                     10 |  (M)] ---- fr [                     10 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox1Low">WidthInMetersApprox1Low</td>
-        <td><p>14827 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]</p>
+        <td><p>14827 -- en [                                                          1 | (L)] ---- fr [                                                          1 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox1Med">WidthInMetersApprox1Med</td>
-        <td><p>14814 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]</p>
+        <td><p>14814 -- en [                                                          1 | (M)] ---- fr [                                                          1 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11827,12 +11887,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox2Low">WidthInMetersApprox2Low</td>
-        <td><p>14828 -- en [                                                      2 | (H)] ---- fr [                                                      2 | (H)]</p>
+        <td><p>14828 -- en [                                                      2 | (L)] ---- fr [                                                      2 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox2Med">WidthInMetersApprox2Med</td>
-        <td><p>14815 -- en [                                                      2 | (H)] ---- fr [                                                      2 | (H)]</p>
+        <td><p>14815 -- en [                                                      2 |  (M)] ---- fr [                                                      2 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11842,12 +11902,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox3Low">WidthInMetersApprox3Low</td>
-        <td><p>14829 -- en [                                                  3 | (H)] ---- fr [                                                  3 | (H)]</p>
+        <td><p>14829 -- en [                                                  3 | (L)] ---- fr [                                                  3 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox3Med">WidthInMetersApprox3Med</td>
-        <td><p>14816 -- en [                                                  3 | (H)] ---- fr [                                                  3 | (H)]</p>
+        <td><p>14816 -- en [                                                  3 |  (M)] ---- fr [                                                  3 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11857,12 +11917,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox4Low">WidthInMetersApprox4Low</td>
-        <td><p>14830 -- en [                                             4 | (H)] ---- fr [                                             4 | (H)]</p>
+        <td><p>14830 -- en [                                             4 | (L)] ---- fr [                                             4 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox4Med">WidthInMetersApprox4Med</td>
-        <td><p>14817 -- en [                                             4 | (H)] ---- fr [                                             4 | (H)]</p>
+        <td><p>14817 -- en [                                             4 |  (M)] ---- fr [                                             4 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11872,12 +11932,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox5Low">WidthInMetersApprox5Low</td>
-        <td><p>14831 -- en [                                         5 | (H)] ---- fr [                                         5 | (H)]</p>
+        <td><p>14831 -- en [                                         5 | (L)] ---- fr [                                         5 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox5Med">WidthInMetersApprox5Med</td>
-        <td><p>14818 -- en [                                         5 | (H)] ---- fr [                                         5 | (H)]</p>
+        <td><p>14818 -- en [                                         5 |  (M)] ---- fr [                                         5 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11887,12 +11947,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox6Low">WidthInMetersApprox6Low</td>
-        <td><p>14832 -- en [                                      6 | (H)] ---- fr [                                      6 | (H)]</p>
+        <td><p>14832 -- en [                                      6 | (L)] ---- fr [                                      6 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox6Med">WidthInMetersApprox6Med</td>
-        <td><p>14819 -- en [                                      6 | (H)] ---- fr [                                      6 | (H)]</p>
+        <td><p>14819 -- en [                                      6 |  (M)] ---- fr [                                      6 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11902,12 +11962,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox7Low">WidthInMetersApprox7Low</td>
-        <td><p>14833 -- en [                                   7 | (H)] ---- fr [                                   7 | (H)]</p>
+        <td><p>14833 -- en [                                   7 | (L)] ---- fr [                                   7 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox7Med">WidthInMetersApprox7Med</td>
-        <td><p>14820 -- en [                                   7 | (H)] ---- fr [                                   7 | (H)]</p>
+        <td><p>14820 -- en [                                   7 |  (M)] ---- fr [                                   7 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11917,12 +11977,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox8Low">WidthInMetersApprox8Low</td>
-        <td><p>14834 -- en [                                8 | (H)] ---- fr [                                8 | (H)]</p>
+        <td><p>14834 -- en [                                8 | (L)] ---- fr [                                8 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox8Med">WidthInMetersApprox8Med</td>
-        <td><p>14821 -- en [                                8 | (H)] ---- fr [                                8 | (H)]</p>
+        <td><p>14821 -- en [                                8 |  (M)] ---- fr [                                8 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11932,12 +11992,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox9Low">WidthInMetersApprox9Low</td>
-        <td><p>14835 -- en [                           9 | (H)] ---- fr [                           9 | (H)]</p>
+        <td><p>14835 -- en [                           9 | (L)] ---- fr [                           9 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersApprox9Med">WidthInMetersApprox9Med</td>
-        <td><p>14822 -- en [                           9 | (H)] ---- fr [                           9 | (H)]</p>
+        <td><p>14822 -- en [                           9 |  (M)] ---- fr [                           9 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11947,12 +12007,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersBetween11And25Low">WidthInMetersBetween11And25Low</td>
-        <td><p>14837 -- en [                11 - 25 | (H)] ---- fr [                11 - 25 | (H)]</p>
+        <td><p>14837 -- en [                11 - 25 | (L)] ---- fr [                11 - 25 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersBetween11And25Med">WidthInMetersBetween11And25Med</td>
-        <td><p>14824 -- en [                11 - 25 | (H)] ---- fr [                11 - 25 | (H)]</p>
+        <td><p>14824 -- en [                11 - 25 |  (M)] ---- fr [                11 - 25 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11962,12 +12022,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersBetween26And40Low">WidthInMetersBetween26And40Low</td>
-        <td><p>14838 -- en [            26 - 40 | (H)] ---- fr [            26 - 40 | (H)]</p>
+        <td><p>14838 -- en [            26 - 40 | (L)] ---- fr [            26 - 40 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersBetween26And40Med">WidthInMetersBetween26And40Med</td>
-        <td><p>14825 -- en [            26 - 40 | (H)] ---- fr [            26 - 40 | (H)]</p>
+        <td><p>14825 -- en [            26 - 40 |  (M)] ---- fr [            26 - 40 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -11977,12 +12037,12 @@
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersGreaterThan40Low">WidthInMetersGreaterThan40Low</td>
-        <td><p>14839 -- en [        &gt; 40 | (H)] ---- fr [        &gt; 40 | (H)]</p>
+        <td><p>14839 -- en [        &gt; 40 | (L)] ---- fr [        &gt; 40 | (H)]</p>
 </td>
       </tr>
       <tr>
         <td id="CSSPEnums_PolSourceObsInfoEnum_WidthInMetersGreaterThan40Med">WidthInMetersGreaterThan40Med</td>
-        <td><p>14826 -- en [        &gt; 40 | (H)] ---- fr [        &gt; 40 | (H)]</p>
+        <td><p>14826 -- en [        &gt; 40 |  (M)] ---- fr [        &gt; 40 | (H)]</p>
 </td>
       </tr>
       <tr>
@@ -12003,7 +12063,7 @@
                     <a href="https://github.com/ECCC-CSSP/CSSPEnums/new/master/apiSpec/new?filename=CSSPEnums_PolSourceObsInfoEnum.md&amp;value=---%0Auid%3A%20CSSPEnums.PolSourceObsInfoEnum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ECCC-CSSP/CSSPEnums/blob/master/CSSPEnums/PolSourceObsInfoEnumWithDocGenerated.cs/#L2017" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ECCC-CSSP/CSSPEnums/blob/master/CSSPEnums/PolSourceObsInfoEnumWithDocGenerated.cs/#L2027" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
